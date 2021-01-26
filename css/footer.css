@@ -1,4 +1,61 @@
 * {
   box-sizing: border-box; }
 
+@media only screen and (max-width: 600px) {
+  /* Mobiles: */
+  section {
+    padding: 15px; }
+  .foot {
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #999; }
+    .foot div {
+      width: 50%;
+      padding: 1px 0 5px 5px; } }
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  /* Tablets: */
+  section {
+    padding: 15px; }
+  .foot {
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #999; }
+    .foot div {
+      width: 33.33%;
+      padding: 1px 0 5px 5px; } }
+
+@media only screen and (min-width: 993px) {
+  /* Desktop: */
+  section {
+    padding: 15px; }
+  .foot {
+    display: flex;
+    flex-flow: row;
+    border-bottom: 1px solid #999;
+    justify-content: center; }
+    .foot div {
+      padding: 0px 50px 5px; }
+  .foot2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em; } }
+
+.foot {
+  font-family: "Roboto", sans-serif; }
+  .foot h3 {
+    color: #222; }
+  .foot p, .foot li {
+    color: #999; }
+
+.foot2 {
+  color: #999;
+  font-size: .9rem; }
+  .foot2 span {
+    color: #222;
+    font-weight: bold; }
+  .foot2 .privacy {
+    display: inline;
+    padding-right: 1em; }
+
 /*# sourceMappingURL=footer.css.map */
