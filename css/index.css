@@ -1,4 +1,16 @@
 * {
   box-sizing: border-box; }
 
+main {
+  font-family: "Roboto", sans-serif; }
+
+.gray {
+  color: #999; }
+
+.SO {
+  color: #f68773; }
+
+a:link {
+  color: black; }
+
 /*# sourceMappingURL=index.css.map */

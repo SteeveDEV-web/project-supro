@@ -2,8 +2,9 @@
 	"version": 3,
 	"file": "index.css",
 	"sources": [
-		"../scss/index.scss"
+		"../scss/index.scss",
+		"../scss/_variables.scss"
 	],
 	"names": [],
-	"mappings": "AAAA,AAAA,CAAC,CAAA;EACG,UAAU,EAAE,UAAU,GACvB"
+	"mappings": "AACA,AAAA,CAAC,CAAA;EACG,UAAU,EAAE,UAAU,GACvB;;AAEH,AAAA,IAAI,CAAA;EACA,WAAW,ECFR,QAAQ,EAAE,UAAU,GDGxB;;AACD,AAAA,KAAK,CAAA;EACH,KAAK,ECRF,IAAI,GDSR;;AACH,AAAA,GAAG,CAAA;EACD,KAAK,ECVE,OAAO,GDWf;;AACD,AAAA,CAAC,AAAA,KAAK,CAAA;EACJ,KAAK,EAAC,KAAK,GACZ"
 }
