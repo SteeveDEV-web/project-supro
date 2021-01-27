@@ -1,3 +1,44 @@
+@import "variables.scss";
+
 *{
     box-sizing: border-box;
   }
+
+@media screen and (min-width: 600px){
+
+}
+
+.so{
+  color: $orange;
+}
+
+
+body{
+  
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  
+}
+main{
+  border: 1px solid green ;
+  font-family: $font;
+
+  article{
+    width: 100px;
+    border: blue 1px solid;
+  }
+  .top{
+    display: flex;
+  }
+}
+aside{
+  border: 1px solid red;
+  font-family: $font;
+}
+
+img{
+  width: 100%;
+}
+
+
