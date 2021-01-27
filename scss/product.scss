@@ -1,3 +1,61 @@
+@import "variables.scss";
+
 *{
     box-sizing: border-box;
   }
+
+.home{
+
+  color: $gray
+
+}
+
+.box{
+
+  display: flex;
+
+}
+
+li{
+
+  
+
+}
+
+.wallet{
+
+  color: $gray;
+
+}
+
+.cdt{
+
+  color: $black
+
+}
+
+.picture{
+
+  width: 40%;
+  height: auto;
+
+}
+
+.littleimg{
+  
+  width: 10%;
+  height: auto;
+
+}
+
+.review{
+
+  
+
+}
+
+.lorem{
+
+  color: $gray
+
+}

@@ -1,4 +1,27 @@
 * {
   box-sizing: border-box; }
 
+.home {
+  color: #999; }
+
+.box {
+  display: flex; }
+
+.wallet {
+  color: #999; }
+
+.cdt {
+  color: #222; }
+
+.picture {
+  width: 40%;
+  height: auto; }
+
+.littleimg {
+  width: 10%;
+  height: auto; }
+
+.lorem {
+  color: #999; }
+
 /*# sourceMappingURL=product.css.map */
