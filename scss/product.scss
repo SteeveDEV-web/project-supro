@@ -17,9 +17,63 @@
 
 }
 
+.list{
+
+  
+  padding-right: 1em;
+  display: flex; 
+  flex-flow: row;
+  justify-content: center;
+  
+}
+
 .wallet{
 
   color: $gray;
+  padding: 0px 20px 5px;
+  
+
+}
+
+.review{
+
+  img {
+    margin-bottom: 10px;
+  } 
+  /* star orange */
+  .so{
+    color: $orange;
+  }
+  /* star gray */
+  .sg, .price{
+    color: $gray;
+  }
+
+}
+
+.areview{
+
+  font-size: small;
+  color : $gray
+
+}
+
+.cdt2{
+
+  font-weight: bold;
+  color: $black;
+}
+
+.sku{
+
+  font-size: small;
+  color: $gray;
+
+}
+
+.prices{
+
+  color: $black;
 
 }
 
@@ -54,9 +108,30 @@ img{
 
 }
 
+.littleheart{
+
+  border: $gray 1px solid;
+  padding: 2px;
+
+}
+
+.cate, .tags{
+
+  color: $black;
+  font-weight: bold;
+
+}
+
+.wtaj, .ctw{
+
+ font-size: small;
+ color: $gray;
+
+}
+
 .logos{
 
-  width: 5%;
+  width: 3%;
 
 }
 
@@ -69,17 +144,29 @@ img{
 
   border-top: $black 1px solid;
   border-bottom: $black 1px solid;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
 
   .desc{
 
     color: $black;
     font-weight: bold;
+    padding-right: 1em;
   
   }
 
   .air{
 
-    color: $gray  
+    
+    font-weight: bold;
+    display: flex;
+    color: $gray;
+    flex-flow: row;
+    padding-left: 2em;
+    justify-content: space-between;
+    width: 300px;
+    
 
   }
 }
@@ -104,6 +191,7 @@ img{
 
 .pyjama{
 
+    display: flex;
     width: 30%;
     float: right;
     border: green 1px solid;

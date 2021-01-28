@@ -8,8 +8,40 @@
   display: flex;
   width: 100%; }
 
+.list {
+  padding-right: 1em;
+  display: flex;
+  flex-flow: row;
+  justify-content: center; }
+
 .wallet {
+  color: #999;
+  padding: 0px 20px 5px; }
+
+.review {
+  /* star orange */
+  /* star gray */ }
+  .review img {
+    margin-bottom: 10px; }
+  .review .so {
+    color: #f68773; }
+  .review .sg, .review .price {
+    color: #999; }
+
+.areview {
+  font-size: small;
   color: #999; }
+
+.cdt2 {
+  font-weight: bold;
+  color: #222; }
+
+.sku {
+  font-size: small;
+  color: #999; }
+
+.prices {
+  color: #222; }
 
 .cdt {
   color: #222; }
@@ -27,20 +59,42 @@ img {
   .littleimg img {
     width: 25%; }
 
+.littleheart {
+  border: #999 1px solid;
+  padding: 2px; }
+
+.cate, .tags {
+  color: #222;
+  font-weight: bold; }
+
+.wtaj, .ctw {
+  font-size: small;
+  color: #999; }
+
 .logos {
-  width: 5%; }
+  width: 3%; }
 
 .lorem {
   color: #999; }
 
 .boxp {
   border-top: #222 1px solid;
-  border-bottom: #222 1px solid; }
+  border-bottom: #222 1px solid;
+  display: flex;
+  flex-flow: row;
+  justify-content: center; }
   .boxp .desc {
     color: #222;
-    font-weight: bold; }
+    font-weight: bold;
+    padding-right: 1em; }
   .boxp .air {
-    color: #999; }
+    font-weight: bold;
+    display: flex;
+    color: #999;
+    flex-flow: row;
+    padding-left: 2em;
+    justify-content: space-between;
+    width: 300px; }
 
 .title1, .title2 {
   color: #222;
@@ -53,6 +107,7 @@ img {
   color: #999; }
 
 .pyjama {
+  display: flex;
   width: 30%;
   float: right;
   border: green 1px solid; }
