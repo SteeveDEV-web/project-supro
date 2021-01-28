@@ -6,19 +6,14 @@
 
 .home{
 
-  color: $gray
+  color: $gray;
 
 }
 
 .box{
 
   display: flex;
-
-}
-
-li{
-
-  
+  width: 100%;
 
 }
 
@@ -30,32 +25,109 @@ li{
 
 .cdt{
 
-  color: $black
+  color: $black;
 
 }
+img{
 
+  width: 100%;
+
+}
 .picture{
 
   width: 40%;
   height: auto;
+  padding: 5px;
+  
 
 }
 
 .littleimg{
   
-  width: 10%;
-  height: auto;
+  display: flex;
+
+  img{
+
+    width: 25%;
+
+  }
 
 }
 
-.review{
+.logos{
 
-  
+  width: 5%;
 
 }
 
 .lorem{
 
-  color: $gray
+  color: $gray;
+
+}
+.boxp{
+
+  border-top: $black 1px solid;
+  border-bottom: $black 1px solid;
+
+  .desc{
+
+    color: $black;
+    font-weight: bold;
+  
+  }
+
+  .air{
+
+    color: $gray  
+
+  }
+}
+
+.title1, .title2{
+
+  color: $black;
+  font-weight: bold;
+}
+
+.plight{
+
+  color: $gray;
+
+}
+
+.ulli{
+
+  color: $gray;
+
+}
+
+.pyjama{
+
+    width: 30%;
+    float: right;
+    border: green 1px solid;
+    
+
+}
+
+
+.as{
+  width: 30%;
+  max-width: 300px;
+  font-size: .8rem;
+  padding-bottom: 30px;
+
+  img {
+    margin-bottom: 10px;
+  } 
+  /* star orange */
+  .so{
+    color: $orange;
+  }
+  /* star gray */
+  .sg, .price{
+    color: $gray;
+  }
 
 }
