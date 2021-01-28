@@ -5,6 +5,10 @@
 
 main{
   font-family: $font;
+
+}
+.black{
+  color:$black;
 }
 .gray{
   color:$gray;
@@ -27,25 +31,21 @@ h2{
 .bold{
   font-weight: bold;
 }
-
-/*img{
-width: 100%;
+img{
+  width: 100%;}
+  /*img{
+  width: 100%;
 } a ajouter pour uqe l'image se redimensionne ne mobile*/
 @media only screen and (max-width: 600px) {
 
   .conteneur {
     position: relative;
-    text-align: center;
+
     color: white;
     margin-bottom: 50px;
   }
-  img{
-    width:100%;
 
-  }
-  .collection{
-    display: flex;
-  }
+
 
   .left{
     position: absolute;
@@ -57,17 +57,21 @@ width: 100%;
   }
   .center{
     position: absolute;
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  .center2{
+    text-align: center;
+  }
   .right{
+    text-align: right;
     position: absolute;
     bottom: 10%;
     right: 5%;
     left:50%;
   }
-
 
   .shop1{
     padding-top:20px;
@@ -85,13 +89,41 @@ width: 100%;
     }
     margin-left: 10px;
   }
-.arrival{
-  display: flex;
-  flex-flow: row wrap;
-  width:40%;
-  img{width: 100%;}
+  .arrival{
+    display: flex;
+    flex-wrap:wrap;
+    article{
+      width: 35%;
+      img{
+        width:100%;
+      }
+    }
+  }
+  .col2{
+    .pad{
+      padding-left: 5px;
+    }
+    .border{
+      background-color: $orange;
+      width: 90px;
+      padding-left: 5px;
+      border-radius: 5px;
+    }
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    .translate{
+      transform: translateY(100px);
+    }
+    .scale{ transform: scale(3.5, 3) translateY(100px) translateX(10px);
+
+
+    }
+  }
 }
-}
+
+
+
 @media only screen and (min-width: 601px) and (max-width: 992px) {
 
 
