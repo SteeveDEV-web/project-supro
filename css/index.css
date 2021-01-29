@@ -2,7 +2,8 @@
   box-sizing: border-box; }
 
 main {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  margin: 0; }
 
 .black {
   color: #222; }
@@ -13,14 +14,14 @@ main {
 .SO {
   color: #f68773; }
 
-a:link {
+a:link.black {
   color: black; }
 
-a:link.white {
-  color: red; }
+.orange {
+  color: #f68773; }
 
 .white {
-  color: red; }
+  color: white; }
 
 h2 {
   color: #222; }
@@ -31,10 +32,25 @@ h2 {
 img {
   width: 100%; }
 
+.marginL {
+  margin-left: 20px;
+  margin-right: 20px; }
+
 /*img{
   width: 100%;
 } a ajouter pour uqe l'image se redimensionne ne mobile*/
 @media only screen and (max-width: 600px) {
+  .centerT {
+    width: 100%;
+    height: 600px;
+    overflow: hidden; }
+    .centerT .centerTop {
+      position: absolute;
+      text-align: center;
+      top: 40%;
+      left: 10%; }
+    .centerT img {
+      transform: scale(3, 3) translateY(75px); }
   .conteneur {
     position: relative;
     color: white;
@@ -61,27 +77,44 @@ img {
     left: 50%; }
   .shop1 {
     padding-top: 20px;
-    width: 50%;
-    margin-left: 10px; }
+    width: 50%; }
     .shop1 img {
       width: 100%; }
   .shop2 {
     padding-top: 20px;
-    width: 70%;
-    margin-left: 10px; }
+    width: 70%; }
     .shop2 img {
       width: 100%; }
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+    .product div {
+      width: 30%; }
   .arrival {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-left: 20px; }
     .arrival article {
-      width: 35%; }
+      padding-right: 20px;
+      padding-bottom: 40px;
+      width: 50%; }
       .arrival article img {
         width: 100%; }
   .col2 {
     width: 100%;
-    height: 800px;
+    display: flex;
+    max-width: 100%;
+    height: 400px;
     overflow: hidden; }
+    .col2 .leftDeal {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      right: 50%;
+      bottom: 75%; }
+    .col2 .line {
+      width: 300px; }
     .col2 .pad {
       padding-left: 5px; }
     .col2 .border {
@@ -92,6 +125,54 @@ img {
     .col2 .translate {
       transform: translateY(100px); }
     .col2 .scale {
-      transform: scale(3.5, 3) translateY(100px) translateX(10px); } }
+      transform: scale(3.5, 3.5) translateY(50px) translateX(5px); }
+    .col2 .timer {
+      background-color: white;
+      display: flex;
+      width: 200%;
+      height: auto;
+      flex-flow: row wrap; }
+      .col2 .timer .time {
+        margin-top: 20px;
+        line-height: 10px;
+        text-align: center;
+        width: 20%;
+        margin-left: 10px; }
+    .col2 .shop {
+      margin-top: 50px; }
+  .news {
+    text-align: left;
+    line-height: 20px;
+    margin-bottom: 50px; }
+  .pad {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap; }
+    .pad .new {
+      width: 100%;
+      display: inline;
+      margin-bottom: 50px;
+      line-height: 15px; }
+      .pad .new img {
+        margin-bottom: 20px; }
+  .flex {
+    display: flex; }
+    .flex p {
+      margin-right: 10px; }
+  .connect {
+    display: flex;
+    width: 500px; }
+  .botImg {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap; }
+    .botImg img {
+      width: 33%; }
+    .botImg .tab {
+      display: none; }
+    .botImg .desk {
+      display: none; } }
 
 /*# sourceMappingURL=index.css.map */
