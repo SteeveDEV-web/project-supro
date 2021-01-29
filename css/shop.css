@@ -3,23 +3,22 @@
   box-sizing: border-box; }
 
 @media screen and (max-width: 600px) {
-  /*mobile*/
+  /*-------mobile--------*/
   body {
     flex-direction: column; }
   .as {
     width: 47%; }
   .top {
-    flex-direction: column;
-    border: 1px solid blue; }
-    .top .topMenu :nth-child(n+2) {
-      display: none;
-      text-align: start; }
+    flex-direction: column; }
+    .top .menMob {
+      display: none; }
     .top .topMenu {
-      justify-content: space-between;
-      border: 1px solid; } }
+      justify-content: space-between; }
+  .menuMobile {
+    opacity: 1; } }
 
 @media screen and (min-width: 601px) and (max-width: 992px) {
-  /*tablette*/
+  /*---------tablette-------*/
   body {
     flex-direction: column; }
   .topMenu {
@@ -29,17 +28,20 @@
     width: 30%; } }
 
 @media screen and (min-width: 993px) {
-  /*desktop*/
+  /*------desktop----------*/
   body {
     flex-direction: row-reverse; }
+  main {
+    width: 70%; }
   .topMenu {
     display: flex;
-    justify-content: space-between;
-    /* menu svg ne s'affiche pas */ }
+    justify-content: space-between; }
     .topMenu .menuMobile {
       opacity: 1; }
   .as {
-    width: 30%; } }
+    width: 30%; }
+  aside {
+    margin: 0px 70px; } }
 
 /*------------- Général----------- */
 body {
@@ -48,32 +50,38 @@ body {
   padding: 0% 5%; }
 
 main {
-  font-family: "Roboto", sans-serif;
-  width: 70%; }
+  font-family: "Roboto", sans-serif; }
   main .allArticles {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    /* article shop */ }
-    main .allArticles .as {
-      max-width: 300px;
-      font-size: .8rem;
-      padding-bottom: 30px;
-      /* star orange */
-      /* star gray */ }
-      main .allArticles .as img {
-        margin-bottom: 10px; }
-      main .allArticles .as .so {
-        color: #f68773; }
-      main .allArticles .as .sg, main .allArticles .as .price {
-        color: #999; }
+    justify-content: space-between; }
+
+h1 {
+  color: #222;
+  font-weight: bold;
+  align-items: center; }
+
+/* article shop */
+.as {
+  font-size: .8rem;
+  /* star orange */
+  /* star gray */ }
+  .as img {
+    margin-bottom: 10px; }
+  .as .name {
+    font-weight: bold; }
+  .as .so {
+    color: #f68773; }
+  .as .sg, .as .price {
+    color: #999; }
 
 .top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
   color: #999;
+  padding-top: 30px;
   /* Home & Shop*/ }
   .top .blk {
     color: black; }
@@ -86,18 +94,70 @@ main {
       width: 100%; }
   .top .topMenu {
     display: flex;
-    width: 70%;
+    width: 100%;
     align-items: center; }
-  .top .menuMobile {
-    opacity: 0; }
 
 aside {
-  font-family: "Roboto", sans-serif;
-  margin: 0px 70px; }
+  font-family: "Roboto", sans-serif; }
   aside h3 {
     padding: 20px 0px; }
+  aside p {
+    color: #999; }
+  aside ul {
+    list-style: none;
+    color: #999;
+    padding-left: 0;
+    /*check box strat-end */ }
+    aside ul div {
+      display: flex;
+      padding: 3px 0; }
+      aside ul div svg {
+        margin-right: 20px; }
+      aside ul div .black {
+        color: #222; }
+      aside ul div .blue {
+        color: rgba(39, 96, 139, 0.829); }
+      aside ul div .gold {
+        color: gold; }
+      aside ul div .nude {
+        color: pink; }
+      aside ul div .orange {
+        color: orange; }
+      aside ul div .red {
+        color: darkred; }
+    aside ul .cbe {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+  aside .progress-bar {
+    margin: 4px 2px; }
+  aside .text-uppercase {
+    margin: 15px 0px; }
 
 img {
   width: 100%; }
+
+/* Discover more */
+.dm {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: .15rem; }
+  .dm p {
+    border-bottom: solid; }
+
+.products .as {
+  display: flex;
+  width: 100%; }
+  .products .as img {
+    max-width: 100px; }
+  .products .as div {
+    padding: 2px 15px; }
+    .products .as div .name {
+      color: #222;
+      font-weight: bold; }
+
+.txtBlack {
+  color: #222; }
 
 /*# sourceMappingURL=shop.css.map */

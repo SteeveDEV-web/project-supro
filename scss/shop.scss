@@ -5,7 +5,7 @@
 }
 
 @media screen and (max-width: 600px){
-  /*mobile*/
+  /*-------mobile--------*/
   body{
     flex-direction: column;
   }
@@ -15,24 +15,26 @@
 
   .top{
     flex-direction: column;
-    border: 1px solid blue;
     
-
-    .topMenu :nth-child(n+2){
+  
+    .menMob{
       display: none;
-      text-align: start;
     }
 
     .topMenu{
-      justify-content: space-between ;
-      border: 1px solid;
+      justify-content: space-between; 
       
     }
+  }
+
+  .menuMobile{
+    opacity: 1;
+    
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 992px){
-  /*tablette*/
+  /*---------tablette-------*/
   body{
     flex-direction: column;
   }
@@ -48,17 +50,20 @@
 }
 
 @media screen and (min-width: 993px){
-  /*desktop*/
+  /*------desktop----------*/
 
   body{
     flex-direction: row-reverse;
+  }
+
+  main{
+    width: 70%;
   }
 
   .topMenu{
     display: flex;
     justify-content: space-between;
 
-    /* menu svg ne s'affiche pas */
     .menuMobile{
       opacity: 1;
     }
@@ -68,13 +73,16 @@
     width: 30%;
   }
 
+  aside{
+    margin: 0px 70px;
+  }
+
 }
 
 /*------------- Général----------- */
 
 body{
   display: flex;
-
   justify-content: center;
   padding: 0% 5%; 
 }
@@ -82,7 +90,7 @@ body{
 main{
   
   font-family: $font;
-  width: 70%;
+  
 
   .allArticles{
     width: 100%;
@@ -90,33 +98,43 @@ main{
     flex-wrap: wrap;
     justify-content: space-between;
 
-    /* article shop */
-    .as{
-      
-      max-width: 300px;
-      font-size: .8rem;
-      padding-bottom: 30px;
     
-      img {
-        margin-bottom: 10px;
-      } 
-      /* star orange */
-      .so{
-        color: $orange;
-      }
-      /* star gray */
-      .sg, .price{
-        color: $gray;
-      }
-    } 
   }  
 }
+
+h1{
+  color: $black;
+  font-weight: bold;
+  align-items: center;
+}
+
+/* article shop */
+.as{
+    
+  font-size: .8rem;
+
+  img {
+    margin-bottom: 10px;
+  } 
+  .name{
+    font-weight: bold;
+  }
+  /* star orange */
+  .so{
+    color: $orange;
+  }
+  /* star gray */
+  .sg, .price{
+    color: $gray;
+  }
+} 
 
 .top{
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
   color: $gray;
+  padding-top: 30px;
 
   .blk{
     color:black;
@@ -138,24 +156,111 @@ main{
   .topMenu{
     
     display: flex;
-    width: 70%;
+    width: 100%;
     align-items: center;
   }
 
-  .menuMobile{
-    opacity: 0;
-  }
+  
 }
 
 aside{
   font-family: $font;
-  margin: 0px 70px;
+  
 
   h3{
     padding: 20px 0px;
+  }
+
+  p{
+    color: $gray;
+  }
+
+  ul{
+    list-style: none;
+    color: $gray;
+    padding-left: 0;
+  
+    div{
+      display: flex;
+      padding: 3px 0;
+      
+      svg{
+        margin-right: 20px;
+      }
+      .black{
+        color: $black;
+      }
+      .blue{
+        color: rgba(39, 96, 139, 0.829);
+      }
+      .gold{
+        color: gold;
+      }
+      .nude{
+        color: pink;
+      }
+      .orange{
+        color: orange;
+      }
+      .red{
+        color: darkred;
+      }
+    }
+    /*check box strat-end */
+    .cbe{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .progress-bar{
+    margin: 4px 2px;
+  }
+  .text-uppercase{
+    margin: 15px 0px;
   }
 }
 
 img{
   width: 100%;
+}
+
+
+/* Discover more */
+.dm{
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: .15rem;
+
+  p{
+    border-bottom: solid ;
+  }
+  
+}
+
+.products{
+  
+  .as{
+  
+    display: flex;
+    width: 100%;
+
+    img{
+      max-width: 100px;
+    }
+
+    div{
+      padding: 2px 15px;
+
+      .name{
+        color: $black;
+        font-weight: bold;
+      }  
+    }
+  }
+}
+
+.txtBlack{
+  color: $black;
 }
