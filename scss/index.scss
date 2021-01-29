@@ -1,3 +1,258 @@
+@import "variables.scss";
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+main{
+  font-family: $font;
+  margin:0;
+}
+.black{
+  color:$black;
+}
+.gray{
+  color:$gray;
+}
+.SO{
+  color: $orange;
+}
+a:link.black{
+  color:black;
+}
+.orange{
+  color:$orange;
+
+}
+.white{
+  color:white;
+}
+h2{
+  color:$black;
+}
+.bold{
+  font-weight: bold;
+}
+img{
+  width: 100%;}
+
+.marginL{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+  /*img{
+  width: 100%;
+} a ajouter pour uqe l'image se redimensionne ne mobile*/
+@media only screen and (max-width: 600px) {
+
+  .centerT{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    .centerTop{
+      position: absolute;
+      text-align: center;
+      top:40%;
+      left:10%;
+
+    }
+    img{
+      transform: scale(3, 3) translateY(75px);
+
+    }
   }
+  .conteneur {
+    position: relative;
+    color: white;
+    margin-bottom: 50px;
+  }
+
+  .left{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 50%;
+    bottom: 75%;
+
+  }
+  .center{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .center2{
+    text-align: center;
+  }
+  .right{
+    text-align: right;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    left:50%;
+  }
+
+  .shop1{
+    padding-top:20px;
+    width:50%;
+    img{
+      width: 100%;
+    }
+
+  }
+  .shop2{
+    padding-top:20px;
+    width:70%;
+    img{
+      width: 100%;
+    }
+
+  }
+.product{
+  display: flex;
+  flex-wrap: wrap ;
+  width: 100%;
+
+  div{
+
+    width: 30%;
+  }
+}
+
+  .arrival{
+    display: flex;
+    flex-wrap:wrap;
+    margin-left: 20px;
+
+
+
+    article{
+      padding-right:20px;
+      padding-bottom: 40px;
+      width: 50%;
+      img{
+        width:100%;
+
+      }
+    }
+  }
+  .col2{
+    width: 100%;
+      display: flex;
+    .leftDeal{
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      right: 50%;
+      bottom: 75%;
+
+    }
+
+    .line{
+      width: 300px;
+    }
+    .pad{
+      padding-left: 5px;
+    }
+    .border{
+      background-color: $orange;
+      width: 90px;
+      padding-left: 5px;
+      border-radius: 5px;
+    }
+    max-width: 100%;
+    height: 400px;
+    overflow: hidden;
+    .translate{
+      transform: translateY(100px);
+    }
+    .scale{ transform: scale(3.5, 3.5) translateY(50px) translateX(5px);
+    }
+    .timer{
+
+      background-color:  white;
+      display: flex;
+      width: 200%;
+      height: auto;
+      flex-flow: row wrap;
+      .time{
+        margin-top: 20px;
+        line-height: 10px;
+        text-align:center;
+        width:20%;
+        margin-left:10px;
+
+      }
+
+
+
+    }
+.shop{
+  margin-top: 50px;
+}
+  }
+.news{
+  text-align: left;
+  line-height: 20px;
+  margin-bottom: 50px;
+}
+.pad{
+padding-left:20px;
+padding-right:20px;
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  .new{
+    img{
+      margin-bottom: 20px;
+
+    }
+ width:100%;
+ display: inline;
+ margin-bottom: 50px;
+ line-height: 15px;
+  }
+}
+.flex{
+  display: flex;
+  p{
+  margin-right: 10px;
+  }
+}
+.connect{
+  display: flex;
+  width:500px;
+}
+.botImg{
+  display:flex;
+  width:100%;
+  flex-flow: row wrap;
+  img{
+    width: 33%;
+
+  }
+  .tab{
+    display: none;
+  }
+  .desk{
+    display: none;
+  }
+}
+
+}
+
+
+
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+
+
+
+}
+
+@media only screen and (min-width: 993px) {
+
+
+
+}
