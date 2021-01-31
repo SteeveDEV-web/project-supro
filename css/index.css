@@ -76,13 +76,14 @@ img {
     right: 5%;
     left: 50%; }
   .shop1 {
+    text-align: left;
     padding-top: 20px;
-    width: 50%; }
+    width: 75%; }
     .shop1 img {
       width: 100%; }
   .shop2 {
     padding-top: 20px;
-    width: 70%; }
+    width: 100%; }
     .shop2 img {
       width: 100%; }
   .product {
@@ -163,7 +164,7 @@ img {
       margin-right: 10px; }
   .connect {
     display: flex;
-    width: 500px; }
+    width: 150%; }
   .botImg {
     display: flex;
     width: 100%;
@@ -174,5 +175,324 @@ img {
       display: none; }
     .botImg .desk {
       display: none; } }
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .centerT {
+    width: 100%;
+    height: 700px;
+    overflow: hidden; }
+    .centerT .centerTop {
+      position: absolute;
+      text-align: center;
+      top: 40%;
+      left: 30%; }
+    .centerT img {
+      transform: scale(2, 2) translateY(100px); }
+  .test {
+    display: flex; }
+  .social {
+    margin-left: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+    color: #999;
+    transform: translateY(-40px); }
+  .conteneur {
+    position: relative;
+    color: white;
+    margin-bottom: 50px; }
+  .left {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 60%;
+    bottom: 75%; }
+  .center {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .center2 {
+    text-align: center; }
+  .right {
+    text-align: right;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    left: 60%; }
+  .shop1 {
+    text-align: left;
+    padding-top: 20px;
+    width: 75%;
+    margin-left: 20px; }
+    .shop1 img {
+      width: 50%; }
+  .shop2 {
+    text-align: left;
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+    .shop2 p {
+      flex-wrap: row wrap;
+      border: red 1px solid; }
+    .shop2 h2 {
+      border: green 1px solid;
+      width: 500px; }
+    .shop2 img {
+      width: 60%;
+      order: 2; }
+  .product {
+    display: flex;
+    width: 100%; }
+    .product div {
+      width: 15%; }
+  .arrival {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px; }
+    .arrival article {
+      padding-right: 40px;
+      padding-bottom: 80px;
+      width: 50%; }
+      .arrival article img {
+        width: 100%; }
+  .col2 {
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+    height: 400px;
+    overflow: hidden; }
+    .col2 .leftDeal {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      right: 50%;
+      bottom: 75%; }
+    .col2 .line {
+      width: 300px; }
+    .col2 .pad {
+      padding-left: 5px; }
+    .col2 .border {
+      background-color: #f68773;
+      width: 90px;
+      padding-left: 5px;
+      border-radius: 5px; }
+    .col2 .translate {
+      transform: translateY(100px); }
+    .col2 .scale {
+      transform: scale(1.7, 1.7) translateY(50px) translateX(5px); }
+    .col2 .timer {
+      background-color: white;
+      display: flex;
+      width: 200%;
+      height: auto;
+      flex-flow: row wrap; }
+      .col2 .timer .time {
+        margin-top: 20px;
+        line-height: 10px;
+        text-align: center;
+        width: 20%;
+        margin-left: 10px; }
+    .col2 .shop {
+      margin-top: 50px; }
+  .news {
+    text-align: left;
+    line-height: 20px;
+    margin-bottom: 50px; }
+  .pad {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; }
+    .pad .1 {
+      width: 100%;
+      display: flex; }
+    .pad .new {
+      display: inline;
+      margin-bottom: 50px;
+      line-height: 15px; }
+      .pad .new img {
+        margin-bottom: 20px; }
+    .pad .petit {
+      margin-left: 20px;
+      width: 100%;
+      padding-right: 40px;
+      height: 285.63px; }
+    .pad .flex {
+      display: flex; }
+      .pad .flex p {
+        margin-right: 10px; }
+  .connect {
+    display: flex;
+    width: 150%; }
+  .botImg {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap; }
+    .botImg img {
+      width: 20%; }
+    .botImg .desk {
+      display: none; } }
+
+@media only screen and (min-width: 993px) {
+  .centerT {
+    width: 100%;
+    height: 900px;
+    overflow: hidden; }
+    .centerT img {
+      transform: scale(2, 2) translateY(100px); }
+    .centerT .centerTop {
+      position: absolute;
+      text-align: center;
+      top: 40%;
+      left: 30%; }
+  .conteneur {
+    width: 100%;
+    display: flex; }
+    .conteneur .collection {
+      width: 33%; }
+  .social {
+    margin-left: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+    color: #999;
+    transform: translateY(-40px); }
+  .conteneur {
+    position: relative;
+    color: white;
+    margin-bottom: 50px; }
+  .left {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 60%;
+    bottom: 75%; }
+  .center {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .center2 {
+    text-align: center; }
+  .right {
+    text-align: right;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    left: 60%; }
+  .shop1 {
+    text-align: left;
+    padding-top: 20px;
+    width: 75%;
+    margin-left: 20px; }
+    .shop1 img {
+      width: 50%; }
+  .shop2 {
+    text-align: left;
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+    .shop2 p {
+      flex-wrap: row wrap;
+      border: red 1px solid; }
+    .shop2 h2 {
+      border: green 1px solid;
+      width: 500px; }
+    .shop2 img {
+      width: 60%;
+      order: 2; }
+  .product {
+    display: flex;
+    width: 100%; }
+    .product div {
+      width: 15%; }
+  .arrival {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px; }
+    .arrival article {
+      padding-right: 40px;
+      padding-bottom: 80px;
+      width: 50%; }
+      .arrival article img {
+        width: 100%; }
+  .col2 {
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+    height: 400px;
+    overflow: hidden; }
+    .col2 .leftDeal {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      right: 50%;
+      bottom: 75%; }
+    .col2 .line {
+      width: 300px; }
+    .col2 .pad {
+      padding-left: 5px; }
+    .col2 .border {
+      background-color: #f68773;
+      width: 90px;
+      padding-left: 5px;
+      border-radius: 5px; }
+    .col2 .translate {
+      transform: translateY(100px); }
+    .col2 .timer {
+      background-color: white;
+      display: flex;
+      width: 200%;
+      height: auto;
+      flex-flow: row wrap; }
+      .col2 .timer .time {
+        margin-top: 20px;
+        line-height: 10px;
+        text-align: center;
+        width: 20%;
+        margin-left: 10px; }
+    .col2 .shop {
+      margin-top: 50px; }
+  .news {
+    text-align: left;
+    line-height: 20px;
+    margin-bottom: 50px; }
+  .pad {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; }
+    .pad .new {
+      width: 40%;
+      width: 100%;
+      display: inline;
+      margin-bottom: 50px;
+      line-height: 15px; }
+      .pad .new img {
+        margin-bottom: 20px; }
+    .pad .flex {
+      display: flex; }
+      .pad .flex p {
+        margin-right: 10px; }
+  .connect {
+    display: flex;
+    width: 150%; }
+  .botImg {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap; }
+    .botImg img {
+      width: 14%; } }
 
 /*# sourceMappingURL=index.css.map */
