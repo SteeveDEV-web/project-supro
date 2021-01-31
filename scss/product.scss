@@ -18,41 +18,197 @@
   .box{
 
     width: 100%;
+    display: flex;
   
   }
-  .picture{
 
-    margin-left: 30%;
-    width: 60%;
-    height: 20px;
+  .list{
 
-  } 
+    .wallet{
+
+      position: absolute;
+      top: 2.5rem;
+      
+    }
+
+    .cdt{
+
+      position: absolute;
+      left: 2.5rem;
+      
+
+    }
+  }
+
+ .picture{
+
+    margin-top: 10px;
+    height: 30%;
+    position: absolute;
+    right: 7rem;
+ }
 
   .review{
 
-    
-    margin-top: 30%;
-    margin-right: 20%;
+    margin-top: 50%;
 
+    .areview{
+
+      position: absolute;
+      right: 10rem;
+      top: 18.7rem;
+      margin-left: 5px;
+    
+    }
+
+    .cdt2{
+
+      padding-top: 15px;
+      font-size: 20px;
+      margin-left: 10px;
+
+    }
+
+    .sku{
+
+      margin-left: 10px;
+
+    }
+
+    .prices{
+
+      margin-left: 10px;
+
+    }
+
+    .lorem{
+
+      margin-left: 10px;
+
+    }
+
+    .butclothes{
+
+      margin-left: 35px;
+    }
+
+    .so{
+      
+      margin-top: 50px;
+      
+
+    }
+    
+    .sg{
+
+      margin-top: 50px;
+      
+    
+    }
+
+    .butadd{
+
+      margin-left: 35px;
+      
+
+    }
+
+    .butpay{
+
+      margin-left: 35px;
+
+    }
+
+    .littleheart{
+
+      position: absolute;
+      right: 20px;
+      bottom: 14px;
+      padding: 6px;
+
+
+    }
+
+    .cate{
+
+      margin-top: 10px;
+      padding-left: 5px;
+    }
+
+    .wtaj{
+
+      position: absolute;
+      right: 1px;
+      bottom: -6rem;
+      margin-right: 5px;
+
+    }
+
+    .tags{
+
+      margin-top: 10px;
+      padding-left: 5px;
+
+    }
+
+    .ctw{
+
+      position: absolute;
+      right: 15px;
+      bottom: -8rem;
+      left: 55px;
+
+    }
+
+    .logos{
+      
+      margin-top: 5px;
+
+
+      .twitter{
+
+        position: absolute;
+        width: 6%;
+        right: 2rem;
+        left: 1rem;
+        bottom: -9.3rem;
+
+      }
+
+    }
   }
 
   .boxp{
 
     display: flex;
     flex-direction: row;
+    padding-bottom: 5px;
 
   }
 
   .desc{
 
     margin: 5px;
+    left: -10rem;
     
   }
 
-  .air {
+  .ai {
 
+    position: absolute;
+    bottom: -13rem; 
+    left: 2.3rem;
+    
+    
 
+  }
 
+  .minireview{
+
+    position: absolute;
+    bottom: -14rem; 
+    left: 5rem;
+    
   }
 
   .title1{
@@ -101,6 +257,34 @@
   .as{
     
     margin-left: 30%;
+
+    .sglasses{
+
+      width: 200%;
+      margin-left: -30px;
+
+    }
+
+    .backpack{
+
+      width: 200%;
+      margin-left: -30px;
+
+    }
+
+    .jacket{
+
+      width: 200%;
+      margin-left: -30px;
+
+    }
+
+    .suit{
+
+      width: 200%;
+      margin-left: -30px;
+
+    }
     
     
     .so{
@@ -108,10 +292,15 @@
 
     }
     
-    .sg, .price{
+    .sg{
 
-      
+      margin-left: -2px;
     
+    }
+
+    .price{
+
+
     }
   
   }
@@ -273,8 +462,6 @@ img{
 }
 .boxp{
 
-  border-top: $black 1px solid;
-  border-bottom: $black 1px solid;
   display: flex;
   flex-flow: row;
   justify-content: center;
@@ -287,7 +474,7 @@ img{
   
   }
 
-  .air{
+  .ai{
 
     
     font-weight: bold;
@@ -298,6 +485,19 @@ img{
     justify-content: space-between;
     width: 300px;
     
+
+  }
+
+  .minireview{
+
+
+    font-weight: bold;
+    display: flex;
+    color: $gray;
+    flex-flow: row;
+    padding-left: 2em;
+    justify-content: space-between;
+    width: 300px;
 
   }
 }

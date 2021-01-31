@@ -7,19 +7,90 @@
     margin-top: 40px;
     padding-left: 20px; }
   .box {
-    width: 100%; }
+    width: 100%;
+    display: flex; }
+  .list .wallet {
+    position: absolute;
+    top: 2.5rem; }
+  .list .cdt {
+    position: absolute;
+    left: 2.5rem; }
   .picture {
-    margin-left: 30%;
-    width: 60%;
-    height: 20px; }
+    margin-top: 10px;
+    height: 30%;
+    position: absolute;
+    right: 7rem; }
   .review {
-    margin-top: 30%;
-    margin-right: 20%; }
+    margin-top: 50%; }
+    .review .areview {
+      position: absolute;
+      right: 10rem;
+      top: 18.7rem;
+      margin-left: 5px; }
+    .review .cdt2 {
+      padding-top: 15px;
+      font-size: 20px;
+      margin-left: 10px; }
+    .review .sku {
+      margin-left: 10px; }
+    .review .prices {
+      margin-left: 10px; }
+    .review .lorem {
+      margin-left: 10px; }
+    .review .butclothes {
+      margin-left: 35px; }
+    .review .so {
+      margin-top: 50px; }
+    .review .sg {
+      margin-top: 50px; }
+    .review .butadd {
+      margin-left: 35px; }
+    .review .butpay {
+      margin-left: 35px; }
+    .review .littleheart {
+      position: absolute;
+      right: 20px;
+      bottom: 14px;
+      padding: 6px; }
+    .review .cate {
+      margin-top: 10px;
+      padding-left: 5px; }
+    .review .wtaj {
+      position: absolute;
+      right: 1px;
+      bottom: -6rem;
+      margin-right: 5px; }
+    .review .tags {
+      margin-top: 10px;
+      padding-left: 5px; }
+    .review .ctw {
+      position: absolute;
+      right: 15px;
+      bottom: -8rem;
+      left: 55px; }
+    .review .logos {
+      margin-top: 5px; }
+      .review .logos .twitter {
+        position: absolute;
+        width: 6%;
+        right: 2rem;
+        left: 1rem;
+        bottom: -9.3rem; }
   .boxp {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    padding-bottom: 5px; }
   .desc {
-    margin: 5px; }
+    margin: 5px;
+    left: -10rem; }
+  .ai {
+    position: absolute;
+    bottom: -13rem;
+    left: 2.3rem; }
+  .minireview {
+    position: absolute;
+    bottom: -14rem;
+    left: 5rem; }
   .title1 {
     margin: 30px; }
   .title2 {
@@ -38,7 +109,21 @@
   .rp {
     text-align: center; }
   .as {
-    margin-left: 30%; } }
+    margin-left: 30%; }
+    .as .sglasses {
+      width: 200%;
+      margin-left: -30px; }
+    .as .backpack {
+      width: 200%;
+      margin-left: -30px; }
+    .as .jacket {
+      width: 200%;
+      margin-left: -30px; }
+    .as .suit {
+      width: 200%;
+      margin-left: -30px; }
+    .as .sg {
+      margin-left: -2px; } }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
   /* Tablets: */ }
@@ -123,8 +208,6 @@ img {
   color: #999; }
 
 .boxp {
-  border-top: #222 1px solid;
-  border-bottom: #222 1px solid;
   display: flex;
   flex-flow: row;
   justify-content: center; }
@@ -132,7 +215,15 @@ img {
     color: #222;
     font-weight: bold;
     padding-right: 1em; }
-  .boxp .air {
+  .boxp .ai {
+    font-weight: bold;
+    display: flex;
+    color: #999;
+    flex-flow: row;
+    padding-left: 2em;
+    justify-content: space-between;
+    width: 300px; }
+  .boxp .minireview {
     font-weight: bold;
     display: flex;
     color: #999;
