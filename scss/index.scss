@@ -2,7 +2,9 @@
 *{
   box-sizing: border-box;
 }
-
+.fullWidth{
+  width: 100%;
+}
 main{
   font-family: $font;
   margin:0;
@@ -38,6 +40,11 @@ h2{
 
 .txtgray{
   color: $gray;
+}
+.tst{
+  width: 100%;
+  top:50%;
+  transform: translateY(-50%);
 }
 img{
   width: 100%;}
@@ -87,6 +94,13 @@ img{
 
 
   @media only screen and (max-width: 600px) {
+    .tst{
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      transform:inherit;
+    }
     footer{
       section{
 
@@ -146,19 +160,37 @@ img{
       }
     }
     .centerT{
+      position:relative;
       width: 100%;
       height: 600px;
       overflow: hidden;
       .centerTop{
         position: absolute;
         text-align: center;
-        top:40%;
-        left:10%;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
 
       }
       img{
         transform: scale(3, 3) translateY(75px);
 
+      }
+      .Tright{
+        display: none;
+      }
+    }
+    .social{
+      bottom: 70px;
+      width: 100%;
+      display: block;
+      text-align: center;
+      position: absolute;
+      svg{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin:0 10px;
       }
     }
     .conteneur {
@@ -323,10 +355,13 @@ img{
     }
   }
 
-
+  // tablet
 
 
   @media only screen and (min-width: 601px) and (max-width: 992px) {
+    .fullWidth{
+      width: inherit;
+    }
     footer{
       section{
 
@@ -395,7 +430,22 @@ img{
 
       }
     }
-
+    .social{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      color:$gray;
+      svg{
+        display: inline-block;
+        margin:10px 0;
+        width: 20px;
+        height: 20px;
+      }
+    }
     .tst{
       width: 100%;
       position: absolute;
@@ -404,13 +454,13 @@ img{
       justify-content: space-between;
       .centerTop{
         width: 33%;
-        display: flex;
-        flex-direction: column;
+        margin:0 auto;
         text-align: center;
 
 
       }
       .Tright{
+        display: none;
         transform: translateY(-50px);
         margin-right: 40px;
         width: 33%;
@@ -422,17 +472,7 @@ img{
           align-items: flex-end;
         }
       }
-      .social{
-        margin-left: 40px;
-        height: 100%;
-        width: 33%;
-        display: flex;
-        flex-direction: column;
-        svg{
-          margin-bottom:40px;
-          transform: translateY(-50px);
-        }
-      }
+
 
     }
 
@@ -476,28 +516,42 @@ img{
       img{
         width: 50%;
       }
+      h2{
+        width: 150px;
+      }
     }
     .shop2{
+      position: relative;
+      padding-left: 100px;
       text-align: left;
       padding-top:20px;
       width:100%;
       display:flex;
       justify-content: flex-end;
+
       .size{
+        position: absolute;
+        top:20%;
+        left: 0;
         display: flex;
         flex-direction: column;
+        padding-left: 10px;
+        width: 150px;
       }
       p{
         flex-wrap: row wrap;
-        border: red 1px solid;
+
       }
       h2{
+        font-weight: 900;
 
-        border: green 1px solid;
 
       }
+      .ttu{
+        text-transform: uppercase;
+      }
       img{
-        width: 60%;
+        width: 100%;
         order:2;
       }
 
@@ -601,9 +655,11 @@ img{
         display: inline;
         margin-bottom: 50px;
         line-height: 15px;
-        margin-left: 50px;
+        padding-left: 50px;
       }
-
+      .sec{
+        width: 49%;
+      }
       .flex{
         display: flex;
         p{
@@ -665,6 +721,12 @@ img{
     }
     header{
       display: flex;
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      z-index: 99;
+      background: transparent;
       justify-content: space-between;
 
 
@@ -709,10 +771,11 @@ img{
     .centerT{
       width: 100%;
       height: 900px;
+      position:relative;
       overflow: hidden;
       img{
 
-        transform: scale(2, 2) translateY(100px);
+        transform: scale(2, 2) translateY(74px);
       }
 
     }
@@ -722,37 +785,47 @@ img{
       display:flex;
       flex-direction: row;
       justify-content: space-between;
+      top: 50%;
+      transform: translateY(-50%);
       .centerTop{
+
+        position: absolute;
+        top:50%;
+        transform: translate(-50%,-50%);
         width: 33%;
+        left: 50%;
+
+
         display: flex;
         flex-direction: column;
         text-align: center;
 
-
       }
       .Tright{
-        transform: translateY(-50px);
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
         margin-right: 40px;
         width: 33%;
         text-align: right;
-        .w-50{
-          display: flex;
-          border: 1px $gray solid;
-          width: 20%;
-          align-items: flex-end;
+        .gray{
+          padding-bottom:10px;
+          position: relative;
+          &::after{
+            content: "";
+            display: block;
+            width: 30px;
+            height: 2px;
+            background:$gray;
+            position: absolute;
+            bottom: 0;
+            right:0;
+          }
         }
       }
-      .social{
-        margin-left: 40px;
-        height: 100%;
-        width: 33%;
-        display: flex;
-        flex-direction: column;
-        svg{
-          margin-bottom:40px;
-          transform: translateY(-50px);
-        }
-      }
+
 
     }
     .conteneur{
@@ -764,13 +837,19 @@ img{
     }
     .social{
       margin-left: 20px;
-
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      height:100px;
       color:$gray;
-      transform:translateY(-40px);
+      svg{
+        display: inline-block;
+        margin:10px 0;
+        width: 20px;
+        height: 20px;
+      }
     }
     .conteneur {
       position: relative;
@@ -805,12 +884,18 @@ img{
       left:70%;
     }
     .gau{
+      margin-top: 100px;
       display: flex;
       width:100%;
     }
     .shop1{
+      h2{
+        width: 150px;
+      }
+
       text-align: left;
-      padding-top:20px;
+      padding-top:100px;
+      padding-left:200px;
       width:75%;
       margin-left: 20px;
 
@@ -823,6 +908,13 @@ img{
 
     }
     .shop2{
+      position: relative;
+      padding-left: 100px;
+      text-align: left;
+      padding-top: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
       .droite{
         display:flex;
         justify-content: flex-end;
@@ -833,8 +925,13 @@ img{
         float:left;
       }
       .size{
+        position: absolute;
+        top: 20%;
+        left: 0;
         display: flex;
         flex-direction: column;
+        padding-left: 10px;
+        width: 150px;
       }
 
       text-align: left;
@@ -844,14 +941,11 @@ img{
       flex-direction: row ;
       p{
         flex-wrap: row wrap;
-        border: red 1px solid;
-      }
-      h2{
 
-        border: green 1px solid;
       }
+
       img{
-        width: 60%;
+        width: 100%;
         order:2;
       }
 
@@ -926,23 +1020,40 @@ img{
         margin-top: 50px;
       }
     }
+    .centerMid{
+      width: 70%;
+      margin: 150px auto 70px;
+    }
     .news{
+      position: relative;
       text-align: left;
       line-height: 20px;
       margin-bottom: 50px;
+      a{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+      .input-group{
+        position: absolute;
+        width: 50%;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-bottom: 1px solid $gray;
+      }
     }
     .pad{
-      padding-left:20px;
-      padding-right:20px;
-      display: flex;
 
+      display: flex;
       flex-wrap: row wrap;
       width: 100%;
       .new{
-        width: 30%;
+        width: 33%;
         img{
           margin-bottom: 20px;
         }
+        padding: 0 20px;
         display: inline;
         margin-bottom: 50px;
         line-height: 15px;
