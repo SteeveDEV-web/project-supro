@@ -29,17 +29,72 @@ h2 {
 .bold {
   font-weight: bold; }
 
+.txtblk {
+  color: #222; }
+
+.txtgray {
+  color: #999; }
+
 img {
   width: 100%; }
+
+.foot {
+  font-family: "Roboto", sans-serif; }
+  .foot h3 {
+    color: #222; }
+  .foot p, .foot li {
+    color: #999; }
+
+.foot2 {
+  color: #999;
+  font-size: .9rem; }
+  .foot2 span {
+    color: #222;
+    font-weight: bold; }
+  .foot2 .privacy {
+    display: inline;
+    padding-right: 1em; }
 
 .marginL {
   margin-left: 20px;
   margin-right: 20px; }
 
-/*img{
-  width: 100%;
-} a ajouter pour uqe l'image se redimensionne ne mobile*/
 @media only screen and (max-width: 600px) {
+  footer section {
+    padding: 15px; }
+  footer .foot {
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #999; }
+    footer .foot div {
+      width: 50%;
+      padding: 1px 0 5px 5px; }
+  header {
+    display: flex;
+    justify-content: space-between; }
+  .logo {
+    max-width: 100px;
+    max-height: 100px;
+    align-items: center;
+    padding-top: 20px; }
+  .nav1, .form {
+    opacity: 0;
+    max-height: 100px; }
+  .minisvg {
+    display: flex;
+    padding: 30px 20px;
+    max-height: 100px;
+    justify-content: space-between;
+    max-width: 100px; }
+  .nav2 {
+    display: flex;
+    font-weight: bold;
+    padding: 10px 10px;
+    max-width: 100px;
+    max-height: 100px;
+    align-items: flex-start; }
+    .nav2 li {
+      padding-top: 20px; }
   .centerT {
     width: 100%;
     height: 600px;
@@ -76,13 +131,14 @@ img {
     right: 5%;
     left: 50%; }
   .shop1 {
+    text-align: left;
     padding-top: 20px;
-    width: 50%; }
+    width: 75%; }
     .shop1 img {
       width: 100%; }
   .shop2 {
     padding-top: 20px;
-    width: 70%; }
+    width: 100%; }
     .shop2 img {
       width: 100%; }
   .product {
@@ -163,7 +219,7 @@ img {
       margin-right: 10px; }
   .connect {
     display: flex;
-    width: 500px; }
+    width: 150%; }
   .botImg {
     display: flex;
     width: 100%;
@@ -174,5 +230,563 @@ img {
       display: none; }
     .botImg .desk {
       display: none; } }
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+<<<<<<< HEAD
+=======
+  footer section {
+    padding: 15px; }
+  footer .foot {
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #999; }
+    footer .foot div {
+      width: 50%;
+      padding: 1px 0 5px 5px; }
+  header {
+    display: flex;
+    justify-content: space-between; }
+  .logo {
+    max-width: 100px;
+    max-height: 100px;
+    align-items: center;
+    padding-top: 20px; }
+  .nav1, .form {
+    opacity: 0;
+    max-height: 100px; }
+  .minisvg {
+    display: flex;
+    padding: 30px 20px;
+    max-height: 100px;
+    justify-content: space-between;
+    max-width: 100px; }
+  .nav2 {
+    display: flex;
+    font-weight: bold;
+    padding: 10px 10px;
+    max-width: 100px;
+    max-height: 100px;
+    align-items: flex-start; }
+    .nav2 li {
+      padding-top: 20px; }
+>>>>>>> Thomas
+  .centerT {
+    width: 100%;
+    height: 700px;
+    overflow: hidden; }
+<<<<<<< HEAD
+    .centerT .centerTop {
+      position: absolute;
+      text-align: center;
+      top: 40%;
+      left: 30%; }
+    .centerT img {
+      transform: scale(2, 2) translateY(100px); }
+  .test {
+    display: flex; }
+  .social {
+    margin-left: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+    color: #999;
+    transform: translateY(-40px); }
+=======
+    .centerT img {
+      transform: scale(2, 2) translateY(100px); }
+  .tst {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .tst .centerTop {
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+    .tst .Tright {
+      transform: translateY(-50px);
+      margin-right: 40px;
+      width: 33%;
+      text-align: right; }
+      .tst .Tright .w-50 {
+        display: flex;
+        border: 1px #999 solid;
+        width: 20%;
+        align-items: flex-end; }
+    .tst .social {
+      margin-left: 40px;
+      height: 100%;
+      width: 33%;
+      display: flex;
+      flex-direction: column; }
+      .tst .social svg {
+        margin-bottom: 40px;
+        transform: translateY(-50px); }
+>>>>>>> Thomas
+  .conteneur {
+    position: relative;
+    color: white;
+    margin-bottom: 50px; }
+  .left {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 60%;
+    bottom: 75%; }
+  .center {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .center2 {
+    text-align: center; }
+  .right {
+    text-align: right;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    left: 60%; }
+  .shop1 {
+    text-align: left;
+    padding-top: 20px;
+    width: 75%;
+    margin-left: 20px; }
+    .shop1 img {
+      width: 50%; }
+  .shop2 {
+    text-align: left;
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+<<<<<<< HEAD
+    flex-direction: row; }
+=======
+    justify-content: flex-end; }
+    .shop2 .size {
+      display: flex;
+      flex-direction: column; }
+>>>>>>> Thomas
+    .shop2 p {
+      flex-wrap: row wrap;
+      border: red 1px solid; }
+    .shop2 h2 {
+<<<<<<< HEAD
+      border: green 1px solid;
+      width: 500px; }
+=======
+      border: green 1px solid; }
+>>>>>>> Thomas
+    .shop2 img {
+      width: 60%;
+      order: 2; }
+  .product {
+    display: flex;
+    width: 100%; }
+    .product div {
+      width: 15%; }
+  .arrival {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px; }
+    .arrival article {
+      padding-right: 40px;
+      padding-bottom: 80px;
+      width: 50%; }
+      .arrival article img {
+        width: 100%; }
+  .col2 {
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+    height: 400px;
+    overflow: hidden; }
+    .col2 .leftDeal {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      right: 50%;
+      bottom: 75%; }
+    .col2 .line {
+      width: 300px; }
+    .col2 .pad {
+      padding-left: 5px; }
+    .col2 .border {
+      background-color: #f68773;
+      width: 90px;
+      padding-left: 5px;
+      border-radius: 5px; }
+    .col2 .translate {
+      transform: translateY(100px); }
+    .col2 .scale {
+      transform: scale(1.7, 1.7) translateY(50px) translateX(5px); }
+    .col2 .timer {
+      background-color: white;
+      display: flex;
+      width: 200%;
+      height: auto;
+      flex-flow: row wrap; }
+      .col2 .timer .time {
+        margin-top: 20px;
+        line-height: 10px;
+        text-align: center;
+        width: 20%;
+        margin-left: 10px; }
+    .col2 .shop {
+      margin-top: 50px; }
+  .news {
+    text-align: left;
+    line-height: 20px;
+    margin-bottom: 50px; }
+  .pad {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    width: 100%;
+<<<<<<< HEAD
+    flex-wrap: wrap; }
+    .pad .1 {
+      width: 100%;
+      display: flex; }
+    .pad .new {
+      display: inline;
+      margin-bottom: 50px;
+      line-height: 15px; }
+      .pad .new img {
+        margin-bottom: 20px; }
+    .pad .petit {
+      margin-left: 20px;
+      width: 100%;
+      padding-right: 40px;
+      height: 285.63px; }
+=======
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .pad .newG {
+      display: flex;
+      width: 100%; }
+    .pad .princ {
+      width: 100%; }
+    .pad .new {
+      display: inline;
+      margin-bottom: 50px;
+      line-height: 15px;
+      margin-left: 50px; }
+      .pad .new img {
+        margin-bottom: 20px; }
+>>>>>>> Thomas
+    .pad .flex {
+      display: flex; }
+      .pad .flex p {
+        margin-right: 10px; }
+  .connect {
+    display: flex;
+    width: 150%; }
+  .botImg {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap; }
+    .botImg img {
+      width: 20%; }
+    .botImg .desk {
+      display: none; } }
+
+@media only screen and (min-width: 993px) {
+<<<<<<< HEAD
+=======
+  footer section {
+    padding: 15px; }
+  footer .foot {
+    display: flex;
+    flex-flow: row;
+    border-bottom: 1px solid #999;
+    justify-content: center; }
+    footer .foot div {
+      padding: 0px 50px 5px;
+      /* Modif Privacy */ }
+  footer .foot2 {
+    display: flex;
+    justify-content: space-between; }
+  header {
+    display: flex;
+    justify-content: space-between; }
+    header .logo {
+      max-width: 100px;
+      align-items: center;
+      padding-top: 20px; }
+    header .nav1 {
+      display: flex;
+      padding: 20px 20px; }
+      header .nav1 p {
+        padding: 0 8px; }
+    header .form {
+      max-width: 300px;
+      padding: 20px 20px; }
+    header .minisvg {
+      display: flex;
+      padding: 30px 20px;
+      justify-content: space-between;
+      max-width: 100px; }
+    header .nav2 {
+      display: flex;
+      font-weight: bold;
+      padding: 10px 20px;
+      max-width: 150px; }
+      header .nav2 li {
+        padding-top: 20px; }
+>>>>>>> Thomas
+  .centerT {
+    width: 100%;
+    height: 900px;
+    overflow: hidden; }
+    .centerT img {
+      transform: scale(2, 2) translateY(100px); }
+<<<<<<< HEAD
+    .centerT .centerTop {
+      position: absolute;
+      text-align: center;
+      top: 40%;
+      left: 30%; }
+=======
+  .tst {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .tst .centerTop {
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+    .tst .Tright {
+      transform: translateY(-50px);
+      margin-right: 40px;
+      width: 33%;
+      text-align: right; }
+      .tst .Tright .w-50 {
+        display: flex;
+        border: 1px #999 solid;
+        width: 20%;
+        align-items: flex-end; }
+    .tst .social {
+      margin-left: 40px;
+      height: 100%;
+      width: 33%;
+      display: flex;
+      flex-direction: column; }
+      .tst .social svg {
+        margin-bottom: 40px;
+        transform: translateY(-50px); }
+>>>>>>> Thomas
+  .conteneur {
+    width: 100%;
+    display: flex; }
+    .conteneur .collection {
+      width: 33%; }
+  .social {
+    margin-left: 20px;
+<<<<<<< HEAD
+    position: absolute;
+=======
+>>>>>>> Thomas
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+    color: #999;
+    transform: translateY(-40px); }
+  .conteneur {
+    position: relative;
+    color: white;
+    margin-bottom: 50px; }
+  .left {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+<<<<<<< HEAD
+    right: 60%;
+=======
+    right: 70%;
+>>>>>>> Thomas
+    bottom: 75%; }
+  .center {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+<<<<<<< HEAD
+=======
+    right: 30%;
+>>>>>>> Thomas
+    transform: translate(-50%, -50%); }
+  .center2 {
+    text-align: center; }
+  .right {
+    text-align: right;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+<<<<<<< HEAD
+    left: 60%; }
+=======
+    left: 70%; }
+  .gau {
+    display: flex;
+    width: 100%; }
+>>>>>>> Thomas
+  .shop1 {
+    text-align: left;
+    padding-top: 20px;
+    width: 75%;
+    margin-left: 20px; }
+    .shop1 img {
+      width: 50%; }
+<<<<<<< HEAD
+=======
+  .gau {
+    display: flex; }
+>>>>>>> Thomas
+  .shop2 {
+    text-align: left;
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+<<<<<<< HEAD
+=======
+    .shop2 .droite {
+      display: flex;
+      justify-content: flex-end;
+      max-width: 60%;
+      float: right; }
+    .shop2 .gauche {
+      float: left; }
+    .shop2 .size {
+      display: flex;
+      flex-direction: column; }
+>>>>>>> Thomas
+    .shop2 p {
+      flex-wrap: row wrap;
+      border: red 1px solid; }
+    .shop2 h2 {
+<<<<<<< HEAD
+      border: green 1px solid;
+      width: 500px; }
+=======
+      border: green 1px solid; }
+>>>>>>> Thomas
+    .shop2 img {
+      width: 60%;
+      order: 2; }
+  .product {
+    display: flex;
+    width: 100%; }
+    .product div {
+      width: 15%; }
+  .arrival {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px; }
+    .arrival article {
+      padding-right: 40px;
+      padding-bottom: 80px;
+<<<<<<< HEAD
+      width: 50%; }
+=======
+      width: 33%; }
+>>>>>>> Thomas
+      .arrival article img {
+        width: 100%; }
+  .col2 {
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+    height: 400px;
+    overflow: hidden; }
+    .col2 .leftDeal {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      right: 50%;
+      bottom: 75%; }
+    .col2 .line {
+      width: 300px; }
+    .col2 .pad {
+<<<<<<< HEAD
+      padding-left: 5px; }
+=======
+      padding-left: 5px;
+      display: flex;
+      width: 100%; }
+>>>>>>> Thomas
+    .col2 .border {
+      background-color: #f68773;
+      width: 90px;
+      padding-left: 5px;
+      border-radius: 5px; }
+    .col2 .translate {
+      transform: translateY(100px); }
+    .col2 .timer {
+      background-color: white;
+      display: flex;
+<<<<<<< HEAD
+      width: 200%;
+=======
+      width: 100%;
+>>>>>>> Thomas
+      height: auto;
+      flex-flow: row wrap; }
+      .col2 .timer .time {
+        margin-top: 20px;
+        line-height: 10px;
+        text-align: center;
+        width: 20%;
+        margin-left: 10px; }
+    .col2 .shop {
+      margin-top: 50px; }
+  .news {
+    text-align: left;
+    line-height: 20px;
+    margin-bottom: 50px; }
+  .pad {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+<<<<<<< HEAD
+    width: 100%;
+    flex-wrap: wrap; }
+    .pad .new {
+      width: 40%;
+      width: 100%;
+=======
+    flex-wrap: row wrap;
+    width: 100%; }
+    .pad .new {
+      width: 30%;
+>>>>>>> Thomas
+      display: inline;
+      margin-bottom: 50px;
+      line-height: 15px; }
+      .pad .new img {
+        margin-bottom: 20px; }
+    .pad .flex {
+      display: flex; }
+      .pad .flex p {
+        margin-right: 10px; }
+  .connect {
+    display: flex;
+    width: 150%; }
+  .botImg {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap; }
+    .botImg img {
+      width: 14%; } }
 
 /*# sourceMappingURL=index.css.map */
