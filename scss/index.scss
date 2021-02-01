@@ -32,132 +32,585 @@ h2{
 .bold{
   font-weight: bold;
 }
+.txtblk{
+  color: $black;
+}
+
+.txtgray{
+  color: $gray;
+}
 img{
   width: 100%;}
+  .foot{
 
+    font-family: $font;
+
+    h3{
+
+      color: $black;
+
+    }
+
+    p, li{
+
+      color: $gray;
+
+    }
+
+  }
+
+  .foot2{
+
+    color: $gray;
+    font-size: .9rem;
+
+
+    span{
+
+      color: $black;
+      font-weight: bold;
+
+
+    }
+
+    .privacy{
+
+      display: inline;
+      padding-right: 1em;
+
+    }
+  }
   .marginL{
     margin-left: 20px;
     margin-right: 20px;
   }
 
-  /*img{
-  width: 100%;
-} a ajouter pour uqe l'image se redimensionne ne mobile*/
-@media only screen and (max-width: 600px) {
 
-  .centerT{
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-    .centerTop{
-      position: absolute;
-      text-align: center;
-      top:40%;
-      left:10%;
+  @media only screen and (max-width: 600px) {
+    footer{
+      section{
 
-    }
-    img{
-      transform: scale(3, 3) translateY(75px);
+        padding: 15px;
 
-    }
-  }
-  .conteneur {
-    position: relative;
-    color: white;
-    margin-bottom: 50px;
-  }
+      }
 
-  .left{
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    right: 50%;
-    bottom: 75%;
+      .foot{
 
-  }
-  .center{
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .center2{
-    text-align: center;
-  }
-  .right{
-    text-align: right;
-    position: absolute;
-    bottom: 10%;
-    right: 5%;
-    left:50%;
-  }
-  .shop1{
-    text-align: left;
-    padding-top:20px;
-    width:75%;
-    img{
-      width: 100%;
-    }
-  }
-  .shop2{
-    padding-top:20px;
-    width:100%;
-    img{
-      width: 100%;
-    }
-  }
-  .product{
-    display: flex;
-    flex-wrap: wrap ;
-    width: 100%;
-    div{
-      width: 30%;
-    }
-  }
-  .arrival{
-    display: flex;
-    flex-wrap:wrap;
-    margin-left: 20px;
-    article{
-      padding-right:20px;
-      padding-bottom: 40px;
-      width: 50%;
-      img{
-        width:100%;
+        display: flex;
+        flex-flow: row wrap;
+        border-bottom: 1px solid $gray;
+
+        div{
+
+          width: 50%;
+          padding: 1px 0 5px 5px;
+
+        }
       }
     }
-  }
-  .col2{
-    width: 100%;
-    display: flex;
-    .leftDeal{
+    header{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .logo{
+      max-width: 100px;
+      max-height: 100px;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .nav1, .form{
+      opacity: 0;
+      max-height: 100px;
+    }
+
+    .minisvg{
+      display: flex;
+      padding: 30px 20px;
+      max-height: 100px;
+      justify-content: space-between;
+      max-width: 100px;
+    }
+
+    .nav2{
+      display: flex;
+      font-weight: bold;
+      padding: 10px 10px;
+      max-width: 100px;
+      max-height: 100px;
+      align-items: flex-start;
+
+      li{
+        padding-top: 20px;
+      }
+    }
+    .centerT{
+      width: 100%;
+      height: 600px;
+      overflow: hidden;
+      .centerTop{
+        position: absolute;
+        text-align: center;
+        top:40%;
+        left:10%;
+
+      }
+      img{
+        transform: scale(3, 3) translateY(75px);
+
+      }
+    }
+    .conteneur {
+      position: relative;
+      color: white;
+      margin-bottom: 50px;
+    }
+
+    .left{
       position: absolute;
       top: 10%;
       left: 5%;
       right: 50%;
       bottom: 75%;
+
     }
-    .line{
-      width: 300px;
+    .center{
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .center2{
+      text-align: center;
+    }
+    .right{
+      text-align: right;
+      position: absolute;
+      bottom: 10%;
+      right: 5%;
+      left:50%;
+    }
+    .shop1{
+      text-align: left;
+      padding-top:20px;
+      width:75%;
+      img{
+        width: 100%;
+      }
+    }
+    .shop2{
+      padding-top:20px;
+      width:100%;
+      img{
+        width: 100%;
+      }
+    }
+    .product{
+      display: flex;
+      flex-wrap: wrap ;
+      width: 100%;
+      div{
+        width: 30%;
+      }
+    }
+    .arrival{
+      display: flex;
+      flex-wrap:wrap;
+      margin-left: 20px;
+      article{
+        padding-right:20px;
+        padding-bottom: 40px;
+        width: 50%;
+        img{
+          width:100%;
+        }
+      }
+    }
+    .col2{
+      width: 100%;
+      display: flex;
+      .leftDeal{
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        right: 50%;
+        bottom: 75%;
+      }
+      .line{
+        width: 300px;
+      }
+      .pad{
+        padding-left: 5px;
+      }
+      .border{
+        background-color: $orange;
+        width: 90px;
+        padding-left: 5px;
+        border-radius: 5px;
+      }
+      max-width: 100%;
+      height: 400px;
+      overflow: hidden;
+      .translate{
+        transform: translateY(100px);
+      }
+      .scale{ transform: scale(3.5, 3.5) translateY(50px) translateX(5px);
+      }
+      .timer{
+        background-color:  white;
+        display: flex;
+        width: 200%;
+        height: auto;
+        flex-flow: row wrap;
+        .time{
+          margin-top: 20px;
+          line-height: 10px;
+          text-align:center;
+          width:20%;
+          margin-left:10px;
+        }
+      }
+      .shop{
+        margin-top: 50px;
+      }
+    }
+    .news{
+      text-align: left;
+      line-height: 20px;
+      margin-bottom: 50px;
     }
     .pad{
-      padding-left: 5px;
+      padding-left:20px;
+      padding-right:20px;
+      display: flex;
+      width: 100%;
+      flex-flow: row wrap;
+      .new{
+        img{
+          margin-bottom: 20px;
+        }
+        width:100%;
+        display: inline;
+        margin-bottom: 50px;
+        line-height: 15px;
+      }
     }
-    .border{
-      background-color: $orange;
-      width: 90px;
-      padding-left: 5px;
-      border-radius: 5px;
+    .flex{
+      display: flex;
+      p{
+        margin-right: 10px;
+      }
     }
-    max-width: 100%;
-    height: 400px;
-    overflow: hidden;
-    .translate{
-      transform: translateY(100px);
+    .connect{
+      display: flex;
+      width:150%;
     }
-    .scale{ transform: scale(3.5, 3.5) translateY(50px) translateX(5px);
+    .botImg{
+      display:flex;
+      width:100%;
+      flex-flow: row wrap;
+      img{
+        width: 33%;
+      }
+      .tab{
+        display: none;
+      }
+      .desk{
+        display: none;
+      }
     }
+  }
+
+
+
+
+  @media only screen and (min-width: 601px) and (max-width: 992px) {
+    footer{
+      section{
+
+        padding: 15px;
+
+      }
+
+      .foot{
+
+        display: flex;
+        flex-flow: row wrap;
+        border-bottom: 1px solid $gray;
+
+        div{
+
+          width: 50%;
+          padding: 1px 0 5px 5px;
+
+        }
+      }
+    }
+    header{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .logo{
+      max-width: 100px;
+      max-height: 100px;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .nav1, .form{
+      opacity: 0;
+      max-height: 100px;
+    }
+
+    .minisvg{
+      display: flex;
+      padding: 30px 20px;
+      max-height: 100px;
+      justify-content: space-between;
+      max-width: 100px;
+    }
+
+    .nav2{
+      display: flex;
+      font-weight: bold;
+      padding: 10px 10px;
+      max-width: 100px;
+      max-height: 100px;
+      align-items: flex-start;
+
+      li{
+        padding-top: 20px;
+      }
+    }
+    .centerT{
+      width: 100%;
+      height: 700px;
+      overflow: hidden;
+
+      img{
+        transform: scale(2, 2) translateY(100px);
+
+      }
+    }
+
+    .tst{
+      width: 100%;
+      position: absolute;
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .centerTop{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+
+      }
+      .Tright{
+        transform: translateY(-50px);
+        margin-right: 40px;
+        width: 33%;
+        text-align: right;
+        .w-50{
+          display: flex;
+          border: 1px $gray solid;
+          width: 20%;
+          align-items: flex-end;
+        }
+      }
+      .social{
+        margin-left: 40px;
+        height: 100%;
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        svg{
+          margin-bottom:40px;
+          transform: translateY(-50px);
+        }
+      }
+
+    }
+
+    .conteneur {
+      position: relative;
+      color: white;
+      margin-bottom: 50px;
+    }
+
+    .left{
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      right: 60%;
+      bottom: 75%;
+    }
+    .center{
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .center2{
+      text-align: center;
+    }
+    .right{
+      text-align: right;
+      position: absolute;
+      bottom: 10%;
+      right: 5%;
+      left:60%;
+    }
+    .shop1{
+      text-align: left;
+      padding-top:20px;
+      width:75%;
+      margin-left: 20px;
+
+      img{
+        width: 50%;
+      }
+    }
+    .shop2{
+      text-align: left;
+      padding-top:20px;
+      width:100%;
+      display:flex;
+      justify-content: flex-end;
+      .size{
+        display: flex;
+        flex-direction: column;
+      }
+      p{
+        flex-wrap: row wrap;
+        border: red 1px solid;
+      }
+      h2{
+
+        border: green 1px solid;
+
+      }
+      img{
+        width: 60%;
+        order:2;
+      }
+
+    }
+    .product{
+      display: flex;
+      width: 100%;
+
+      div{
+        width:15%;
+      }
+    }
+    .arrival{
+      display: flex;
+      flex-wrap:wrap;
+      margin-left: 40px;
+      article{
+        padding-right:40px;
+        padding-bottom: 80px;
+        width: 50%;
+        img{
+          width:100%;
+        }
+      }
+    }
+    .col2{
+      width: 100%;
+      display: flex;
+      .leftDeal{
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        right: 50%;
+        bottom: 75%;
+      }
+      .line{
+        width: 300px;
+      }
+      .pad{
+        padding-left: 5px;
+      }
+      .border{
+        background-color: $orange;
+        width: 90px;
+        padding-left: 5px;
+        border-radius: 5px;
+      }
+      max-width: 100%;
+      height: 400px;
+      overflow: hidden;
+      .translate{
+        transform: translateY(100px);
+      }
+      .scale{ transform: scale(1.7, 1.7) translateY(50px) translateX(5px);
+      }
+      .timer{
+        background-color:  white;
+        display: flex;
+        width: 200%;
+        height: auto;
+        flex-flow: row wrap;
+        .time{
+          margin-top: 20px;
+          line-height: 10px;
+          text-align:center;
+          width:20%;
+          margin-left:10px;
+        }
+      }
+      .shop{
+        margin-top: 50px;
+      }
+    }
+    .news{
+      text-align: left;
+      line-height: 20px;
+      margin-bottom: 50px;
+    }
+    .pad{
+      padding-left:20px;
+      padding-right:20px;
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .newG{
+        display:flex;
+        width: 100%;
+
+      }
+      .princ{
+        width: 100%;
+      }
+
+      .new{
+        img{
+          margin-bottom: 20px;
+        }
+
+        display: inline;
+        margin-bottom: 50px;
+        line-height: 15px;
+        margin-left: 50px;
+      }
+
+      .flex{
+        display: flex;
+        p{
+          margin-right: 10px;
+        }
+      }
+    }
+    .connect{
     .timer{
       background-color:  white;
       display: flex;
@@ -373,9 +826,15 @@ img{
     .timer{
       background-color:  white;
       display: flex;
-      width: 200%;
-      height: auto;
+      width:150%;
+    }
+    .botImg{
+      display:flex;
+      width:100%;
       flex-flow: row wrap;
+      img{
+        width: 20%;
+      }
       .time{
         margin-top: 20px;
         line-height: 10px;
@@ -408,242 +867,340 @@ img{
       img{
         margin-bottom: 20px;
 
+      .desk{
+        display: none;
+      }
+    }
+
+
+  }
+
+  @media only screen and (min-width: 993px) {
+    footer{
+      section{
+
+        padding: 15px;
+
       }
 
-      display: inline;
-      margin-bottom: 50px;
-      line-height: 15px;
+      .foot{
 
+        display: flex;
+        flex-flow: row;
+        border-bottom: 1px solid $gray;
+        justify-content: center;
+
+        div{
+
+          padding: 0px 50px 5px; /* Modif Privacy */
+
+
+        }
+
+      }
+
+      .foot2{
+
+        display: flex;
+        justify-content: space-between;
+
+
+      }
     }
-    .petit{
-      margin-left:20px;
-      width: 100%;
-      padding-right:40px;
-      height:285.63px;
-    }
-    .flex{
+    header{
       display: flex;
-      p{
-        margin-right: 10px;
+      justify-content: space-between;
+
+
+      .logo{
+        max-width: 100px;
+        align-items: center;
+        padding-top: 20px;
+      }
+
+      .nav1{
+        display: flex;
+        padding: 20px 20px;
+
+        p{
+          padding: 0 8px;
+        }
+
+      }
+      .form{
+        max-width: 300px;
+        padding: 20px 20px;
+      }
+
+      .minisvg{
+        display: flex;
+        padding: 30px 20px;
+        justify-content: space-between;
+        max-width: 100px;
+      }
+
+      .nav2{
+        display: flex;
+        font-weight: bold;
+        padding: 10px 20px;
+        max-width: 150px;
+
+        li{
+          padding-top: 20px;
+        }
       }
     }
-  }
-  .connect{
-    display: flex;
-    width:150%;
-  }
-  .botImg{
-    display:flex;
-    width:100%;
-    flex-flow: row wrap;
-    img{
-      width: 20%;
-    }
-
-    .desk{
-      display: none;
-    }
-  }
-
-
-}
-
-@media only screen and (min-width: 993px) {
-
-  .centerT{
-    width: 100%;
-    height: 900px;
-    overflow: hidden;
-    img{
-      transform: scale(2, 2) translateY(100px);
-
-    }
-    .centerTop{
-      position: absolute;
-      text-align: center;
-      top:40%;
-      left:30%;
-
-    }
-
-  }
-  .conteneur{
-    width:100%;
-    display: flex;
-    .collection{
-      width: 33%;
-    }
-  }
-  .social{
-    margin-left: 20px;
-    position:absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height:100px;
-    color:$gray;
-    transform:translateY(-40px);
-  }
-  .conteneur {
-    position: relative;
-    color: white;
-    margin-bottom: 50px;
-  }
-
-  .left{
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    right: 60%;
-    bottom: 75%;
-
-  }
-  .center{
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .center2{
-    text-align: center;
-  }
-  .right{
-    text-align: right;
-    position: absolute;
-    bottom: 10%;
-    right: 5%;
-    left:60%;
-  }
-  .shop1{
-    text-align: left;
-    padding-top:20px;
-    width:75%;
-    margin-left: 20px;
-
-    img{
-      width: 50%;
-    }
-  }
-  .shop2{
-    text-align: left;
-    padding-top:20px;
-    width:100%;
-    display:flex;
-    flex-direction: row ;
-    p{
-      flex-wrap: row wrap;
-      border: red 1px solid;
-    }
-    h2{
-
-      border: green 1px solid;
-      width:500px;
-    }
-    img{
-      width: 60%;
-      order:2;
-    }
-
-  }
-  .product{
-    display: flex;
-    width: 100%;
-
-    div{
-      width:15%;
-    }
-  }
-  .arrival{
-    display: flex;
-    flex-wrap:wrap;
-    margin-left: 40px;
-    article{
-      padding-right:40px;
-      padding-bottom: 80px;
-      width: 50%;
+    .centerT{
+      width: 100%;
+      height: 900px;
+      overflow: hidden;
       img{
-        width:100%;
+
+        transform: scale(2, 2) translateY(100px);
+      }
+
+<<<<<<< HEAD
+=======
+    }
+    .tst{
+      width: 100%;
+      position: absolute;
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .centerTop{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+>>>>>>> Thomas
+
+
+      }
+      .Tright{
+        transform: translateY(-50px);
+        margin-right: 40px;
+        width: 33%;
+        text-align: right;
+        .w-50{
+          display: flex;
+          border: 1px $gray solid;
+          width: 20%;
+          align-items: flex-end;
+        }
+      }
+      .social{
+        margin-left: 40px;
+        height: 100%;
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        svg{
+          margin-bottom:40px;
+          transform: translateY(-50px);
+        }
+      }
+
+    }
+    .conteneur{
+      width:100%;
+      display: flex;
+      .collection{
+        width: 33%;
       }
     }
-  }
-  .col2{
-    width: 100%;
-    display: flex;
-    .leftDeal{
+    .social{
+      margin-left: 20px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height:100px;
+      color:$gray;
+      transform:translateY(-40px);
+    }
+    .conteneur {
+      position: relative;
+      color: white;
+      margin-bottom: 50px;
+    }
+
+    .left{
       position: absolute;
       top: 10%;
       left: 5%;
-      right: 50%;
+      right: 70%;
       bottom: 75%;
+
     }
-    .line{
-      width: 300px;
+    .center{
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      right: 30%;
+      transform: translate(-50%, -50%);
+    }
+    .center2{
+      text-align: center;
+    }
+    .right{
+      text-align: right;
+      position: absolute;
+      bottom: 10%;
+      right: 5%;
+      left:70%;
+    }
+    .gau{
+      display: flex;
+      width:100%;
+    }
+    .shop1{
+      text-align: left;
+      padding-top:20px;
+      width:75%;
+      margin-left: 20px;
+
+      img{
+        width: 50%;
+      }
+    }
+    .gau{
+      display: flex;
+
+    }
+    .shop2{
+      .droite{
+        display:flex;
+        justify-content: flex-end;
+        max-width: 60%;
+        float:right;
+      }
+      .gauche{
+        float:left;
+      }
+      .size{
+        display: flex;
+        flex-direction: column;
+      }
+
+      text-align: left;
+      padding-top:20px;
+      width:100%;
+      display:flex;
+      flex-direction: row ;
+      p{
+        flex-wrap: row wrap;
+        border: red 1px solid;
+      }
+      h2{
+
+        border: green 1px solid;
+      }
+      img{
+        width: 60%;
+        order:2;
+      }
+
+    }
+    .product{
+      display: flex;
+      width: 100%;
+
+      div{
+        width:15%;
+      }
+    }
+    .arrival{
+      display: flex;
+      flex-wrap:wrap;
+      margin-left: 40px;
+      article{
+        padding-right:40px;
+        padding-bottom: 80px;
+        width: 33%;
+        img{
+          width:100%;
+        }
+      }
+    }
+    .col2{
+      width: 100%;
+      display: flex;
+      .leftDeal{
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        right: 50%;
+        bottom: 75%;
+      }
+      .line{
+        width: 300px;
+      }
+      .pad{
+        padding-left: 5px;
+        display: flex;
+        width: 100%;
+      }
+      .border{
+        background-color: $orange;
+        width: 90px;
+        padding-left: 5px;
+        border-radius: 5px;
+      }
+      max-width: 100%;
+      height: 400px;
+      overflow: hidden;
+      .translate{
+        transform: translateY(100px);
+      }
+
+      .timer{
+        background-color:  white;
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-flow: row wrap;
+        .time{
+          margin-top: 20px;
+          line-height: 10px;
+          text-align:center;
+          width:20%;
+          margin-left:10px;
+        }
+      }
+      .shop{
+        margin-top: 50px;
+      }
+    }
+    .news{
+      text-align: left;
+      line-height: 20px;
+      margin-bottom: 50px;
     }
     .pad{
-      padding-left: 5px;
-    }
-    .border{
-      background-color: $orange;
-      width: 90px;
-      padding-left: 5px;
-      border-radius: 5px;
-    }
-    max-width: 100%;
-    height: 400px;
-    overflow: hidden;
-    .translate{
-      transform: translateY(100px);
-    }
-
-    .timer{
-      background-color:  white;
+      padding-left:20px;
+      padding-right:20px;
       display: flex;
-      width: 200%;
-      height: auto;
-      flex-flow: row wrap;
-      .time{
-        margin-top: 20px;
-        line-height: 10px;
-        text-align:center;
-        width:20%;
-        margin-left:10px;
-      }
-    }
-    .shop{
-      margin-top: 50px;
-    }
-  }
-  .news{
-    text-align: left;
-    line-height: 20px;
-    margin-bottom: 50px;
-  }
-  .pad{
-    padding-left:20px;
-    padding-right:20px;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    .new{
-      width: 40%;
-      img{
-        margin-bottom: 20px;
 
+      flex-wrap: row wrap;
+      width: 100%;
+      .new{
+        width: 30%;
+        img{
+          margin-bottom: 20px;
+        }
+        display: inline;
+        margin-bottom: 50px;
+        line-height: 15px;
       }
-      width:100%;
-      display: inline;
-      margin-bottom: 50px;
-      line-height: 15px;
-
-    }
-    .flex{
-      display: flex;
-      p{
-        margin-right: 10px;
+      .flex{
+        display: flex;
+        p{
+          margin-right: 10px;
+        }
       }
     }
-  }
     .connect{
       display: flex;
       width:150%;
@@ -652,16 +1209,10 @@ img{
       display:flex;
       width:100%;
       flex-flow: row wrap;
-  img{
-    width: 14%;
-  }
-
+      img{
+        width: 14%;
+      }
 
     }
 
-
-
-
-
-
-}
+  }
