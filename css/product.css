@@ -8,25 +8,38 @@
     padding-left: 20px; }
   .box {
     width: 100%;
-    display: flex; }
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .box .picture {
+      display: flex;
+      flex-direction: column; }
+      .box .picture .pic {
+        width: 100%;
+        height: 50%;
+        padding: 15px; }
+      .box .picture .littleimg {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: 13px; }
+        .box .picture .littleimg img {
+          padding: 5px;
+          width: 25%; }
   .list .wallet {
     position: absolute;
     top: 2.5rem; }
   .list .cdt {
     position: absolute;
-    left: 2.5rem; }
-  .picture {
-    margin-top: 10px;
-    height: 30%;
-    position: absolute;
-    right: 7rem; }
+    left: 2.5rem;
+    margin-bottom: 10px; }
   .review {
-    margin-top: 50%; }
-    .review .areview {
-      position: absolute;
-      right: 10rem;
-      top: 18.7rem;
-      margin-left: 5px; }
+    margin-top: 5%; }
+    .review .starp {
+      display: flex;
+      margin-left: 10px; }
+      .review .starp .areview {
+        margin: 8px; }
     .review .cdt2 {
       padding-top: 15px;
       font-size: 20px;
@@ -38,59 +51,58 @@
     .review .lorem {
       margin-left: 10px; }
     .review .butclothes {
-      margin-left: 35px; }
+      margin-left: 40px; }
     .review .so {
-      margin-top: 50px; }
+      margin-top: 10px; }
     .review .sg {
-      margin-top: 50px; }
+      margin-top: 10px; }
     .review .butadd {
       margin-left: 35px; }
     .review .butpay {
-      margin-left: 35px; }
+      margin-left: 35px;
+      margin-bottom: 20px;
+      width: 108%; }
     .review .littleheart {
-      position: absolute;
-      right: 20px;
-      bottom: 14px;
-      padding: 6px; }
-    .review .cate {
-      margin-top: 10px;
-      padding-left: 5px; }
-    .review .wtaj {
-      position: absolute;
-      right: 1px;
-      bottom: -6rem;
-      margin-right: 5px; }
-    .review .tags {
-      margin-top: 10px;
-      padding-left: 5px; }
-    .review .ctw {
-      position: absolute;
-      right: 15px;
-      bottom: -8rem;
-      left: 55px; }
+      border: none; }
+    .review .cate, .review .tags {
+      margin-top: 20px;
+      padding: 10px; }
+      .review .cate .wtajclass, .review .tags .wtajclass {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        .review .cate .wtajclass .tagclass, .review .tags .wtajclass .tagclass {
+          display: flex;
+          flex-direction: row; }
+          .review .cate .wtajclass .tagclass .ctw, .review .tags .wtajclass .tagclass .ctw {
+            margin-top: 20px;
+            padding: 10px; }
     .review .logos {
-      margin-top: 5px; }
+      margin-top: 5px;
+      margin-left: 5px;
+      display: flex;
+      flex-direction: row; }
+      .review .logos .fb {
+        padding-left: 10px;
+        width: 10%; }
       .review .logos .twitter {
-        position: absolute;
-        width: 6%;
-        right: 2rem;
-        left: 1rem;
-        bottom: -9.3rem; }
+        padding-left: 10px;
+        width: 10%; }
+      .review .logos .pinterest {
+        padding-left: 10px;
+        padding-top: 5px;
+        width: 10%; }
   .boxp {
+    padding-bottom: 5px;
     display: flex;
-    flex-direction: row;
-    padding-bottom: 5px; }
-  .desc {
-    margin: 5px;
-    left: -10rem; }
-  .ai {
-    position: absolute;
-    bottom: -13rem;
-    left: 2.3rem; }
-  .minireview {
-    position: absolute;
-    bottom: -14rem;
-    left: 5rem; }
+    flex-direction: column; }
+    .boxp .desc {
+      text-align: center; }
+    .boxp .ai {
+      padding: 3px;
+      justify-content: center; }
+    .boxp .minireview {
+      text-align: center; }
   .title1 {
     margin: 30px; }
   .title2 {
@@ -109,24 +121,37 @@
   .rp {
     text-align: center; }
   .as {
-    margin-left: 30%; }
-    .as .sglasses {
-      width: 200%;
-      margin-left: -30px; }
-    .as .backpack {
-      width: 200%;
-      margin-left: -30px; }
-    .as .jacket {
-      width: 200%;
-      margin-left: -30px; }
-    .as .suit {
-      width: 200%;
-      margin-left: -30px; }
-    .as .sg {
-      margin-left: -2px; } }
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%; } }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
-  /* Tablets: */ }
+  /* Tablets: */
+  .home {
+    margin: 40px; }
+  .box {
+    display: flex;
+    width: 100%; }
+  .miniheader {
+    display: flex;
+    flex-direction: row; }
+    .miniheader .list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 40%; }
+    .miniheader .wallet {
+      margin: 38px; }
+    .miniheader .cdt {
+      margin: 38px; }
+  .picture {
+    margin-left: 15px; }
+  /*.review{
+
+
+
+      }*/ }
 
 @media only screen and (min-width: 993px) {
   /* Desktop: */ }
@@ -180,7 +205,6 @@ img {
   width: 100%; }
 
 .picture {
-  width: 40%;
   height: auto;
   padding: 5px; }
 
@@ -202,14 +226,14 @@ img {
   color: #999; }
 
 .logos {
-  width: 3%; }
+  width: 100%;
+  color: #222; }
 
 .lorem {
   color: #999; }
 
 .boxp {
   display: flex;
-  flex-flow: row;
   justify-content: center; }
   .boxp .desc {
     color: #222;
@@ -221,11 +245,9 @@ img {
     color: #999;
     flex-flow: row;
     padding-left: 2em;
-    justify-content: space-between;
     width: 300px; }
   .boxp .minireview {
     font-weight: bold;
-    display: flex;
     color: #999;
     flex-flow: row;
     padding-left: 2em;
@@ -252,10 +274,9 @@ img {
   font-weight: bold; }
 
 .as {
-  width: 30%;
+  width: 100%;
   max-width: 300px;
   font-size: .8rem;
-  padding-bottom: 30px;
   /* star orange */
   /* star gray */ }
   .as img {
