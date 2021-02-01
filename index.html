@@ -9,78 +9,180 @@
   <title>Document</title>
 </head>
 <body>
-  <main>
-    <section >
-      <div class="centerT">
-        <img src="images\homepage-images\sl3-1.jpeg" alt="">
+  <header class="container-fluid">
+    <div class="row">
+      <div class="logo col">
+        <img src="images\homepage-images\logo_supro.svg" alt="logo_supro">
+      </div>
+
+      <div class="nav1 col">
+        <p> <a class="txtblk" href="#">Home</a> </p>
+        <p> <a class="txtblk" href="#">Shop</a> </p>
+        <p> <a class="txtblk" href="#">Collection</a> </p>
+        <p> <a class="txtblk" href="#">Pages</a> </p>
+        <p> <a class="txtblk" href="#">Blog</a> </p>
+        <p> <a class="txtblk" href="#">Contact</a> </p>
+
+      </div>
+      <div class="form col">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn " type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg></button>
+        </form>
+      </div>
+      <div class="minisvg col">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+          <path d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg>
+      </div>
+
+      <div class="nav2 col">
+        <nav class="navbar navbar-dark ">
+
+          <button class="navbar-toggler text-dark " type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText " aria-expanded="false" aria-label="Toggle navigation"><span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="txtgray" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="txtgray" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="txtgray" href="#">Collection</a>
+            </li>
+            <li class="nav-item">
+              <a class="txtgray" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="txtgray" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="txtgray" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+</header>
+<main>
+  <section >
+    <div class="centerT">
+      <img src="images\homepage-images\sl3-1.jpeg" alt="">
+      <div class="tst">
+        <div class="social">
+          <svg class="soc" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg>
+          <svg class="soc"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg>
+          <svg class="soc"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+            <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+          </svg>
+          <svg enable-background="new 0 0 40 40" height="16" id="Layer_1" version="1.1" viewBox="0 0 40 40" width="16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><path d="M20,2.071c9.925,0,18,8.075,18,18s-8.074,18-18,18s-18-8.075-18-18S10.075,2.071,20,2.071 M20,0.071    c-11.046,0-20,8.954-20,20c0,11.047,8.954,20,20,20c11.046,0,20-8.953,20-20C40,9.025,31.047,0.071,20,0.071L20,0.071z" fill="#959595"/></g><path d="M21.068,9.018c-5.881,0-8.846,4.216-8.846,7.732c0,2.129,0.806,4.023,2.534,4.728   c0.284,0.117,0.538,0.004,0.62-0.309c0.057-0.219,0.191-0.766,0.252-0.994c0.084-0.311,0.051-0.42-0.178-0.69   c-0.498-0.588-0.816-1.349-0.816-2.427c0-3.129,2.34-5.929,6.094-5.929c3.325,0,5.151,2.031,5.151,4.743   c0,3.569-1.58,6.582-3.924,6.582c-1.295,0-2.265-1.07-1.955-2.384c0.372-1.568,1.093-3.261,1.093-4.393   c0-1.013-0.544-1.858-1.67-1.858c-1.323,0-2.387,1.37-2.387,3.204c0,1.169,0.395,1.959,0.395,1.959s-1.354,5.74-1.592,6.746   c-0.473,2.002-0.07,4.456-0.037,4.704c0.02,0.146,0.209,0.182,0.295,0.07c0.121-0.16,1.698-2.106,2.234-4.052   c0.151-0.551,0.871-3.402,0.871-3.402c0.43,0.82,1.687,1.543,3.024,1.543c3.979,0,6.678-3.627,6.678-8.483   C28.904,12.437,25.795,9.018,21.068,9.018z" fill="#959595"/></g></svg>
+        </div>
         <div class="centerTop">
           <h1 class="white bold">WINTER COLLECTION</h1>
           <p><a class ="white bold" href="#">DISCOVER MORE</a></p>
         </div>
-      </div>
-    </section>
-    <section class="conteneur">
-      <div class="collection">
-        <img src="images\homepage-images\banner_h1_1.jpeg" alt="">
-        <div class="left">
-          <p class="gray">Jaccquard Print</p>
-          <h2 class="black">HAIRBAND COLLECTION</h2>
-          <p><a class="black bold" href="#">DISCOVER MORE</a></p>
+        <div class="Tright">
+          <p class="rightT gray">Next SS Preview <span class="bold"><br>Woman Shoes</span></p>
+          <p class="rightT w-50"></p>
+          <p class="rightT gray">Pink <span class="bold"><br>Sneaker</span></p>
+          <p class="rightT w-50"></p>
+          <p class="rightT ">Winter <span class="bold black"><br>Collection</span></p>
         </div>
       </div>
-      <div class="collection">
-        <img src="images\homepage-images\banner_h1_2.jpeg" alt="">
-        <div class="center">
-          <p class="white">Jaccquard Print</p>
-          <h2 class="white bold">HAIRBAND COLLECTION</h2>
-          <p><a class="white bold" href="#">DISCOVER MORE</a></p>
-        </div>
+    </div>
+
+
+  </section>
+  <section class="conteneur">
+    <div class="collection">
+      <img src="images\homepage-images\banner_h1_1.jpeg" alt="">
+      <div class="left">
+        <p class="gray">Jaccquard Print</p>
+        <h2 class="black">HAIRBAND COLLECTION</h2>
+        <p><a class="black bold" href="#">DISCOVER MORE</a></p>
       </div>
-      <div class="collection">
-        <img src="images\homepage-images\banner_h1_3.jpeg" alt="">
-        <div class="right">
-          <p class ="gray">Special Price</p>
-          <h2 class="bold">CORDURTOY CULOTTES</h2>
-          <p><a class="black bold" href="#">DISCOVER MORE</a></p>
-        </div>
+    </div>
+    <div class="collection">
+      <img src="images\homepage-images\banner_h1_2.jpeg" alt="">
+      <div class="center">
+        <p class="white">Jaccquard Print</p>
+        <h2 class="white bold">HAIRBAND COLLECTION</h2>
+        <p><a class="white bold" href="#">DISCOVER MORE</a></p>
       </div>
-    </section>
-    <section >
-      <div class="marginL">
+    </div>
+    <div class="collection">
+      <img src="images\homepage-images\banner_h1_3.jpeg" alt="">
+      <div class="right">
+        <p class ="gray">Special Price</p>
+        <h2 class="bold">CORDURTOY CULOTTES</h2>
+        <p><a class="black bold" href="#">DISCOVER MORE</a></p>
+      </div>
+    </div>
+  </section>
+  <section >
+    <div class="marginL">
 
 
       <h2 class="bold">Top sellers</h2>
       <p class="gray">Browse the huge variety of our products</p>
-      <div class="shop1">
-        <img src="images\homepage-images\bsl1.jpeg" alt="">
-        <h2 class="bold">Leather shop bag</h2>
-        <p class="gray">$59.90</p>
-        <p><a class="black bold" href="#">SHOP NOW</a></p>
+      <div class="gau">
+        <div class="shop1">
+          <img src="images\homepage-images\bsl1.jpeg" alt="">
+          <h2 class="bold">Leather shop bag</h2>
+          <p class="gray">$59.90</p>
+          <p><a class="black bold" href="#">SHOP NOW</a></p>
+        </div>
+        <div class="shop2 droite">
+          <img src="images\homepage-images\bsl2.jpeg" alt="">
+          <div class="size">
+            <h2>flower design blouse</h2>
+            <p class="gray">$89.90</p>
+            <p><a class="black bold" href="#">SHOP NOW</a></p>
+          </div>
+        </div>
       </div>
-      <div class="shop2">
-        <img src="images\homepage-images\bsl2.jpeg" alt="">
-        <h2>flower design blouse</h2>
-        <p class="gray">$89.90</p>
-        <p><a class="black bold" href="#">SHOP NOW</a></p>
-      </div>
-      <div class="shop2">
+      <div class="gau">
+        <div class="shop2 gauche">
+          <img src="images\homepage-images\bsl3.jpeg" alt="">
+          <div class="size">
+            <h2>glitter decorated shoes</h2>
+            <p class="gray"><s>$89.90</s></p>
+            <p><a class="black bold" href="#">SHOP NOW</a></p>
+          </div>
+        </div>
+        <div class="shop1">
 
-        <img src="images\homepage-images\bsl3.jpeg" alt="">
-        <h2>glitter decorated shoes</h2>
-        <p class="gray"><s>$89.90</s></p>
-        <p><a class="black bold" href="#">SHOP NOW</a></p>
+          <img src="images\homepage-images\bsl4.jpeg" alt="">
+          <h2>metallic frame glasses</h2>
+          <p class="gray">$29.90</p>
+          <p><a class="black bold" href="#">SHOP NOW</a></p>
+        </div>
       </div>
-      <div class="shop1">
-
-        <img src="images\homepage-images\bsl4.jpeg" alt="">
-        <h2>metallic frame glasses</h2>
-        <p class="gray">$29.90</p>
-        <p><a class="black bold" href="#">SHOP NOW</a></p>
-      </div>
-      </div>
-    </section>
-    <section >
-      <div class="marginL">
+    </div>
+  </section>
+  <section >
+    <div class="marginL">
 
 
       <h2 class="bold">New Arrival</h2>
@@ -102,203 +204,204 @@
           <p class="gray">Wallets </p>
         </div>
       </div>
-      </div>
-      <div class="arrival">
-        <article>
-
-          <img src="images\homepage-images\prd_05_1_2.jpeg" alt="">
-          <p> Contrast Backpack</p>
-          <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill gray" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-          </p>
-          <p class="gray"> £ 9.90</p>
-
-        </article>
-        <article>
-
-          <img src="images\homepage-images\prd_09_1_1_5.jpeg" alt="">
-          <p> Contrasting Design T-shirt </p>
-          <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill gray" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-          </p>
-          <p class="gray"> £ 95.90</p>
-
-        </article>
-        <article>
-
-          <img src="images\shop-images\7.jpeg" alt="">
-          <p> Contrasting Design T-shirt 2</p>
-          <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill gray" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-          </p>
-          <p class="gray"> £ 65.90</p>
-
-        </article>
-        <article>
-
-          <img src="images\homepage-images\prd_08_1_6.jpeg" alt="">
-          <p> Cotton Sweater </p>
-          <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill gray" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-          </p>
-          <p class="gray"> £ 19.00</p>
-        </article>
-        <article>
-
-          <img src="images\shop-images\12.jpeg" alt="">
-          <p> Cropped Denim Jumpsuit </p>
-          <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill gray" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-          </p>
-          <p class="gray"> £ 89.00</p>
-
-        </article>
-        <article>
-
-          <img src="images\shop-images\6.jpeg" alt="">
-          <p> Glitter Decorated Shoes </p>
-          <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill gray" viewBox="0 0 16 16">
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-            </svg>
-          </p>
-          <p> £ 56.00</p>
-
-        </article>
-      </div>
-      <p class="center2"><a class="black bold" href="#">DISCOVER MORE</a></p>
-    </section>
-    <section class="conteneur">
-      <div class="col2">
-        <img class="scale" src="images\homepage-images\deals_image.jpeg" alt="">
-
-        <div class="leftDeal ">
-          <p class="gray"><b>Deal of the day</b></p>
-          <h2 class="line"><b>Hobo Shopper Bag</b></h2>
-          <p class="black pad"><s class="gray">$79.90</s>$39.90</p>
-          <p class="border">Save <b>50%</b></p>
-          <div class="timer">
-
-            <div class="time">
-              <p class="black bold ">-179 <p class="gray">Days</p></p>
-            </div>
-            <div class="time">
-              <p class="black bold ">-20 <p class="gray">Hours</p></p>
-            </div>
-            <div class="time">
-              <p class="black bold ">-43 <p class="gray">Minutes</p></p>
-            </div>
-            <div class="time">
-              <p class="black bold ">-33 <p class="gray">Seconds</p></p>
-            </div>
-          </div>
-          <div class="shop ">
-            <p><a class="black bold " href="#">SHOP NOW</a></p>
-          </div>
-        </div>
-      </div>
-
     </div>
+    <div class="arrival">
+      <article>
+
+        <img src="images\homepage-images\prd_05_1_2.jpeg" alt="">
+        <p> Contrast Backpack</p>
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill gray" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+        </p>
+        <p class="gray"> £ 9.90</p>
+
+      </article>
+      <article>
+
+        <img src="images\homepage-images\prd_09_1_1_5.jpeg" alt="">
+        <p> Contrasting Design T-shirt </p>
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill gray" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+        </p>
+        <p class="gray"> £ 95.90</p>
+
+      </article>
+      <article>
+
+        <img src="images\shop-images\7.jpeg" alt="">
+        <p> Contrasting Design T-shirt 2</p>
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill gray" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+        </p>
+        <p class="gray"> £ 65.90</p>
+
+      </article>
+      <article>
+
+        <img src="images\homepage-images\prd_08_1_6.jpeg" alt="">
+        <p> Cotton Sweater </p>
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill gray" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+        </p>
+        <p class="gray"> £ 19.00</p>
+      </article>
+      <article>
+
+        <img src="images\shop-images\12.jpeg" alt="">
+        <p> Cropped Denim Jumpsuit </p>
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill gray" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+        </p>
+        <p class="gray"> £ 89.00</p>
+
+      </article>
+      <article>
+
+        <img src="images\shop-images\6.jpeg" alt="">
+        <p> Glitter Decorated Shoes </p>
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill SO" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill gray" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+        </p>
+        <p> £ 56.00</p>
+
+      </article>
+    </div>
+    <p class="center2"><a class="black bold" href="#">DISCOVER MORE</a></p>
   </section>
-  <section>
-    <div class="news">
-      <h1 class="marginL bold">Latest News</h1>
-      <p class="gray marginL">Our recent articles about fashion ideas & products</p>
-      <a class ="black marginL bold"href="#">SEE ALL NEWS</a>
-    </div>
-    <div class="pad">
-      <div class="new">
-        <img src="images\homepage-images\blog1.jpeg" alt="">
-        <p class="black bold">five thing you only know if you were at Chanel's Hamburg show</p>
-        <div class="flex">
-          <p class="orange">DIY </p>
-          <p class="gray">June 10,2019</p>
+  <section class="conteneur">
+    <div class="col2">
+      <img class="scale" src="images\homepage-images\deals_image.jpeg" alt="">
+
+      <div class="leftDeal ">
+        <p class="gray"><b>Deal of the day</b></p>
+        <h2 class="line"><b>Hobo Shopper Bag</b></h2>
+        <p class="black pad"><s class="gray">$79.90</s>$39.90</p>
+        <p class="border">Save <b>50%</b></p>
+        <div class="timer">
+
+          <div class="time">
+            <p class="black bold ">-179 <p class="gray">Days</p></p>
+          </div>
+          <div class="time">
+            <p class="black bold ">-20 <p class="gray">Hours</p></p>
+          </div>
+          <div class="time">
+            <p class="black bold ">-43 <p class="gray">Minutes</p></p>
+          </div>
+          <div class="time">
+            <p class="black bold ">-33 <p class="gray">Seconds</p></p>
+          </div>
         </div>
-        <a class="black" href="#">READ MORE</a>
+        <div class="shop ">
+          <p><a class="black bold " href="#">SHOP NOW</a></p>
+        </div>
       </div>
+    </div>
+
+  </div>
+</section>
+<section>
+  <div class="news">
+    <h1 class="marginL bold">Latest News</h1>
+    <p class="gray marginL">Our recent articles about fashion ideas & products</p>
+    <a class ="black marginL bold"href="#">SEE ALL NEWS</a>
+  </div>
+  <div class="pad">
+    <div class="new princ">
+      <img src="images\homepage-images\blog1.jpeg" alt="">
+      <p class="black bold">five thing you only know if you were at Chanel's Hamburg show</p>
+      <div class="flex">
+        <p class="orange">DIY </p>
+        <p class="gray">June 10,2019</p>
+      </div>
+      <a class="black" href="#">READ MORE</a>
+    </div>
+    <div class="newG">
       <div class="new">
         <img class="petit" src="images\homepage-images\blog2.jpeg" alt="">
         <p>Kering Reinforces Luxury Status By Distributin Puma Shares</p>
@@ -306,25 +409,26 @@
           <p class="orange">DIY </p>
           <p class="gray">June 10,2019</p>
         </div>
-          <a class="black" href="#">READ MORE</a>
+        <a class="black" href="#">READ MORE</a>
       </div>
       <div class="new">
-        <img src="images\homepage-images\blog4_1.jpeg" alt="">
+        <img class="petit" src="images\homepage-images\blog4_1.jpeg" alt="">
         <p>There Glittery Sneakers will make you want to ditch your holiday heels</p>
         <div class="flex">
           <p class="orange">DIY </p>
           <p class="gray">June 10,2019</p>
         </div>
-          <a class="black" href="#">READ MORE</a>
+        <a class="black" href="#">READ MORE</a>
       </div>
     </div>
-  </section>
-  <section class="newsletter">
-    <div >
-      <div class="row">
-        <div class="col-8">
-          <div >
-            <div class=" marginL">
+  </div>
+</section>
+<section class="newsletter">
+  <div >
+    <div class="row">
+      <div class="col-8">
+        <div >
+          <div class=" marginL">
             <h2>KEEP CONNECTED</h2>
             <p class="connect">Get updates by subscribe our weekly newsletter</p>
 
@@ -334,22 +438,88 @@
                 <button class="btn" type="submit">Subscribe Now</button>
               </span>
             </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="botImg">
-      <img src="images\homepage-images\blog8.jpeg" alt="">
-      <img src="images\homepage-images\blog3.jpeg" alt="">
-      <img src="images\homepage-images\blog6_1.jpeg" alt="">
-      <img class="tab" src="images\homepage-images\blog9.jpeg" alt="">
-      <img class="tab" src="images\homepage-images\blog5_1.jpeg" alt="">
-      <img class="desk" src="images\homepage-images\prd_04_1_1.jpeg" alt="">
-      <img class="desk" src="images\homepage-images\latest2_1.jpeg" alt="">
+  </div>
+  <div class="botImg">
+    <img src="images\homepage-images\blog8.jpeg" alt="">
+    <img src="images\homepage-images\blog3.jpeg" alt="">
+    <img src="images\homepage-images\blog6_1.jpeg" alt="">
+    <img class="tab" src="images\homepage-images\blog9.jpeg" alt="">
+    <img class="tab" src="images\homepage-images\blog5_1.jpeg" alt="">
+    <img class="desk" src="images\homepage-images\prd_04_1_1.jpeg" alt="">
+    <img class="desk" src="images\homepage-images\latest2_1.jpeg" alt="">
+  </div>
+</section>
+
+</main>
+<footer>
+  <section class="foot">
+    <div>
+      <h3>Help & Information</h3>
+
+      <p>Track order</p>
+      <p>Delivery & returns</p>
+      <p>Premier delivery</p>
+      <p>FAQs</p>
+
+    </div>
+
+    <div>
+      <h3>About Supro</h3>
+
+      <p>About us</p>
+      <p>Careers</p>
+      <p>Corporate</p>
+      <p>Investors</p>
+    </div>
+
+    <div>
+      <h3>Online shop</h3>
+
+      <p>Shoes</p>
+      <p>Bags</p>
+      <p>Wallets</p>
+      <p>Belts</p>
+    </div>
+
+    <div>
+      <h3>Language</h3>
+
+      <ul>
+        <li>English</li>
+        <li>French</li>
+        <li>Spanish</li>
+        <li>German</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Currency</h3>
+
+      <ul>
+        <li>USD</li>
+        <li>EUR</li>
+        <li>GBP</li>
+      </ul>
     </div>
   </section>
 
-</main>
+  <section class="foot2">
+    <div>
+      <p>© 2019 <span>Supro</span>. All rights reserved </p>
+    </div>
+    <div>
+      <p class="privacy">Privacy Policy</p>
+      <p class="privacy">Terms of Use </p>
+    </div>
+  </section>
+
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </body>
 </html>
