@@ -1,4 +1,225 @@
 * {
   box-sizing: border-box; }
 
+/*---------------------mobile------------------------*/
+@media screen and (max-width: 600px) {
+  main {
+    width: 100%;
+    font-size: .8rem;
+    margin-top: 100px; }
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; }
+    .title .subtitle {
+      display: flex;
+      justify-content: space-between; }
+  .form {
+    padding: 50px 15px 20px; }
+    .form span {
+      color: red; }
+    .form input, .form textarea {
+      border: 1px solid #999;
+      margin-bottom: 30px; }
+    .form .btn {
+      padding: 10px 30px;
+      font-weight: bold; }
+  .link {
+    padding: 15px;
+    /* Get in Touch */ }
+    .link .network {
+      margin: 10px 0px 30px; }
+    .link svg {
+      border: 1px solid #999;
+      border-radius: 50%;
+      padding: 10px;
+      width: 40px;
+      height: 40px; }
+    .link .gt {
+      margin: 30px 0px;
+      border-bottom: 1px solid #999; }
+    .link .info {
+      margin: 0; }
+  .store {
+    padding: 15px;
+    /* phone number & email */ }
+    .store .info {
+      margin: 0; }
+    .store h3 {
+      margin: 30px 0; }
+    .store .pe {
+      display: flex; }
+      .store .pe div {
+        width: 150px; }
+  .map {
+    margin: 30px 0;
+    height: 200px; }
+    .map .google {
+      height: 100%;
+      width: 100%; } }
+
+/*----------------------tablette---------------------*/
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  main {
+    width: 100%;
+    font-size: .9rem;
+    margin-top: 100px; }
+    main h3 {
+      margin: 30px 0; }
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; }
+    .title .subtitle {
+      display: flex;
+      justify-content: space-between; }
+  .form {
+    padding: 50px 30px 20px;
+    /* name & email*/ }
+    .form .ne {
+      display: flex;
+      justify-content: space-between; }
+    .form span {
+      color: red; }
+    .form .name, .form .email {
+      width: 47%; }
+    .form input, .form textarea {
+      border: 1px solid #999;
+      margin-bottom: 30px; }
+    .form .btn {
+      padding: 10px 30px;
+      font-weight: bold; }
+  .link {
+    padding: 30px;
+    /* Get in Touch */ }
+    .link .network {
+      margin: 10px 0px 30px; }
+    .link svg {
+      border: 1px solid #999;
+      border-radius: 50%;
+      padding: 10px;
+      width: 40px;
+      height: 40px;
+      margin: 5px; }
+    .link .gt {
+      margin: 30px 0px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #999; }
+    .link .info {
+      margin: 0; }
+  .store {
+    padding: 0px 30px;
+    /* phone number & email */ }
+    .store .info {
+      margin: 0; }
+    .store .allinfo {
+      display: flex; }
+    .store .adress {
+      max-width: 30%; }
+    .store .pe {
+      display: flex;
+      margin-left: 50px; }
+      .store .pe div {
+        width: 200px; }
+  .map {
+    margin: 30px 0;
+    height: 400px; }
+    .map .google {
+      width: 100%; } }
+
+/*-----------------------desktop---------------------*/
+@media screen and (min-width: 993px) {
+  main {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .desk {
+      width: 80%;
+      display: flex;
+      border-bottom: 1px solid #999; }
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%; }
+    .title .subtitle {
+      display: flex;
+      justify-content: space-between; }
+  .form {
+    padding: 50px 30px 20px;
+    width: 100%;
+    /* name & email*/ }
+    .form .ne {
+      display: flex;
+      justify-content: space-between; }
+    .form span {
+      color: red; }
+    .form .name, .form .email {
+      width: 47%; }
+    .form input, .form textarea {
+      border: 1px solid #999;
+      margin-bottom: 30px; }
+    .form .btn {
+      padding: 10px 30px;
+      font-weight: bold; }
+  .link {
+    width: 40%;
+    /* Get in Touch */ }
+    .link .network {
+      margin: 30px 0px; }
+      .link .network svg {
+        border: 1px solid #999;
+        border-radius: 50%;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        margin: 5px; }
+    .link .gt {
+      margin: 30px 0px; }
+    .link .info {
+      margin: 0; }
+  .store {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    /* phone number & email */ }
+    .store .info {
+      margin: 0; }
+    .store .store1, .store .store2, .store .store3 {
+      display: flex;
+      align-items: center; }
+    .store .allinfo {
+      display: flex;
+      align-items: center;
+      width: 100%; }
+    .store .adress {
+      width: 33%; }
+    .store h3 {
+      width: 25%;
+      margin-right: 15px; }
+    .store .pe {
+      display: flex;
+      width: 66%;
+      justify-content: space-around; }
+  .map {
+    margin: 30px 0;
+    width: 100%; }
+    .map .google {
+      width: 100%;
+      height: 600px; } }
+
+/*-----------------------General---------------------*/
+.title {
+  background-image: url(../images/contact-images/contact-bg.jpeg);
+  background-size: cover; }
+
+.txtgray {
+  color: #999; }
+
 /*# sourceMappingURL=contact.css.map */
