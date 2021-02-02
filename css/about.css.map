@@ -2,8 +2,9 @@
 	"version": 3,
 	"file": "about.css",
 	"sources": [
-		"../scss/about.scss"
+		"../scss/about.scss",
+		"../scss/_variables.scss"
 	],
 	"names": [],
-	"mappings": "AAAA,AAAA,CAAC,CAAA;EACG,UAAU,EAAE,UAAU,GACvB"
+	"mappings": "AAEA,AAAA,CAAC,CAAA;EACG,UAAU,EAAE,UAAU,GACvB"
 }
