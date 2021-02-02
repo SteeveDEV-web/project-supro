@@ -128,8 +128,9 @@
     display: flex;
     justify-content: space-between; }
     header .logo {
-      max-width: 100px;
-      align-items: center;
+      width: 100px;
+      height: 100px;
+      text-align: center;
       padding-top: 20px; }
     header .nav1 {
       display: flex;
@@ -199,6 +200,8 @@ body {
 
 header {
   width: 100%; }
+  header .fullwidth {
+    width: 100%; }
   header img {
     width: 100%; }
   header .txtblk {

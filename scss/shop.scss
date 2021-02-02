@@ -23,6 +23,7 @@
       max-height: 100px;
       align-items: center;
       padding-top: 20px;
+
     }
   
     .nav1, .form{
@@ -220,11 +221,11 @@
   header{
     display: flex;
     justify-content: space-between;
-    
 
     .logo{
-      max-width: 100px;
-      align-items: center;
+      width: 100px;
+      height: 100px;
+      text-align: center;
       padding-top: 20px;
     }
     
@@ -339,6 +340,10 @@ body{
 
 header{
   width: 100%;
+
+  .fullwidth{
+    width: 100%
+  }
   img{
     width: 100%; 
   }
@@ -350,6 +355,7 @@ header{
   .txtgray{
     color: $gray;
   }
+
 }
 
 main{
