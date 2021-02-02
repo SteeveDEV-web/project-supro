@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box; }
 
@@ -142,7 +141,16 @@
     margin: 25px;
     display: flex;
     flex-direction: column;
-    width: 100%; } }
+    width: 100%; }
+  footer section {
+    padding: 15px; }
+  footer .foot {
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #999; }
+    footer .foot div {
+      width: 50%;
+      padding: 1px 0 5px 5px; } }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
   /* Tablets: */
@@ -310,7 +318,16 @@
       width: 100%;
       padding: 10px; }
     .as .fsj {
-      margin: 10px; } }
+      margin: 10px; }
+  footer section {
+    padding: 15px; }
+  footer .foot {
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #999; }
+    footer .foot div {
+      width: 33.33%;
+      padding: 1px 0 5px 5px; } }
 
 @media only screen and (min-width: 993px) {
   /* Desktop: */
@@ -480,7 +497,20 @@
     .as .suit {
       width: 75%; }
     .as .fsj {
-      margin: 10px; } }
+      margin: 10px; }
+  footer section {
+    padding: 15px; }
+  footer .foot {
+    display: flex;
+    flex-flow: row;
+    border-bottom: 1px solid #999;
+    justify-content: center; }
+    footer .foot div {
+      padding: 0px 50px 5px;
+      /* Modif Privacy */ }
+  footer .foot2 {
+    display: flex;
+    justify-content: space-between; } }
 
 .home {
   color: #999; }
@@ -500,7 +530,6 @@
   padding: 0px 20px 5px; }
 
 .review {
-
   /* star orange */
   /* star gray */ }
   .review img {
@@ -509,7 +538,6 @@
     color: #f68773; }
   .review .sg, .review .price {
     color: #999; }
-  
 
 .areview {
   font-size: small;
@@ -614,5 +642,23 @@ img {
   .as .sg, .as .price {
     color: #999; }
 
+footer .foot {
+  font-family: "Roboto", sans-serif; }
+  footer .foot h3 {
+    color: #222; }
+  footer .foot p, footer .foot li {
+    color: #999; }
+
+footer .foot2 {
+  color: #999;
+  font-size: .9rem; }
+  footer .foot2 span {
+    color: #222;
+    font-weight: bold; }
+  footer .foot2 .privacy {
+    display: inline;
+    padding-right: 1em; }
+  footer .foot2 .margin0 {
+    margin: 0; }
 
 /*# sourceMappingURL=product.css.map */
