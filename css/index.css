@@ -106,7 +106,8 @@ img {
     padding: 10px 10px;
     max-width: 100px;
     max-height: 100px;
-    align-items: flex-start; }
+    align-items: flex-start;
+    z-index: 1; }
     .nav2 li {
       padding-top: 20px; }
   .centerT {
@@ -135,6 +136,17 @@ img {
       width: 20px;
       height: 20px;
       margin: 0 10px; }
+  .pastille {
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: absolute; }
+    .pastille svg {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px; }
   .conteneur {
     position: relative;
     color: white;
@@ -300,7 +312,8 @@ img {
     padding: 10px 10px;
     max-width: 100px;
     max-height: 100px;
-    align-items: flex-start; }
+    align-items: flex-start;
+    z-index: 1; }
     .nav2 li {
       padding-top: 20px; }
 >>>>>>> Thomas
@@ -344,6 +357,17 @@ img {
       margin: 10px 0;
       width: 20px;
       height: 20px; }
+  .pastille {
+    bottom: 20%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: absolute; }
+    .pastille svg {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px; }
   .tst {
     width: 100%;
     position: absolute;
@@ -719,6 +743,17 @@ img {
       margin: 10px 0;
       width: 20px;
       height: 20px; }
+  .pastille {
+    bottom: 5%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: absolute; }
+    .pastille svg {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px; }
   .conteneur {
     position: relative;
     color: white;
