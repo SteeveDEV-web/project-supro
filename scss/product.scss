@@ -651,6 +651,7 @@
 
     .home{
 
+      padding-left: 20px;
       margin: 40px;
       
       }
@@ -665,19 +666,22 @@
           display: flex; 
           flex-direction: row;
           justify-content: center;
-          width: 45%;
+          width: 50%;
           
         }
         
         .wallet{
           
-          padding: 38px;
+          padding: 40px;
+          width: 40%
         
         }
   
         .cdt{
   
-          padding: 38px;
+          padding: 40px;
+          width: 45%;
+          height: 10px;
   
         }
       }
@@ -728,7 +732,7 @@
 
       margin-left: 50px;
       margin-right: 50px;
-      width: 75%;
+      width: 100%;
 
         .littleimg{
 
@@ -910,7 +914,7 @@
 
         display: flex;
         flex-direction: column;
-        background-color: pink;
+        border: green 1px solid;
         width: 40%;
         margin: 20px;
       }
@@ -926,67 +930,69 @@
     .as1{ // ajouter balise html
 
       display: flex;
-      flex-flow: row wrap;
-
+      flex-direction: row;
+      margin-left: 30px;
+      
     }
 
     .as{
 
-      padding: 10px;
-      width: 100%;
+      padding: 5px;
+      width: 200%;
 
       .sglasses{
 
-        width: 108%;
+        width: 75%;
         height: 46,5vw;
-        padding: 10px;
+        
       }
 
       .so, .sg{
 
-        margin-left: 10px;
+        margin-left: 5px;
         width: 5%;
 
       }
 
       .sunglasses{
 
-        margin: 10px;
+        margin: 2px;
 
       }
 
       .price{
 
-        margin: 10px;
+        margin: 5px;
         width: 100%;
       }
 
       .backpack{
 
-        margin: 10px;
+        width: 75%;
+        
       }
 
       .bp{
 
-        margin: 10px;
+        margin: 5px;
       }
 
       .jacket{
 
-        width: 100%;
-        padding: 10px;
+        width: 75%;
+        
       }
 
       .efj{
 
-        margin: 10px;
+        margin: 5px;
 
       }
 
       .suit{
 
-        width: 100%;
-        padding: 10px;
+        width: 75%;
+        
 
       }
 
