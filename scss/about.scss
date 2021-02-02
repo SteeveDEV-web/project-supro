@@ -257,6 +257,185 @@
       }
     }
   }
+  main{
+    section{
+      width: 100%;
+  
+      h2{
+        font-weight: bold;
+        padding: 20px 0;
+      }
+    
+    }
+    .red{
+      color: red;
+    }
+  
+    .supro{
+      
+
+      .image{
+        width: 100%;
+        margin-top: 40px;
+      }
+    
+      
+    
+      .under{
+        padding: 60px;
+      }
+  
+      .started{
+        padding-left: 50px;
+      }
+
+    }
+  
+    .cofounder{
+     padding: 30px;
+     display: flex;
+     
+     .sup{
+       padding: 0 30px;
+     }
+  
+     img{
+       margin-bottom: 20px;
+     }
+  
+     h3{
+       font-style: italic;
+       margin-bottom: 20px;
+     }
+    }
+  
+    .timeline{
+      padding: 15px;
+      
+      .allyear{
+        display: flex;
+        flex-flow: row wrap;
+
+      }
+      .year{
+        width: 50%;
+      }
+      
+      p{
+        color:$gray;
+      }
+    }
+  
+    .video{
+      height: 800px;
+      padding: 20px;
+      .top{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        background-image: url(../images/about-images/video-img.jpeg);
+        background-position: center;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+  
+        .work{
+          font-size: 3rem;
+          color:$bannertop;
+        }
+  
+        .no{
+          font-size: 3.5rem;
+          color: $bannertop;
+          font-weight: bold;
+          margin-top: 0;
+        }
+  
+        img{
+          width: 100px;
+          height: 100px;
+        }
+      }
+  
+      .table{
+        display: flex;
+        flex-flow: row wrap;
+        padding: 15px;
+  
+        .part{
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          padding: 15px;
+  
+          svg{
+            color: $orange;
+            width: 50px;
+            height: 50px;
+          }
+  
+          p{
+            color: $gray;
+          }
+          
+        }
+      }
+    }
+  
+    .techno{
+      padding: 30px;
+
+      h2{
+        text-align: center;
+      }
+  
+      p{
+        padding: 5px;
+        color: $gray;
+      }
+    }
+  
+    .member{
+      width: 100%;
+      padding: 15px;
+      
+      .title{
+        width: 100%;
+        text-align: center;
+      }
+  
+      .allmember{
+        display: flex;
+        flex-flow: row wrap;
+        
+        
+  
+        .perso{
+          width: 33%;
+          padding: 15px;
+        }
+       
+      }
+      
+    }
+  
+    .brand{
+      display: flex;
+      flex-flow: row wrap;
+      padding: 15px;
+      width: 100%;
+      background-color: rgba(235, 230, 230, 0.666);
+      justify-content: center;
+      
+  
+      img{
+        width: 50px;
+        height: 10px;
+        margin: 15px;
+        
+      }
+    }
+  }
 
   footer{
     width: 100%;
@@ -329,6 +508,203 @@
       }
     }
   }
+  main{
+    section{
+      width: 100%;
+  
+      h2{
+        font-weight: bold;
+        padding: 20px 0;
+      }
+    
+    }
+
+    .red{
+      color: red;
+    }
+  
+    .supro{
+      display: flex;
+      flex-direction: row-reverse;
+
+      .image{
+        
+        height: 100%;
+        margin-top: 40px;
+        
+      }
+    
+      
+    
+      .under{
+        padding: 60px;
+        max-width: 50%;
+      }
+  
+      .started{
+        padding-left: 50px;
+      }
+
+    }
+  
+    .cofounder{
+     padding: 0 15%;
+     display: flex;
+     
+     .sup{
+       max-width: 55%;
+       padding: 0 30px;
+     }
+  
+     img{
+       margin-bottom: 20px;
+     }
+  
+     h3{
+       font-style: italic;
+       margin-bottom: 20px;
+     }
+    }
+  
+    .timeline{
+      padding: 0 15%;
+      display: flex;
+      align-items: center;
+      
+      .allyear{
+        display: flex;
+        flex-flow: row wrap;
+        
+      }
+      .year{
+        width: 50%;
+      }
+      
+      p{
+        color:$gray;
+      }
+    }
+  
+    .video{
+      
+      height: 800px;
+      padding: 0 15%;
+      .top{
+        
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        background-image: url(../images/about-images/video-img.jpeg);
+        background-position: center;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+  
+        .work{
+          font-size: 3rem;
+          color:$bannertop;
+        }
+  
+        .no{
+          font-size: 3.5rem;
+          color: $bannertop;
+          font-weight: bold;
+          margin-top: 0;
+        }
+  
+        img{
+          width: 100px;
+          height: 100px;
+        }
+      }
+  
+      .table{
+        display: flex;
+        flex-flow: row wrap;
+        padding: 15px;
+  
+        .part{
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          padding: 15px;
+  
+          svg{
+            color: $orange;
+            width: 50px;
+            height: 50px;
+          }
+  
+          p{
+            color: $gray;
+          }
+          
+        }
+      }
+    }
+  
+    .techno{
+      padding: 0 20%;
+      
+
+      h2{
+        text-align: center;
+      }
+  
+      p{
+        padding: 5px;
+        color: $gray;
+      }
+
+      .subtechno{
+        display: flex;
+      }
+    }
+  
+    .member{
+      width: 100%;
+      padding: 15px;
+      
+      .title{
+        width: 100%;
+        text-align: center;
+      }
+  
+      .allmember{
+        display: flex;
+        flex-flow: row wrap;
+        
+        
+  
+        .perso{
+          width: 33%;
+          padding: 15px;
+        }
+       
+      }
+      
+    }
+  
+    .brand{
+      display: flex;
+      flex-flow: row wrap;
+      padding: 15px;
+      width: 100%;
+      height: 100px;
+      background-color: rgba(235, 230, 230, 0.666);
+      justify-content: center;
+      align-items: center;
+      
+  
+      img{
+        width: 80px;
+        height: 16px;
+        margin: 15px;
+        
+      }
+    }
+  }
+  
 
   footer{
     width:100%;
