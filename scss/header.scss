@@ -69,13 +69,16 @@
     padding: 30px 20px;
     max-height: 100px;
     justify-content: space-between;
-    max-width: 100px;
+      
+      svg{
+        margin: 0 10px;
+      }
   }
 
   .nav2{
     display: flex;
     font-weight: bold;
-    padding: 10px 10px;
+    padding: 10px;
     max-width: 100px;
     max-height: 100px;
     align-items: flex-start;
@@ -104,7 +107,7 @@
     
     .nav1{
       display: flex;
-      padding: 20px 20px;
+      align-items: center;
       
       p{
         padding: 0 8px;
@@ -112,15 +115,18 @@
       
     }
     .form{
-      max-width: 300px;
+      min-width: 300px;
       padding: 20px 20px; 
     }
 
     .minisvg{
       display: flex;
-      padding: 30px 20px;
+      align-items: center;
       justify-content: space-between;
-      max-width: 100px;
+       
+      svg{
+        margin: 0 10px;
+      }
     }
 
     .nav2{

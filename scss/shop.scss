@@ -8,8 +8,49 @@
 
 @media screen and (max-width: 600px){
 
+  
   body{
     flex-direction: column;
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+  
+  
+    .logo{
+      max-width: 100px;
+      max-height: 100px;
+      align-items: center;
+      padding-top: 20px;
+
+    }
+  
+    .nav1, .form{
+      opacity: 0;
+      max-height: 100px;
+    }
+  
+    .minisvg{
+      display: flex;
+      padding: 30px 20px;
+      max-height: 100px;
+      justify-content: space-between;
+      max-width: 100px;
+    }
+    
+    .nav2{
+      display: flex;
+      font-weight: bold;
+      padding: 10px 10px;
+      max-width: 100px;
+      max-height: 100px;
+      align-items: flex-start;
+  
+      li{
+        padding-top: 20px;
+      }
+    }
   }
 
   /* article shop */
@@ -35,6 +76,34 @@
     opacity: 1;
     
   }
+
+  /*--------footer------- */
+
+  footer {
+    width: 100%;
+    section{
+
+      padding: 15px;
+  
+    }
+  
+    .foot{
+    
+    display: flex; 
+    flex-flow: row wrap;
+    border-bottom: 1px solid $gray;
+    
+    div{
+  
+      width: 50%;
+      padding: 1px 0 5px 5px;
+    
+    }
+   }
+
+  }
+
+
 }
 
 /*----------------------tablette-------------------*/
@@ -43,6 +112,47 @@
 
   body{
     flex-direction: column;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+  
+    .logo{
+      max-width: 100px;
+      max-height: 100px;
+      align-items: center;
+      padding-top: 20px;
+    }
+  
+    .nav1, .form{
+      opacity: 0;
+      max-height: 100px;
+    }
+  
+    .minisvg{
+      display: flex;
+      padding: 30px 20px;
+      max-height: 100px;
+      justify-content: space-between;
+        
+        svg{
+          margin: 0 10px;
+        }
+    }
+  
+    .nav2{
+      display: flex;
+      font-weight: bold;
+      padding: 10px;
+      max-width: 100px;
+      max-height: 100px;
+      align-items: flex-start;
+  
+      li{
+        padding-top: 20px;
+      }
+    }
   }
 
   .topMenu{
@@ -61,7 +171,7 @@
   }
 
   aside{
-    max-width: 25%;  
+    max-width: 50%;  
   }
 
   .top{
@@ -79,17 +189,84 @@
   }
 
   .menuMobile{
-    opacity: 1;
-    
+    opacity: 1; 
+  }
+
+  footer{
+    section{
+      padding: 15px;
+    }
+  
+    .foot{
+    display: flex; 
+    flex-flow: row wrap;
+    border-bottom: 1px solid $gray;
+
+      div{
+        width: 33.33%;
+        padding: 1px 0 5px 5px;
+      }
+    }
   }
 }
 
 /*-----------------------desktop-------------------*/
 
 @media screen and (min-width: 993px){
-
-
   body{
+    display: flex;
+    flex-direction: column;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+
+    .logo{
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      padding-top: 20px;
+    }
+    
+    .nav1{
+      display: flex;
+      align-items: center;
+      
+      p{
+        padding: 0 8px;
+      }
+      
+    }
+    .form{
+      min-width: 300px;
+      padding: 20px 20px; 
+    }
+
+    .minisvg{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+       
+      svg{
+        margin: 0 10px;
+      }
+    }
+
+    .nav2{
+      display: flex;
+      font-weight: bold;
+      padding: 10px 20px;
+      max-width: 150px;
+
+      li{
+        padding-top: 20px;
+      }
+    }
+  }
+
+
+  .mainaside{
     flex-direction: row-reverse;
   }
 
@@ -120,9 +297,35 @@
     }
 
   }
+  aside{
+    max-width: 50%;
+  }
 /* article shop */
   .as{
     width: 30%;
+  }
+
+  footer{
+    width: 100%;
+    section{
+      padding: 15px;
+    }
+  
+    .foot{
+    display: flex; 
+    flex-flow: row;
+    border-bottom: 1px solid $gray;
+    justify-content: center;
+
+      div{
+        padding: 0px 50px 5px; /* Modif Privacy */
+    }
+  }
+
+  .foot2{
+    display: flex;
+    justify-content: space-between;
+  }
   }
 }
 
@@ -133,6 +336,26 @@ body{
   justify-content: center;
   padding: 0% 5%; 
   font-size: .8rem;
+}
+
+header{
+  width: 100%;
+
+  .fullwidth{
+    width: 100%
+  }
+  img{
+    width: 100%; 
+  }
+  
+  .txtblk{
+    color: $black;
+  }
+  
+  .txtgray{
+    color: $gray;
+  }
+
 }
 
 main{
@@ -275,7 +498,6 @@ img{
   p{
     border-bottom: solid ;
   }
-  
 }
 
 .products{
@@ -327,4 +549,33 @@ img{
   left: 20px;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+footer{
+  .foot{
+    font-family: $font;
+  
+    h3{
+      color: $black;
+    }
+    
+    p, li{
+      color: $gray;
+    }
+  }
+  
+  .foot2{
+    color: $gray;
+    font-size: .9rem;
+    
+    span{
+      color: $black;
+      font-weight: bold;
+    }
+  
+    .privacy{
+      display: inline;
+      padding-right: 1em;
+    }
+  }
 }

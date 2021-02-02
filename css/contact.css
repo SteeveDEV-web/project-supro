@@ -3,6 +3,32 @@
 
 /*---------------------mobile------------------------*/
 @media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between; }
+    header .logo {
+      max-width: 100px;
+      max-height: 100px;
+      align-items: center;
+      padding-top: 20px; }
+    header .nav1, header .form {
+      opacity: 0;
+      max-height: 100px; }
+    header .minisvg {
+      display: flex;
+      padding: 30px 20px;
+      max-height: 100px;
+      justify-content: space-between;
+      max-width: 100px; }
+    header .nav2 {
+      display: flex;
+      font-weight: bold;
+      padding: 10px 10px;
+      max-width: 100px;
+      max-height: 100px;
+      align-items: flex-start; }
+      header .nav2 li {
+        padding-top: 20px; }
   main {
     width: 100%;
     font-size: .8rem;
@@ -57,10 +83,48 @@
     height: 200px; }
     .map .google {
       height: 100%;
-      width: 100%; } }
+      width: 100%; }
+  footer {
+    width: 100%; }
+    footer section {
+      padding: 15px; }
+    footer .foot {
+      display: flex;
+      flex-flow: row wrap;
+      border-bottom: 1px solid #999; }
+      footer .foot div {
+        width: 50%;
+        padding: 1px 0 5px 5px; } }
 
 /*----------------------tablette---------------------*/
 @media screen and (min-width: 601px) and (max-width: 992px) {
+  header {
+    display: flex;
+    justify-content: space-between; }
+    header .logo {
+      max-width: 100px;
+      max-height: 100px;
+      align-items: center;
+      padding-top: 20px; }
+    header .nav1, header .form {
+      opacity: 0;
+      max-height: 100px; }
+    header .minisvg {
+      display: flex;
+      padding: 30px 20px;
+      max-height: 100px;
+      justify-content: space-between; }
+      header .minisvg svg {
+        margin: 0 10%; }
+    header .nav2 {
+      display: flex;
+      font-weight: bold;
+      padding: 10px;
+      max-width: 100px;
+      max-height: 100px;
+      align-items: flex-start; }
+      header .nav2 li {
+        padding-top: 20px; }
   main {
     width: 100%;
     font-size: .9rem;
@@ -124,13 +188,52 @@
       .store .pe div {
         width: 200px; }
   .map {
-    margin: 30px 0;
+    margin: 50px 0 100px;
     height: 400px; }
     .map .google {
-      width: 100%; } }
+      width: 100%; }
+  footer {
+    width: 100%; }
+    footer section {
+      padding: 15px; }
+    footer .foot {
+      display: flex;
+      flex-flow: row wrap;
+      border-bottom: 1px solid #999; }
+      footer .foot div {
+        width: 33.33%;
+        padding: 1px 0 5px 5px; } }
 
 /*-----------------------desktop---------------------*/
 @media screen and (min-width: 993px) {
+  header {
+    display: flex;
+    justify-content: space-between; }
+    header .logo {
+      max-width: 100px;
+      align-items: center;
+      padding-top: 20px; }
+    header .nav1 {
+      display: flex;
+      align-items: center; }
+      header .nav1 p {
+        padding: 0 8px; }
+    header .form {
+      min-width: 300px;
+      padding: 20px 20px; }
+    header .minisvg {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      header .minisvg svg {
+        margin: 0 10px; }
+    header .nav2 {
+      display: flex;
+      font-weight: bold;
+      padding: 10px 20px;
+      max-width: 150px; }
+      header .nav2 li {
+        padding-top: 20px; }
   main {
     width: 100%;
     margin-top: 100px;
@@ -212,14 +315,54 @@
     width: 100%; }
     .map .google {
       width: 100%;
-      height: 600px; } }
+      height: 600px; }
+  footer {
+    width: 100% section;
+      width-padding: 15px; }
+    footer .foot {
+      display: flex;
+      flex-flow: row;
+      border-bottom: 1px solid #999;
+      justify-content: center; }
+      footer .foot div {
+        padding: 0px 50px 5px;
+        /* Modif Privacy */ }
+    footer .foot2 {
+      display: flex;
+      justify-content: space-between; } }
 
 /*-----------------------General---------------------*/
-.title {
+header {
+  width: 100%; }
+  header img {
+    width: 100%; }
+  header .txtblk {
+    color: #222; }
+  header .txtgray {
+    color: #999; }
+
+main .title {
   background-image: url(../images/contact-images/contact-bg.jpeg);
   background-size: cover; }
 
-.txtgray {
+main .txtgray {
   color: #999; }
+
+footer .foot {
+  font-family: "Roboto", sans-serif; }
+  footer .foot h3 {
+    color: #222; }
+  footer .foot p, footer .foot li {
+    color: #999; }
+
+footer .foot2 {
+  color: #999;
+  font-size: .9rem; }
+  footer .foot2 span {
+    color: #222;
+    font-weight: bold; }
+  footer .foot2 .privacy {
+    display: inline;
+    padding-right: 1em; }
 
 /*# sourceMappingURL=contact.css.map */
