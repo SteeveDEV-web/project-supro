@@ -1,4 +1,106 @@
 * {
   box-sizing: border-box; }
 
+/*---------------------mobile---------------*/
+@media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between; }
+  .logo {
+    max-width: 100px;
+    max-height: 100px;
+    align-items: center;
+    padding-top: 20px; }
+  .nav1, .form {
+    opacity: 0;
+    max-height: 100px; }
+  .minisvg {
+    display: flex;
+    padding: 30px 20px;
+    max-height: 100px;
+    justify-content: space-between;
+    max-width: 100px; }
+  .nav2 {
+    display: flex;
+    font-weight: bold;
+    padding: 10px 10px;
+    max-width: 100px;
+    max-height: 100px;
+    align-items: flex-start; }
+    .nav2 li {
+      padding-top: 20px; } }
+
+/*---------------------Tablette---------------*/
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  header {
+    display: flex;
+    justify-content: space-between; }
+  .logo {
+    max-width: 100px;
+    max-height: 100px;
+    align-items: center;
+    padding-top: 20px; }
+  .nav1, .form {
+    opacity: 0;
+    max-height: 100px; }
+  .minisvg {
+    display: flex;
+    padding: 30px 20px;
+    max-height: 100px;
+    justify-content: space-between; }
+    .minisvg svg {
+      margin: 0 10px; }
+  .nav2 {
+    display: flex;
+    font-weight: bold;
+    padding: 10px;
+    max-width: 100px;
+    max-height: 100px;
+    align-items: flex-start; }
+    .nav2 li {
+      padding-top: 20px; } }
+
+/*---------------------Desktop---------------*/
+@media screen and (min-width: 993px) {
+  body {
+    display: flex; }
+  header {
+    display: flex;
+    justify-content: space-between; }
+    header .logo {
+      max-width: 100px;
+      align-items: center;
+      padding-top: 20px; }
+    header .nav1 {
+      display: flex;
+      align-items: center; }
+      header .nav1 p {
+        padding: 0 8px; }
+    header .form {
+      min-width: 300px;
+      padding: 20px 20px; }
+    header .minisvg {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      header .minisvg svg {
+        margin: 0 10px; }
+    header .nav2 {
+      display: flex;
+      font-weight: bold;
+      padding: 10px 20px;
+      max-width: 150px; }
+      header .nav2 li {
+        padding-top: 20px; } }
+
+/*---------------------General---------------*/
+img {
+  width: 100%; }
+
+.txtblk {
+  color: #222; }
+
+.txtgray {
+  color: #999; }
+
 /*# sourceMappingURL=header.css.map */
