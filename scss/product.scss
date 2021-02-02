@@ -649,10 +649,354 @@
     /* Desktop: */
 
 
+    .home{
+
+      margin: 40px;
+      
+      }
+
+      .miniheader{
+
+        display: flex;
+        flex-direction: row;
+  
+        .list{
+  
+          display: flex; 
+          flex-direction: row;
+          justify-content: center;
+          width: 45%;
+          
+        }
+        
+        .wallet{
+          
+          padding: 38px;
+        
+        }
+  
+        .cdt{
+  
+          padding: 38px;
+  
+        }
+      }
+
+      .box{
+      
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+      
+      }
+    
+
+    .boxp{
+
+      padding-bottom: 5px;
+      display: flex;
+      flex-direction: row;
+      border-top: $gray 1px solid;
+      border-bottom: $gray 1px solid;
+
+      .desc{
+
+        text-align: left;
+        margin-left: 50px;
+        padding-top: 20px;
+
+      }
+
+      .ai{
+
+        margin-left: 200px;
+        padding-top: 20px;
+        text-align: right;
+
+      }
+
+      .minireview{
+
+        margin-right: 10px;
+        padding-top: 20px;
+        text-align: center;
+
+      }
+    }
+
+    .picture{
+
+      margin-left: 50px;
+      margin-right: 50px;
+      width: 75%;
+
+        .littleimg{
+
+          
+          width: 100%;
+          margin: 5px;
+
+          img{
+
+            padding: 5px;
+            width: 25%;
+
+          }
+
+          .pic{
+
+            width: 100%;
+            height: 60%;
+            padding: 15px;
 
 
+          }
+        }
+    }
+      .review{
 
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+
+        .butclick{
+
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+          height: 25vw;
+
+        }
+
+        .butclothes{
+
+          width: 30%;
+          padding-left: 10px;
+
+        }
+
+        .littleheart{
+
+          margin: 0;
+          font-family: inherit;
+          font-size: inherit;
+          line-height: inherit;
+
+        }
+
+        .butadd{
+
+          display: flex;
+          flex-direction: row;
+          margin-left: 40px;
+          height: 35%;
+          padding-left: 30px;
+          width: 101%;
+
+        }
+
+        .butpay{
+
+          display: flex;
+          flex-direction: column;
+          justify-content: right;
+          margin-left: 40px;
+          width: 100%;
+        }
+
+        .starp{
+
+          display: flex;
+          padding-left: 20px;
+
+          .areview{
+
+            padding-left: 10px;
+
+          }
+
+        }
+
+        .cdt2, .sku, .prices, .lorem{
+
+          padding-left: 20px;
+
+        }
+
+        .logos{
+
+          margin-top: 5px;
+          margin-left: 5px;
+          display: flex;
+          flex-direction: row;
+
+          .fb{
+
+            padding-left: 10px;
+            width: 5%;
+          }
+
+          .twitter{
+
+            padding-left: 10px;
+            padding-top: 3px;
+            width: 5%;
+
+          }
+
+          .pinterest{
+
+            padding-left: 10px;
+            padding-top: 10px;
+            width: 5%;
+
+          }
+
+        }
+
+        .cate, .tags{
+
+          margin-top: 20px;
+          padding: 10px;
+
+          .wtajclass{
+
+            justify-content: left;
+
+            .tagclass{
+
+              display: flex;
+              flex-direction: row;
+
+              .ctw{
+
+                margin-top: 20px;
+                padding: 10px;
+
+              }
+            }
+          }
+        }
+      }
+
+    .title1{
+
+      margin: 30px;
+    }
+
+    .title2{
+
+      margin: 30px;
+    }
+
+    .plight{
+
+      margin: 30px;
+
+    }
+
+    .ulli{
+
+      margin: 10px;
+    }
+
+    .intro{
+
+      display: flex;
+      flex-direction: column;
+
+      .pyjama{
+
+        display: flex;
+        flex-direction: row;
+        border: green 1px solid;
+        width: 40%;
+        margin: 20px;
+      }
+    }
+
+    .rp{
+
+      padding-top: 10px;
+      text-align: center;
+
+    }
+
+    .as1{ // ajouter balise html
+
+      display: flex;
+      flex-flow: row wrap;
+
+    }
+
+    .as{
+
+      padding: 10px;
+      width: 100%;
+
+      .sglasses{
+
+        width: 108%;
+        height: 46,5vw;
+        padding: 10px;
+      }
+
+      .so, .sg{
+
+        margin-left: 10px;
+        width: 5%;
+
+      }
+
+      .sunglasses{
+
+        margin: 10px;
+
+      }
+
+      .price{
+
+        margin: 10px;
+        width: 100%;
+      }
+
+      .backpack{
+
+        margin: 10px;
+      }
+
+      .bp{
+
+        margin: 10px;
+      }
+
+      .jacket{
+
+        width: 100%;
+        padding: 10px;
+      }
+
+      .efj{
+
+        margin: 10px;
+
+      }
+
+      .suit{
+
+        width: 100%;
+        padding: 10px;
+
+      }
+
+      .fsj{
+
+        margin: 10px;
+      }
+    }
   }
+
 
 .home{
 
