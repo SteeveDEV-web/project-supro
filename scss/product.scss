@@ -6,772 +6,378 @@
 
 @media only screen and (max-width: 600px) {
 
-    /* Mobiles: */
-  
-  .home{
+  /* Mobiles: */
 
-    margin-top: 40px;
-    padding-left: 20px;
+.home{
 
-  }
+  margin-top: 40px;
+  padding-left: 20px;
 
-  .box{
+}
 
-    width: 100%;
+.box{
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .picture{
+
     display: flex;
-    justify-content: center;
     flex-direction: column;
 
-    .picture{
+    .pic{
 
-      display: flex;
-      flex-direction: column;
+    width: 100%;
+    height: 50%;
+    padding: 15px;
+    
+   }
 
-      .pic{
+    .littleimg{
 
-      width: 100%;
-      height: 50%;
-      padding: 15px;
       
-     }
-
-      .littleimg{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin: 13px;
+    
+      img{
 
         
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        margin: 13px;
-      
-        img{
-
-          
-          padding: 5px;
-          width: 25%;
-
-        }
+        padding: 5px;
+        width: 25%;
 
       }
+
     }
   }
-  .list{
+}
+.list{
 
-    .wallet{
+  .wallet{
 
-      position: absolute;
-      top: 2.5rem;
-      
-    }
-
-    .cdt{
-
-      position: absolute;
-      left: 2.5rem;
-      margin-bottom: 10px;
+    position: absolute;
+    top: 2.5rem;
     
-    }
   }
-  .review{
 
-    margin-top: 5%;
+  .cdt{
 
-    .starp{
+    position: absolute;
+    left: 2.5rem;
+    margin-bottom: 10px;
+  
+  }
+}
+.review{
+
+  margin-top: 5%;
+
+  .starp{
+
+    display: flex;
+    margin-left: 10px;
+
+    .areview{
+
+      margin: 8px;
+  
+    }
+
+  }
+
+  .cdt2{
+
+    padding-top: 15px;
+    font-size: 20px;
+    margin-left: 10px;
+
+  }
+
+  .sku{
+
+    margin-left: 10px;
+
+  }
+
+  .prices{
+
+    margin-left: 10px;
+
+  }
+
+  .lorem{
+
+    margin-left: 10px;
+
+  }
+
+  .allbutton{
 
       display: flex;
-      margin-left: 10px;
-
-      .areview{
-
-        margin: 8px;
-    
-      }
-
-    }
-
-    .cdt2{
-
-      padding-top: 15px;
-      font-size: 20px;
-      margin-left: 10px;
-
-    }
-
-    .sku{
-
-      margin-left: 10px;
-
-    }
-
-    .prices{
-
-      margin-left: 10px;
-
-    }
-
-    .lorem{
-
-      margin-left: 10px;
-
-    }
-
-    .allbutton{
-
-        display: flex;
-        width: 100%;
-        align-items: flex-end;
-        flex-wrap: wrap;
-        height: 50px;
-        margin-bottom: 30px;
-
-    }
-
-    .butclothes{
-
-      margin-left: 40px;
-      
-    }
-
-    .so{
-      
-      margin-top: 10px;
-    
-
-    }
-    
-    .sg{
-
-      margin-top: 10px;
-      
-    }
-
-    .butadd{
-
-      display: flex;
-      justify-content: center;
-      width: 300px;
-      height: 55px;
-      margin-left: 20px;
-    
-    }
-
-    .butpay{
-
-      margin-left: 35px;
-      margin-bottom: 20px;
       width: 100%;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      height: 50px;
+      margin-bottom: 30px;
 
-    }
+  }
 
-    .littleheart{
+  .butclothes{
 
-            width: 30px;
-            height: 30px;
-            margin-top: 10px;
-            border: $gray 1px solid;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    margin-left: 40px;
+    
+  }
 
-    }
+  .so{
+    
+    margin-top: 10px;
+  
 
-    .cate, .tags{
+  }
+  
+  .sg{
 
-      margin-top: 20px;
-      padding: 10px;
+    margin-top: 10px;
+    
+  }
 
-      .wtajclass{
+  .butadd{
 
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 55px;
+    margin-left: 20px;
+  
+  }
 
-        .tagclass{
+  .butpay{
 
+    margin-left: 35px;
+    margin-bottom: 20px;
+    width: 350px;
+
+  }
+
+  .littleheart{
+
+          width: 30px;
+          height: 30px;
+          margin-top: 10px;
+          border: $gray 1px solid;
           display: flex;
-          flex-direction: row;
-    
-          .ctw{
-    
-            margin-top: 20px;
-            padding: 10px;
-      
-          }
-          
-        }      
-      }
-    }
+          align-items: center;
+          justify-content: center;
 
+  }
 
-    .logos{
-      
-      margin-top: 5px;
-      margin-left: 5px;
+  .cate, .tags{
+
+    margin-top: 20px;
+    padding: 10px;
+
+    .wtajclass{
+
       display: flex;
       flex-direction: row;
-
-      .fb{
-
-       padding-left: 10px; 
-       width: 10%;
-       
-      }
-
-      .twitter{
-
-        padding-left: 10px;
-        width: 10%;
-
-      }
-
-      .pinterest{
-
-        padding-left: 10px;
-        padding-top: 5px;
-        width: 10%
-
-      }
-
-    }
-  }
-
-  .boxp{
-
-    padding-bottom: 5px;
-    display: flex;
-    flex-direction: column;
-
-    .desc{
-
-      text-align: center;
-      
-    }
-  
-    .ai {
-  
-      padding: 3px;
       justify-content: center;
+
+      .tagclass{
+
+        display: flex;
+        flex-direction: row;
   
+        .ctw{
+  
+          margin-top: 20px;
+          padding: 10px;
+    
+        }
+        
+      }      
     }
-  
-    .minireview{
-  
-      text-align: center;
-      
-    }
-
   }
 
-  .title1{
 
-    margin: 30px;
-
-  }
-
-  .title2{
-
-    margin: 30px;
-
-  }
-
-  .plight{
-
-    margin: 30px;
-
-  }
-
-  .ulli{
-
-    margin: 10px;
-
-  }
-
-  .intro{
-
+  .logos{
+    
+    margin-top: 5px;
+    margin-left: 5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
+    .fb{
+
+     padding-left: 10px; 
+     width: 10%;
+     
+    }
+
+    .twitter{
+
+      padding-left: 10px;
+      width: 10%;
+
+    }
+
+    .pinterest{
+
+      padding-left: 10px;
+      padding-top: 5px;
+      width: 10%
+
+    }
 
   }
-  .pyjama{
+}
 
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 10px;
-  }
+.boxp{
 
-  .rp{
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+
+  .desc{
 
     text-align: center;
-  
+    
   }
 
-  .as{
+  .ai {
+
+    padding: 3px;
+    justify-content: center;
+
+  }
+
+  .minireview{
+
+    text-align: center;
     
-    margin: 25px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
   }
 
 }
 
+.title1{
+
+  margin: 30px;
+
+}
+
+.title2{
+
+  margin: 30px;
+
+}
+
+.plight{
+
+  margin: 30px;
+
+}
+
+.ulli{
+
+  margin: 10px;
+
+}
+
+.intro{
+
+  display: flex;
+  flex-direction: column;
+
+}
+.pyjama{
+
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.rp{
+
+  text-align: center;
+
+}
+
+.as{
+  
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+}
+
 @media only screen and (min-width: 601px) and (max-width: 992px) {
+
+  /* Tablets: */
+
+  .home{
+
+  margin: 40px;
   
-    /* Tablets: */
+  }
+  
+  .box{
+  
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+  }
+  
+  .miniheader{
 
-    .home{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 
-    margin: 40px;
-    
-    }
-    
-    .box{
-    
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    
-    }
-    
-    .miniheader{
+    .list{
 
-      display: flex;
+      display: flex; 
       flex-direction: row;
-      width: 100%;
-
-      .list{
-
-        display: flex; 
-        flex-direction: row;
-        justify-content: center;
-        
-        
-      }
+      justify-content: center;
       
-      .wallet{
-        
-        margin: 40px;
-        
-
       
-      }
+    }
+    
+    .wallet{
+      
+      margin: 40px;
+      
 
-      .cdt{
-
-        margin-top: 40px;
-        height: 60px;
-
-      }
-
+    
     }
 
-      .picture{
+    .cdt{
 
-        margin-left: 15px;
-        width: 75%;
+      margin-top: 40px;
+      height: 60px;
 
-          .littleimg{
-
-            height: 60%;
-            width: 101%;
-
-            img{
-
-              padding: 5px;
-              width: 25%
-
-            }
-
-            .pic{
-
-              width: 100%;
-              height: 60%;
-              padding: 15px;
-
-
-            }
-
-          }
-
-        }
-
-        .review{
-
-          display: flex;
-          flex-direction: column;
-          padding-top: 10px;
-
-          .allbutton{
-
-            display: flex;
-            width: 100%;
-            align-items: flex-end;
-            height: 50px;
-  
-          }
-  
-          .butclothes{
-  
-            width: 280px;
-            padding-left: 50px;
-            padding-bottom: 7px;
-  
-          }
-  
-          .littleheart{
-  
-            width: 30px;
-            height: 30px;
-            margin-top: 10px;
-            border: $gray 1px solid;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-  
-          }
-  
-          
-  
-          .butadd{
-  
-            display: flex;
-            flex-direction: row;
-            height: 50px;
-            width: 200px;
-  
-          }
-  
-          .butpay{
-  
-            display: flex;
-            flex-direction: column;
-            justify-content: right;
-            margin-left: 40px;
-            width: 100%;
-          }
-
-          .starp{
-
-            display: flex;
-            padding-left: 20px;
-
-            .areview{
-
-              padding-left: 10px;
-
-            }
-
-          }
-
-          .cdt2, .sku, .prices, .lorem{
-
-            padding-left: 20px;
-
-          }
-
-          .logos{
-
-            margin-top: 5px;
-            margin-left: 5px;
-            display: flex;
-            flex-direction: row;
-
-            .fb{
-
-              padding-left: 10px;
-              width: 10%;
-            }
-
-            .twitter{
-
-              padding-left: 10px;
-              padding-top: 3px;
-              width: 10%;
-
-            }
-
-            .pinterest{
-
-              padding-left: 10px;
-              padding-top: 13px;
-              width: 10%;
-
-            }
-
-          }
-
-          .cate, .tags{
-
-            margin-top: 20px;
-            padding: 10px;
-
-            .wtajclass{
-
-              justify-content: left;
-
-              .tagclass{
-
-                display: flex;
-                flex-direction: row;
-
-                .ctw{
-
-                  margin-top: 20px;
-                  padding: 10px;
-
-                }
-              }
-            }
-          }
-        }
-
-      .boxp{
-
-        padding-bottom: 5px;
-        display: flex;
-        flex-direction: row;
-        border-top: $gray 1px solid;
-        border-bottom: $gray 1px solid;
-
-        .desc{
-
-          text-align: left;
-          margin-left: 50px;
-          padding-top: 20px;
-
-        }
-
-        .ai{
-
-          margin-left: 50px;
-          padding-top: 20px;
-          text-align: right;
-
-        }
-
-        .minireview{
-
-          margin-right: 10px;
-          padding-top: 20px;
-          text-align: center;
-
-        }
-      }
-
-      .title1{
-
-        margin: 30px;
-      }
-
-      .title2{
-
-        margin: 30px;
-      }
-
-      .plight{
-
-        margin: 30px;
-
-      }
-
-      .ulli{
-
-        margin: 10px;
-      }
-
-      .intro{
-
-        display: flex;
-        flex-direction: column;
-
-        .pyjama{
-
-          width: 60%;
-          margin: 20px;
-        }
-      }
-
-      .rp{
-
-        padding-top: 10px;
-        text-align: center;
-
-      }
-
-      .as1{ // ajouter balise html
-
-        display: flex;
-        flex-flow: row wrap;
-
-      }
-
-      .as{
-
-        padding: 10px;
-        width: 100%;
-
-        .sglasses{
-
-          width: 100%;
-          height: 46,5vw;
-          padding: 10px;
-        }
-
-        .so, .sg{
-
-          margin-left: 10px;
-          width: 5%;
-
-        }
-
-        .sunglasses{
-
-          margin: 10px;
-
-        }
-
-        .price{
-
-          margin: 10px;
-          width: 100%
-        }
-
-        .backpack{
-
-          margin: 10px;
-        }
-
-        .bp{
-
-          margin: 10px;
-        }
-
-        .jacket{
-
-          width: 100%;
-          padding: 10px;
-        }
-
-        .efj{
-
-          margin: 10px;
-
-        }
-
-        .suit{
-
-          width: 100%;
-          padding: 10px;
-
-        }
-
-        .fsj{
-
-          margin: 10px;
-        }
-      }
+    }
 
   }
 
-@media only screen and (min-width: 993px) {
-  
-    /* Desktop: */
-
-
-    .home{
-
-      padding-left: 20px;
-      margin: 40px;
-      
-      }
-
-      .miniheader{
-
-        display: flex;
-        flex-direction: row;
-  
-        .list{
-  
-          display: flex; 
-          flex-direction: row;
-          justify-content: center;
-          width: 50%;
-          
-        }
-        
-        .wallet{
-          
-          padding: 40px;
-          width: 40%
-        
-        }
-  
-        .cdt{
-  
-          padding: 40px;
-          width: 60%;
-          height: 10px;
-  
-        }
-      }
-
-      .box{
-      
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-      
-      }
-    
-
-    .boxp{
-
-      padding-bottom: 5px;
-      display: flex;
-      flex-direction: row;
-      border-top: $gray 1px solid;
-      border-bottom: $gray 1px solid;
-
-      .desc{
-
-        text-align: left;
-        margin-left: 50px;
-        padding-top: 20px;
-
-      }
-
-      .ai{
-
-        margin-left: 200px;
-        padding-top: 20px;
-        text-align: right;
-
-      }
-
-      .minireview{
-
-        margin-right: 10px;
-        padding-top: 20px;
-        text-align: center;
-
-      }
-    }
-
     .picture{
 
-      margin-left: 50px;
-      margin-right: 50px;
-      width: 100%;
+      margin-left: 15px;
+      width: 75%;
 
         .littleimg{
 
-          
-          width: 100%;
-          margin: 5px;
+          height: 60%;
+          width: 101%;
 
           img{
 
             padding: 5px;
-            width: 25%;
+            width: 25%
 
           }
 
@@ -783,8 +389,11 @@
 
 
           }
+
         }
-    }
+
+      }
+
       .review{
 
         display: flex;
@@ -810,8 +419,9 @@
 
         .littleheart{
 
-          width: 50px;
-          height: 50px;
+          width: 30px;
+          height: 30px;
+          margin-top: 10px;
           border: $gray 1px solid;
           display: flex;
           align-items: center;
@@ -868,22 +478,22 @@
           .fb{
 
             padding-left: 10px;
-            width: 5%;
+            width: 10%;
           }
 
           .twitter{
 
             padding-left: 10px;
-            padding-top: 2px;
-            width: 5%;
+            padding-top: 3px;
+            width: 10%;
 
           }
 
           .pinterest{
 
             padding-left: 10px;
-            padding-top: 5px;
-            width: 5%;
+            padding-top: 13px;
+            width: 10%;
 
           }
 
@@ -914,6 +524,39 @@
         }
       }
 
+    .boxp{
+
+      padding-bottom: 5px;
+      display: flex;
+      flex-direction: row;
+      border-top: $gray 1px solid;
+      border-bottom: $gray 1px solid;
+
+      .desc{
+
+        text-align: left;
+        margin-left: 50px;
+        padding-top: 20px;
+
+      }
+
+      .ai{
+
+        margin-left: 50px;
+        padding-top: 20px;
+        text-align: right;
+
+      }
+
+      .minireview{
+
+        margin-right: 10px;
+        padding-top: 20px;
+        text-align: center;
+
+      }
+    }
+
     .title1{
 
       margin: 30px;
@@ -938,14 +581,12 @@
     .intro{
 
       display: flex;
-      
+      flex-direction: column;
 
       .pyjama{
 
-        display: flex;
-        flex-direction: column;
         width: 60%;
-        margin: 70px;
+        margin: 20px;
       }
     }
 
@@ -956,72 +597,70 @@
 
     }
 
-    .as1{ 
+    .as1{ // ajouter balise html
 
       display: flex;
-      flex-direction: row;
-      margin-left: 30px;
-      
+      flex-flow: row wrap;
+
     }
 
     .as{
 
-      padding: 5px;
-      width: 200%;
+      padding: 10px;
+      width: 100%;
 
       .sglasses{
 
-        width: 75%;
+        width: 100%;
         height: 46,5vw;
-        
+        padding: 10px;
       }
 
       .so, .sg{
 
-        margin-left: 5px;
+        margin-left: 10px;
         width: 5%;
 
       }
 
       .sunglasses{
 
-        margin: 2px;
+        margin: 10px;
 
       }
 
       .price{
 
-        margin: 5px;
-        width: 100%;
+        margin: 10px;
+        width: 100%
       }
 
       .backpack{
 
-        width: 75%;
-        
+        margin: 10px;
       }
 
       .bp{
 
-        margin: 5px;
+        margin: 10px;
       }
 
       .jacket{
 
-        width: 75%;
-        
+        width: 100%;
+        padding: 10px;
       }
 
       .efj{
 
-        margin: 5px;
+        margin: 10px;
 
       }
 
       .suit{
 
-        width: 75%;
-        
+        width: 100%;
+        padding: 10px;
 
       }
 
@@ -1030,234 +669,595 @@
         margin: 10px;
       }
     }
+
+}
+
+@media only screen and (min-width: 993px) {
+
+  /* Desktop: */
+
+
+  .home{
+
+    padding-left: 20px;
+    margin: 40px;
+    
+    }
+
+    .miniheader{
+
+      display: flex;
+      flex-direction: row;
+
+      .list{
+
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+        
+      }
+      
+      .wallet{
+        
+        padding: 40px;
+        width: 40%
+      
+      }
+
+      .cdt{
+
+        padding: 40px;
+        width: 60%;
+        height: 10px;
+
+      }
+    }
+
+    .box{
+    
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    
+    }
+  
+
+  .boxp{
+
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    border-top: $gray 1px solid;
+    border-bottom: $gray 1px solid;
+
+    .desc{
+
+      text-align: left;
+      margin-left: 50px;
+      padding-top: 20px;
+
+    }
+
+    .ai{
+
+      margin-left: 200px;
+      padding-top: 20px;
+      text-align: right;
+
+    }
+
+    .minireview{
+
+      margin-right: 10px;
+      padding-top: 20px;
+      text-align: center;
+
+    }
   }
+
+  .picture{
+
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 100%;
+
+      .littleimg{
+
+        
+        width: 100%;
+        margin: 5px;
+
+        img{
+
+          padding: 5px;
+          width: 25%;
+
+        }
+
+        .pic{
+
+          width: 100%;
+          height: 60%;
+          padding: 15px;
+
+
+        }
+      }
+  }
+    .review{
+
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+
+      .allbutton{
+
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+        height: 50px;
+
+      }
+
+      .butclothes{
+
+        width: 280px;
+        padding-left: 50px;
+        padding-bottom: 7px;
+
+      }
+
+      .littleheart{
+
+        width: 50px;
+        height: 50px;
+        border: $gray 1px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      }
+
+      
+
+      .butadd{
+
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        width: 200px;
+
+      }
+
+      .butpay{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        margin-left: 40px;
+        width: 100%;
+      }
+
+      .starp{
+
+        display: flex;
+        padding-left: 20px;
+
+        .areview{
+
+          padding-left: 10px;
+
+        }
+
+      }
+
+      .cdt2, .sku, .prices, .lorem{
+
+        padding-left: 20px;
+
+      }
+
+      .logos{
+
+        margin-top: 5px;
+        margin-left: 5px;
+        display: flex;
+        flex-direction: row;
+
+        .fb{
+
+          padding-left: 10px;
+          width: 5%;
+        }
+
+        .twitter{
+
+          padding-left: 10px;
+          padding-top: 2px;
+          width: 5%;
+
+        }
+
+        .pinterest{
+
+          padding-left: 10px;
+          padding-top: 5px;
+          width: 5%;
+
+        }
+
+      }
+
+      .cate, .tags{
+
+        margin-top: 20px;
+        padding: 10px;
+
+        .wtajclass{
+
+          justify-content: left;
+
+          .tagclass{
+
+            display: flex;
+            flex-direction: row;
+
+            .ctw{
+
+              margin-top: 20px;
+              padding: 10px;
+
+            }
+          }
+        }
+      }
+    }
+
+  .title1{
+
+    margin: 30px;
+  }
+
+  .title2{
+
+    margin: 30px;
+  }
+
+  .plight{
+
+    margin: 30px;
+
+  }
+
+  .ulli{
+
+    margin: 10px;
+  }
+
+  .intro{
+
+    display: flex;
+    
+
+    .pyjama{
+
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      margin: 70px;
+    }
+  }
+
+  .rp{
+
+    padding-top: 10px;
+    text-align: center;
+
+  }
+
+  .as1{ 
+
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    
+  }
+
+  .as{
+
+    padding: 5px;
+    width: 200%;
+
+    .sglasses{
+
+      width: 75%;
+      height: 46,5vw;
+      
+    }
+
+    .so, .sg{
+
+      margin-left: 5px;
+      width: 5%;
+
+    }
+
+    .sunglasses{
+
+      margin: 2px;
+
+    }
+
+    .price{
+
+      margin: 5px;
+      width: 100%;
+    }
+
+    .backpack{
+
+      width: 75%;
+      
+    }
+
+    .bp{
+
+      margin: 5px;
+    }
+
+    .jacket{
+
+      width: 75%;
+      
+    }
+
+    .efj{
+
+      margin: 5px;
+
+    }
+
+    .suit{
+
+      width: 75%;
+      
+
+    }
+
+    .fsj{
+
+      margin: 10px;
+    }
+  }
+}
 
 
 .home{
 
-  color: $gray;
+color: $gray;
 
 }
 
 .box{
 
-  display: flex;
-  width: 100%;
+display: flex;
+width: 100%;
 
 }
 
 .list{
 
-  
-  padding-right: 1em;
-  display: flex; 
-  flex-flow: row;
-  justify-content: center;
-  
+
+padding-right: 1em;
+display: flex; 
+flex-flow: row;
+justify-content: center;
+
 }
 
 .wallet{
 
-  color: $gray;
-  padding: 0px 20px 5px;
-  
+color: $gray;
+padding: 0px 20px 5px;
+
 
 }
 
 .review{
 
-  img {
-    margin-bottom: 10px;
-  } 
-  /* star orange */
-  .so{
-    color: $orange;
-  }
-  /* star gray */
-  .sg, .price{
-    color: $gray;
-  }
+img {
+  margin-bottom: 10px;
+} 
+/* star orange */
+.so{
+  color: $orange;
+}
+/* star gray */
+.sg, .price{
+  color: $gray;
+}
 
 }
 
 .areview{
 
-  font-size: small;
-  color : $gray
+font-size: small;
+color : $gray
 
 }
 
 .cdt2{
 
-  font-weight: bold;
-  color: $black;
+font-weight: bold;
+color: $black;
 }
 
 .sku{
 
-  font-size: small;
-  color: $gray;
+font-size: small;
+color: $gray;
 
 }
 
 .prices{
 
-  color: $black;
+color: $black;
 
 }
 
 .cdt{
 
-  color: $black;
+color: $black;
 
 }
 img{
 
-  width: 100%;
+width: 100%;
 
 }
 .picture{
 
-  
-  height: auto;
-  padding: 5px;
+
+height: auto;
+padding: 5px;
 
 }
 
 .littleimg{
-  
-  display: flex;
 
-  img{
+display: flex;
 
-    width: 25%;
+img{
 
-  }
+  width: 25%;
+
+}
 
 }
 
 .littleheart{
 
-  border: $gray 1px solid;
-  padding: 2px;
+border: $gray 1px solid;
+padding: 2px;
 
 }
 
 .cate, .tags{
 
-  color: $black;
-  font-weight: bold;
+color: $black;
+font-weight: bold;
 
 }
 
 .wtaj, .ctw{
 
- font-size: small;
- color: $gray;
+font-size: small;
+color: $gray;
 
 }
 
 .logos{
 
-  width: 100%;
-  color: $black;
+width: 100%;
+color: $black;
 
 }
 
 .lorem{
 
-  color: $gray;
+color: $gray;
 
 }
 .boxp{
 
-  display: flex;
-  justify-content: center;
+display: flex;
+justify-content: center;
 
-  .desc{
+.desc{
 
-    color: $black;
-    font-weight: bold;
-    padding-right: 1em;
+  color: $black;
+  font-weight: bold;
+  padding-right: 1em;
+
+}
+
+.ai{
+
   
-  }
+  font-weight: bold;
+  display: flex;
+  color: $gray;
+  flex-flow: row;
+  padding-left: 2em;
+  //justify-content: center;
+  width: 300px;
+  
 
-  .ai{
+}
 
-    
-    font-weight: bold;
-    display: flex;
-    color: $gray;
-    flex-flow: row;
-    padding-left: 2em;
-    //justify-content: center;
-    width: 300px;
-    
-
-  }
-
-  .minireview{
+.minireview{
 
 
-    font-weight: bold;
-    //display: flex;
-    color: $gray;
-    flex-flow: row;
-    padding-left: 2em;
-    justify-content: space-between;
-    width: 300px;
+  font-weight: bold;
+  //display: flex;
+  color: $gray;
+  flex-flow: row;
+  padding-left: 2em;
+  justify-content: space-between;
+  width: 300px;
 
-  }
+}
 }
 
 .title1, .title2{
 
-  color: $black;
-  font-weight: bold;
+color: $black;
+font-weight: bold;
 }
 
 .plight{
 
-  color: $gray;
+color: $gray;
 
 }
 
 .ulli{
 
-  color: $gray;
+color: $gray;
 
 }
 
 .pyjama{
 
-    display: flex;
-    float: right;
+  display: flex;
+  float: right;
 
 }
 
 .rp{
 
-  color: $black;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bold;
+color: $black;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: bold;
 }
 
 .as{
-  width: 100%;
-  max-width: 300px;
-  font-size: .8rem;
-  
+width: 100%;
+max-width: 300px;
+font-size: .8rem;
 
-  img {
-    margin-bottom: 10px;
-  } 
-  /* star orange */
-  .so{
-    color: $orange;
-  }
-  /* star gray */
-  .sg, .price{
-    color: $gray;
-  }
+
+img {
+  margin-bottom: 10px;
+} 
+/* star orange */
+.so{
+  color: $orange;
+}
+/* star gray */
+.sg, .price{
+  color: $gray;
+}
 
 }
