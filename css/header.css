@@ -47,12 +47,13 @@
     display: flex;
     padding: 30px 20px;
     max-height: 100px;
-    justify-content: space-between;
-    max-width: 100px; }
+    justify-content: space-between; }
+    .minisvg svg {
+      margin: 0 10px; }
   .nav2 {
     display: flex;
     font-weight: bold;
-    padding: 10px 10px;
+    padding: 10px;
     max-width: 100px;
     max-height: 100px;
     align-items: flex-start; }
@@ -72,17 +73,18 @@
       padding-top: 20px; }
     header .nav1 {
       display: flex;
-      padding: 20px 20px; }
+      align-items: center; }
       header .nav1 p {
         padding: 0 8px; }
     header .form {
-      max-width: 300px;
+      min-width: 300px;
       padding: 20px 20px; }
     header .minisvg {
       display: flex;
-      padding: 30px 20px;
-      justify-content: space-between;
-      max-width: 100px; }
+      align-items: center;
+      justify-content: space-between; }
+      header .minisvg svg {
+        margin: 0 10px; }
     header .nav2 {
       display: flex;
       font-weight: bold;
