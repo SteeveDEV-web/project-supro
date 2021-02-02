@@ -1,3 +1,608 @@
+@import "variables.scss";
+
 *{
     box-sizing: border-box;
   }
+
+/*---------------------mobile------------------------*/
+@media screen and (max-width: 600px){
+
+  header{
+    display: flex;
+    justify-content: space-between;
+
+
+    .logo{
+      max-width: 100px;
+      max-height: 100px;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .nav1, .form{
+      opacity: 0;
+      max-height: 100px;
+    }
+
+    .minisvg{
+      display: flex;
+      padding: 30px 20px;
+      max-height: 100px;
+      justify-content: space-between;
+      max-width: 100px;
+    }
+
+    .nav2{
+      display: flex;
+      font-weight: bold;
+      padding: 10px 10px;
+      max-width: 100px;
+      max-height: 100px;
+      align-items: flex-start;
+
+      li{
+        padding-top: 20px;
+      }
+    }
+  }
+
+  main{
+    width: 100%;
+    font-size: .8rem;
+    margin-top: 100px;
+  }
+
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+    .subtitle{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .form{
+    padding: 50px 15px 20px;
+
+    span{
+      color: red;
+    }
+
+    input, textarea{
+      border: 1px solid $gray;
+      margin-bottom: 30px;
+    }
+
+    .btn{
+      padding: 10px 30px;
+      font-weight: bold;
+    }
+  }
+
+  .link{
+    padding: 15px;
+
+    .network{
+      margin: 10px 0px 30px ;
+    }
+
+    svg{
+      border: 1px solid $gray;
+      border-radius: 50%;
+      padding: 10px;
+      width: 40px;
+      height: 40px;
+    }
+
+  /* Get in Touch */
+    .gt{
+      margin: 30px 0px;
+      border-bottom: 1px solid $gray;
+    }
+    .info{
+      margin : 0;
+    }
+
+  }
+  .store{
+    padding: 15px;
+
+    .info{
+      margin : 0;
+    }
+
+    h3{
+      margin: 30px 0;
+    }
+
+/* phone number & email */
+    .pe{
+      display: flex;
+
+      div{
+        width: 150px;
+      }
+    }
+  }
+  .map{
+    margin: 30px 0;
+    height: 200px;
+
+    .google{
+    height: 100%;
+    width: 100%;
+    }
+  }
+
+  footer{
+    width: 100%;
+    section{
+      padding: 15px;
+    }
+
+    .foot{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid $gray;
+
+    div{
+      width: 50%;
+      padding: 1px 0 5px 5px;
+    }
+   }
+  }
+
+}
+
+/*----------------------tablette---------------------*/
+@media screen and (min-width: 601px) and (max-width: 992px){
+  header{
+    display: flex;
+    justify-content: space-between;
+
+    .logo{
+      max-width: 100px;
+      max-height: 100px;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .nav1, .form{
+      opacity: 0;
+      max-height: 100px;
+    }
+
+    .minisvg{
+      display: flex;
+      padding: 30px 20px;
+      max-height: 100px;
+      justify-content: space-between;
+
+      svg{
+        margin: 0 10%;
+      }
+    }
+
+    .nav2{
+      display: flex;
+      font-weight: bold;
+      padding: 10px;
+      max-width: 100px;
+      max-height: 100px;
+      align-items: flex-start;
+
+
+      li{
+        padding-top: 20px;
+      }
+    }
+  }
+
+  main{
+    width: 100%;
+    font-size: .9rem;
+    margin-top: 100px;
+
+    h3{
+      margin: 30px 0;
+    }
+
+  }
+
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+    .subtitle{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .form{
+    padding: 50px 30px 20px;
+
+/* name & email*/
+    .ne{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    span{
+      color: red;
+    }
+
+    .name, .email{
+      width: 47%;
+    }
+
+    input, textarea{
+      border: 1px solid $gray;
+      margin-bottom: 30px;
+
+    }
+
+    .btn{
+      padding: 10px 30px;
+      font-weight: bold;
+    }
+  }
+
+  .link{
+    padding: 30px;
+
+    .network{
+      margin: 10px 0px 30px ;
+    }
+
+    svg{
+      border: 1px solid $gray;
+      border-radius: 50%;
+      padding: 10px;
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+    }
+
+  /* Get in Touch */
+    .gt{
+      margin: 30px 0px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid $gray;
+    }
+    .info{
+      margin : 0;
+    }
+
+  }
+  .store{
+    padding: 0px 30px;
+
+    .info{
+      margin : 0;
+
+    }
+
+    .allinfo{
+      display: flex;
+    }
+
+    .adress{
+      max-width: 30%;
+    }
+/* phone number & email */
+    .pe{
+      display: flex;
+      margin-left: 50px;
+
+      div{
+        width: 200px;
+      }
+    }
+  }
+  .map{
+    margin: 50px 0 100px;
+    height: 400px;
+
+    .google{
+    width: 100%;
+    }
+  }
+
+  footer{
+    width: 100%;
+
+
+    section{
+      padding: 15px;
+    }
+
+    .foot{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid $gray;
+
+      div{
+        width: 33.33%;
+        padding: 1px 0 5px 5px;
+    }
+  }
+  }
+
+}
+
+/*-----------------------desktop---------------------*/
+@media screen and (min-width: 993px){
+
+  header{
+    display: flex;
+    justify-content: space-between;
+
+
+    .logo{
+      max-width: 100px;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .nav1{
+      display: flex;
+      align-items: center;
+
+      p{
+        padding: 0 8px;
+      }
+
+    }
+    .form{
+      min-width: 300px;
+      padding: 20px 20px;
+    }
+
+    .minisvg{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      svg{
+        margin: 0 10px;
+      }
+    }
+
+    .nav2{
+      display: flex;
+      font-weight: bold;
+      padding: 10px 20px;
+      max-width: 150px;
+
+      li{
+        padding-top: 20px;
+      }
+    }
+  }
+
+  main{
+    width: 100%;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .desk{
+      width: 80%;
+      display: flex;
+      border-bottom: 1px solid $gray;
+    }
+
+  }
+
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+
+    .subtitle{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .form{
+    padding: 50px 30px 20px;
+    width: 100%;
+
+
+/* name & email*/
+    .ne{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    span{
+      color: red;
+    }
+
+    .name, .email{
+      width: 47%;
+    }
+
+    input, textarea{
+      border: 1px solid $gray;
+      margin-bottom: 30px;
+
+    }
+
+    .btn{
+      padding: 10px 30px;
+      font-weight: bold;
+    }
+  }
+
+  .link{
+    width: 40%;
+
+    .network{
+      margin: 30px 0px;
+
+      svg{
+        border: 1px solid $gray;
+        border-radius: 50%;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+      }
+    }
+
+
+
+  /* Get in Touch */
+    .gt{
+      margin: 30px 0px;
+    }
+    .info{
+      margin : 0;
+    }
+
+  }
+  .store{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+
+    .info{
+      margin : 0;
+    }
+
+    .store1, .store2, .store3{
+      display: flex;
+      align-items: center;
+    }
+
+    .allinfo{
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .adress{
+      width: 33%;
+    }
+
+    h3{
+      width: 25%;
+      margin-right: 15px;
+    }
+/* phone number & email */
+    .pe{
+      display: flex;
+      width: 66%;
+      justify-content: space-around;
+    }
+  }
+  .map{
+    margin: 30px 0;
+
+    width: 100%;
+
+    .google{
+    width: 100%;
+    height: 600px;
+    }
+  }
+
+  footer{
+    width: 100%
+    section{
+      padding: 15px;
+    }
+
+    .foot{
+    display: flex;
+    flex-flow: row;
+    border-bottom: 1px solid $gray;
+    justify-content: center;
+
+      div{
+        padding: 0px 50px 5px; /* Modif Privacy */
+    }
+  }
+
+  .foot2{
+    display: flex;
+    justify-content: space-between;
+  }
+  }
+
+}
+
+/*-----------------------General---------------------*/
+
+header{
+  width: 100%;
+
+  img{
+    width: 100%;
+  }
+
+  .txtblk{
+    color: $black;
+  }
+
+  .txtgray{
+    color: $gray;
+  }
+}
+
+
+main{
+  .title{
+    background-image: url(../images/contact-images/contact-bg.jpeg);
+    background-size: cover;
+
+  }
+
+  .txtgray{
+    color: $gray;
+  }
+
+}
+
+
+footer{
+  .foot{
+    font-family: $font;
+
+    h3{
+      color: $black;
+    }
+
+    p, li{
+      color: $gray;
+    }
+  }
+
+  .foot2{
+    color: $gray;
+    font-size: .9rem;
+
+    span{
+      color: $black;
+      font-weight: bold;
+    }
+
+    .privacy{
+      display: inline;
+      padding-right: 1em;
+    }
+  }
+}

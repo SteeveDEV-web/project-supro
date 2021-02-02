@@ -1,3 +1,789 @@
+@import "variables.scss";
+
 *{
     box-sizing: border-box;
   }
+
+/*----------------------mobile-----------------*/
+@media screen and (max-width:600px){
+
+  header{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+
+
+    .logo{
+      max-width: 100px;
+      max-height: 100px;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .nav1, .form{
+      opacity: 0;
+      max-height: 100px;
+    }
+
+    .minisvg{
+      display: flex;
+      padding: 30px 20px;
+      max-height: 100px;
+      justify-content: space-between;
+      max-width: 100px;
+    }
+
+    .nav2{
+      display: flex;
+      font-weight: bold;
+      padding: 10px 10px;
+      max-width: 100px;
+      max-height: 100px;
+      align-items: flex-start;
+
+      li{
+        padding-top: 20px;
+      }
+    }
+  }
+
+  section{
+    width: 100%;
+
+    h2{
+      font-weight: bold;
+      padding: 20px 0;
+    }
+
+  }
+
+  .image{
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .red{
+    color: red;
+  }
+
+  .under{
+    padding: 30px;
+  }
+
+  .cofounder{
+   padding: 15px;
+
+   img{
+     margin-bottom: 20px;
+   }
+
+   h3{
+     font-style: italic;
+     margin-bottom: 20px;
+   }
+  }
+
+  .timeline{
+    padding: 15px;
+
+    p{
+      color:$gray;
+    }
+  }
+
+  .video{
+    height: 800px;
+    .top{
+      display: flex;
+      flex-direction: column;
+      height: 500px;
+      background-image: url(../images/about-images/video-img.jpeg);
+      background-position: center;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
+      .work{
+        font-size: 3rem;
+        color:$bannertop;
+      }
+
+      .no{
+        font-size: 3.5rem;
+        color: $bannertop;
+        font-weight: bold;
+        margin-top: 0;
+      }
+
+      img{
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    .table{
+      display: flex;
+      flex-flow: row wrap;
+      padding: 15px;
+
+      .part{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+
+        svg{
+          color: $orange;
+          width: 50px;
+          height: 50px;
+        }
+
+        p{
+          color: $gray;
+        }
+
+      }
+    }
+  }
+
+  .techno{
+    padding: 30px;
+
+    p{
+      padding: 5px;
+      color: $gray;
+    }
+  }
+
+  .member{
+    width: 100%;
+    padding: 15px;
+
+    .title{
+      width: 100%;
+      text-align: center;
+    }
+
+    .allmember{
+      display: flex;
+      flex-flow: row wrap;
+
+
+
+      .perso{
+        width: 50%;
+        padding: 15px;
+      }
+
+    }
+
+  }
+
+  .brand{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 15px;
+    width: 100%;
+    background-color: lightgray;
+
+
+    img{
+      width: 150px;
+      height: 40px;
+      margin: 15px;
+
+    }
+  }
+
+  footer{
+    width: 100%;
+    section{
+      padding: 15px;
+    }
+
+    .foot{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid $gray;
+
+    div{
+      width: 50%;
+      padding: 1px 0 5px 5px;
+    }
+   }
+
+  }
+
+}
+
+/*----------------------tablette-----------------*/
+@media screen and (min-width:601px) and (max-width:992px){
+
+  header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .logo{
+      max-width: 100px;
+      max-height: 100px;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .nav1, .form{
+      opacity: 0;
+      max-height: 100px;
+    }
+
+    .minisvg{
+      display: flex;
+      padding: 30px 20px;
+      max-height: 100px;
+      justify-content: space-between;
+      max-width: 100px;
+    }
+
+    .nav2{
+      display: flex;
+      font-weight: bold;
+      padding: 10px 10px;
+      max-width: 100px;
+      max-height: 100px;
+      align-items: flex-start;
+
+      li{
+        padding-top: 20px;
+      }
+    }
+  }
+  main{
+    section{
+      width: 100%;
+
+      h2{
+        font-weight: bold;
+        padding: 20px 0;
+      }
+
+    }
+    .red{
+      color: red;
+    }
+
+    .supro{
+
+
+      .image{
+        width: 100%;
+        margin-top: 40px;
+      }
+
+
+
+      .under{
+        padding: 60px;
+      }
+
+      .started{
+        padding-left: 50px;
+      }
+
+    }
+
+    .cofounder{
+     padding: 30px;
+     display: flex;
+
+     .sup{
+       padding: 0 30px;
+     }
+
+     img{
+       margin-bottom: 20px;
+     }
+
+     h3{
+       font-style: italic;
+       margin-bottom: 20px;
+     }
+    }
+
+    .timeline{
+      padding: 15px;
+
+      .allyear{
+        display: flex;
+        flex-flow: row wrap;
+
+      }
+      .year{
+        width: 50%;
+      }
+
+      p{
+        color:$gray;
+      }
+    }
+
+    .video{
+      height: 800px;
+      padding: 20px;
+      .top{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        background-image: url(../images/about-images/video-img.jpeg);
+        background-position: center;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        .work{
+          font-size: 3rem;
+          color:$bannertop;
+        }
+
+        .no{
+          font-size: 3.5rem;
+          color: $bannertop;
+          font-weight: bold;
+          margin-top: 0;
+        }
+
+        img{
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      .table{
+        display: flex;
+        flex-flow: row wrap;
+        padding: 15px;
+
+        .part{
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          padding: 15px;
+
+          svg{
+            color: $orange;
+            width: 50px;
+            height: 50px;
+          }
+
+          p{
+            color: $gray;
+          }
+
+        }
+      }
+    }
+
+    .techno{
+      padding: 30px;
+
+      h2{
+        text-align: center;
+      }
+
+      p{
+        padding: 5px;
+        color: $gray;
+      }
+    }
+
+    .member{
+      width: 100%;
+      padding: 15px;
+
+      .title{
+        width: 100%;
+        text-align: center;
+      }
+
+      .allmember{
+        display: flex;
+        flex-flow: row wrap;
+
+
+
+        .perso{
+          width: 33%;
+          padding: 15px;
+        }
+
+      }
+
+    }
+
+    .brand{
+      display: flex;
+      flex-flow: row wrap;
+      padding: 15px;
+      width: 100%;
+      background-color: rgba(235, 230, 230, 0.666);
+      justify-content: center;
+
+
+      img{
+        width: 50px;
+        height: 10px;
+        margin: 15px;
+
+      }
+    }
+  }
+
+  footer{
+    width: 100%;
+
+    section{
+      padding: 15px;
+    }
+
+    .foot{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid $gray;
+
+      div{
+        width: 33.33%;
+        padding: 1px 0 5px 5px;
+      }
+    }
+  }
+
+}
+
+/*----------------------desktop-----------------*/
+@media screen and (min-width:993px){
+
+  header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .fullwidth{
+      width: 100;
+    }
+
+    .logo{
+      max-width: 100px;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .nav1{
+      display: flex;
+      padding: 20px 20px;
+
+      p{
+        padding: 0 8px;
+      }
+
+    }
+    .form{
+      max-width: 300px;
+      padding: 20px 20px;
+    }
+
+    .minisvg{
+      display: flex;
+      padding: 30px 20px;
+      justify-content: space-between;
+      max-width: 100px;
+    }
+
+    .nav2{
+      display: flex;
+      font-weight: bold;
+      padding: 10px 20px;
+      max-width: 150px;
+
+      li{
+        padding-top: 20px;
+      }
+    }
+  }
+  main{
+    section{
+      width: 100%;
+
+      h2{
+        font-weight: bold;
+        padding: 20px 0;
+      }
+
+    }
+
+    .red{
+      color: red;
+    }
+
+    .supro{
+      display: flex;
+      flex-direction: row-reverse;
+
+      .image{
+
+        height: 100%;
+        margin-top: 40px;
+
+      }
+
+
+
+      .under{
+        padding: 60px;
+        max-width: 50%;
+      }
+
+      .started{
+        padding-left: 50px;
+      }
+
+    }
+
+    .cofounder{
+     padding: 0 15%;
+     display: flex;
+
+     .sup{
+       max-width: 55%;
+       padding: 0 30px;
+     }
+
+     img{
+       margin-bottom: 20px;
+     }
+
+     h3{
+       font-style: italic;
+       margin-bottom: 20px;
+     }
+    }
+
+    .timeline{
+      padding: 0 15%;
+      display: flex;
+      align-items: center;
+
+      .allyear{
+        display: flex;
+        flex-flow: row wrap;
+
+      }
+      .year{
+        width: 50%;
+      }
+
+      p{
+        color:$gray;
+      }
+    }
+
+    .video{
+
+      height: 800px;
+      padding: 0 15%;
+      .top{
+
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        background-image: url(../images/about-images/video-img.jpeg);
+        background-position: center;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        .work{
+          font-size: 3rem;
+          color:$bannertop;
+        }
+
+        .no{
+          font-size: 3.5rem;
+          color: $bannertop;
+          font-weight: bold;
+          margin-top: 0;
+        }
+
+        img{
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      .table{
+        display: flex;
+        flex-flow: row wrap;
+        padding: 15px;
+
+        .part{
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          padding: 15px;
+
+          svg{
+            color: $orange;
+            width: 50px;
+            height: 50px;
+          }
+
+          p{
+            color: $gray;
+          }
+
+        }
+      }
+    }
+
+    .techno{
+      padding: 0 20%;
+
+
+      h2{
+        text-align: center;
+      }
+
+      p{
+        padding: 5px;
+        color: $gray;
+      }
+
+      .subtechno{
+        display: flex;
+      }
+    }
+
+    .member{
+      width: 100%;
+      padding: 15px;
+
+      .title{
+        width: 100%;
+        text-align: center;
+      }
+
+      .allmember{
+        display: flex;
+        flex-flow: row wrap;
+
+
+
+        .perso{
+          width: 33%;
+          padding: 15px;
+        }
+
+      }
+
+    }
+
+    .brand{
+      display: flex;
+      flex-flow: row wrap;
+      padding: 15px;
+      width: 100%;
+      height: 100px;
+      background-color: rgba(235, 230, 230, 0.666);
+      justify-content: center;
+      align-items: center;
+
+
+      img{
+        width: 80px;
+        height: 16px;
+        margin: 15px;
+
+      }
+    }
+  }
+
+
+  footer{
+    width:100%;
+
+    section{
+      padding: 15px;
+    }
+
+    .foot{
+    display: flex;
+    flex-flow: row;
+    border-bottom: 1px solid $gray;
+    justify-content: center;
+
+      div{
+        padding: 0px 50px 5px; /* Modif Privacy */
+      }
+    }
+
+  .foot2{
+    display: flex;
+    justify-content: space-between;
+    }
+  }
+
+}
+
+/*----------------------general-----------------*/
+header{
+  img{
+    width: 100%;
+  }
+
+  .txtblk{
+    color: $black;
+  }
+
+  .txtgray{
+    color: $gray;
+  }
+}
+
+main{
+  img{
+    width: 100%;
+  }
+
+  .gray{
+    color: $gray;
+  }
+
+}
+
+
+footer{
+  .foot{
+    font-family: $font;
+
+    h3{
+      color: $black;
+    }
+
+    p, li{
+      color: $gray;
+    }
+  }
+
+  .foot2{
+    color: $gray;
+    font-size: .9rem;
+
+    span{
+      color: $black;
+      font-weight: bold;
+    }
+
+    .privacy{
+      display: inline;
+      padding-right: 1em;
+    }
+  }
+}
