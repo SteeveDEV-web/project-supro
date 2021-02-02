@@ -273,6 +273,7 @@ img {
       display: none; } }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
+
   .fullWidth {
     width: inherit; }
   footer section {
@@ -809,5 +810,4 @@ img {
     flex-flow: row wrap; }
     .botImg img {
       width: 14%; } }
-
 /*# sourceMappingURL=index.css.map */

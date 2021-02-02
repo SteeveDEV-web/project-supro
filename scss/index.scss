@@ -2,11 +2,9 @@
 *{
   box-sizing: border-box;
 }
-
 .fullWidth{
   width: 100%;
 }
-
 main{
   font-family: $font;
   margin:0;
@@ -161,13 +159,11 @@ img{
       max-height: 100px;
       align-items: flex-start;
       z-index: 1;
-
       li{
         padding-top: 20px;
       }
     }
     .centerT{
-
       position:relative;
       width: 100%;
       height: 600px;
@@ -175,12 +171,9 @@ img{
       .centerTop{
         position: absolute;
         text-align: center;
-
         top: 40%;
         left: 50%;
         transform: translateX(-50%);
-
-
       }
       img{
         transform: scale(3, 3) translateY(75px);
@@ -219,7 +212,6 @@ img{
 
 
       }
-
     }
     .conteneur {
       position: relative;
@@ -383,7 +375,8 @@ img{
     }
   }
 
-
+=======
+>>>>>>> 7cf59f2787fd31f5944eeeaf277d60757e03ce3b
   // tablet
 
   @media only screen and (min-width: 601px) and (max-width: 992px) {
@@ -395,7 +388,6 @@ img{
         padding: 15px;
       }
       .foot{
-
         display: flex;
         flex-flow: row wrap;
         border-bottom: 1px solid $gray;
@@ -456,7 +448,6 @@ img{
 
       }
     }
-
     .social{
       position: absolute;
       top: 50%;
@@ -473,6 +464,21 @@ img{
         height: 20px;
       }
 
+    .social{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      color:$gray;
+      svg{
+        display: inline-block;
+        margin:10px 0;
+        width: 20px;
+        height: 20px;
+      }
     }
     .pastille{
         bottom: 20%;
@@ -487,7 +493,6 @@ img{
           margin:0 5px;
       }
     }
-
     .tst{
       width: 100%;
       position: absolute;
@@ -502,7 +507,6 @@ img{
 
       }
       .Tright{
-
         display: none;
         transform: translateY(-50px);
         margin-right: 40px;
@@ -515,8 +519,6 @@ img{
           align-items: flex-end;
         }
       }
-
-
 
     }
 
@@ -560,7 +562,6 @@ img{
       img{
         width: 50%;
       }
-
       h2{
         width: 150px;
       }
@@ -573,7 +574,6 @@ img{
       width:100%;
       display:flex;
       justify-content: flex-end;
-
 
       .size{
         position: absolute;
@@ -598,7 +598,6 @@ img{
       }
       img{
         width: 100%;
-
         order:2;
       }
 
@@ -702,13 +701,11 @@ img{
         display: inline;
         margin-bottom: 50px;
         line-height: 15px;
-
         padding-left: 50px;
       }
       .sec{
         width: 49%;
       }
-
       .flex{
         display: flex;
         p{
@@ -847,7 +844,6 @@ img{
         display: flex;
         flex-direction: column;
         text-align: center;
-
       }
       .Tright{
         position: absolute;
@@ -883,7 +879,6 @@ img{
     }
     .social{
       margin-left: 20px;
-
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -944,7 +939,6 @@ img{
       left:70%;
     }
     .gau{
-
       margin-top: 100px;
       display: flex;
       width:100%;
@@ -969,7 +963,6 @@ img{
 
     }
     .shop2{
-
       position: relative;
       padding-left: 100px;
       text-align: left;
@@ -977,7 +970,6 @@ img{
       width: 100%;
       display: flex;
       justify-content: flex-end;
-
       .droite{
         display:flex;
         justify-content: flex-end;
@@ -1082,7 +1074,6 @@ img{
         margin-top: 50px;
       }
     }
-
     .centerMid{
       width: 70%;
       margin: 150px auto 70px;
