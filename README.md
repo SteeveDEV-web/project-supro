@@ -38,11 +38,11 @@ Respect the deadline
 ![Contact/Product](image/Design2.jpg)
 
 ## Statut:
-Done
+In progress
 
 ## Deployed project:
 Lien Github : https://github.com/SteeveDEV-web/project-supro
 
-Lien web:
+Lien web:https://steevedev-web.github.io/project-supro/.
 
 ## Note:
