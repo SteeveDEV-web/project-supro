@@ -526,8 +526,7 @@ img {
     border-bottom: 1px solid #999;
     justify-content: center; }
     footer .foot div {
-      padding: 0px 50px 5px;
-      /* Modif Privacy */ }
+      padding: 0px 50px 5px; }
   footer .foot2 {
     display: flex;
     justify-content: space-between; }
