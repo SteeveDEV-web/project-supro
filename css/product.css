@@ -422,8 +422,8 @@
     flex-direction: column; }
     .intro .pyjama {
       display: flex;
-      flex-direction: row;
-      border: green 1px solid;
+      flex-direction: column;
+      background-color: pink;
       width: 40%;
       margin: 20px; }
   .rp {
