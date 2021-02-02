@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box; }
 
+.fullWidth {
+  width: 100%; }
+
 main {
   font-family: "Roboto", sans-serif;
   margin: 0; }
@@ -35,6 +38,11 @@ h2 {
 .txtgray {
   color: #999; }
 
+.tst {
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%); }
+
 img {
   width: 100%; }
 
@@ -60,6 +68,12 @@ img {
   margin-right: 20px; }
 
 @media only screen and (max-width: 600px) {
+  .tst {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    transform: inherit; }
   footer section {
     padding: 15px; }
   footer .foot {
@@ -96,6 +110,7 @@ img {
     .nav2 li {
       padding-top: 20px; }
   .centerT {
+    position: relative;
     width: 100%;
     height: 600px;
     overflow: hidden; }
@@ -103,9 +118,23 @@ img {
       position: absolute;
       text-align: center;
       top: 40%;
-      left: 10%; }
+      left: 50%;
+      transform: translateX(-50%); }
     .centerT img {
       transform: scale(3, 3) translateY(75px); }
+    .centerT .Tright {
+      display: none; }
+  .social {
+    bottom: 70px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: absolute; }
+    .social svg {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0 10px; }
   .conteneur {
     position: relative;
     color: white;
@@ -233,7 +262,12 @@ img {
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+  .fullWidth {
+    width: inherit; }
+>>>>>>> Thomas
   footer section {
     padding: 15px; }
   footer .foot {
@@ -296,6 +330,20 @@ img {
 =======
     .centerT img {
       transform: scale(2, 2) translateY(100px); }
+  .social {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #999; }
+    .social svg {
+      display: inline-block;
+      margin: 10px 0;
+      width: 20px;
+      height: 20px; }
   .tst {
     width: 100%;
     position: absolute;
@@ -304,10 +352,10 @@ img {
     justify-content: space-between; }
     .tst .centerTop {
       width: 33%;
-      display: flex;
-      flex-direction: column;
+      margin: 0 auto;
       text-align: center; }
     .tst .Tright {
+      display: none;
       transform: translateY(-50px);
       margin-right: 40px;
       width: 33%;
@@ -317,6 +365,7 @@ img {
         border: 1px #999 solid;
         width: 20%;
         align-items: flex-end; }
+<<<<<<< HEAD
     .tst .social {
       margin-left: 40px;
       height: 100%;
@@ -326,6 +375,8 @@ img {
       .tst .social svg {
         margin-bottom: 40px;
         transform: translateY(-50px); }
+>>>>>>> Thomas
+=======
 >>>>>>> Thomas
   .conteneur {
     position: relative;
@@ -358,7 +409,11 @@ img {
     margin-left: 20px; }
     .shop1 img {
       width: 50%; }
+    .shop1 h2 {
+      width: 150px; }
   .shop2 {
+    position: relative;
+    padding-left: 100px;
     text-align: left;
     padding-top: 20px;
     width: 100%;
@@ -368,21 +423,35 @@ img {
 =======
     justify-content: flex-end; }
     .shop2 .size {
+      position: absolute;
+      top: 20%;
+      left: 0;
       display: flex;
+<<<<<<< HEAD
       flex-direction: column; }
 >>>>>>> Thomas
+=======
+      flex-direction: column;
+      padding-left: 10px;
+      width: 150px; }
+>>>>>>> Thomas
     .shop2 p {
-      flex-wrap: row wrap;
-      border: red 1px solid; }
+      flex-wrap: row wrap; }
     .shop2 h2 {
+<<<<<<< HEAD
 <<<<<<< HEAD
       border: green 1px solid;
       width: 500px; }
 =======
       border: green 1px solid; }
 >>>>>>> Thomas
+=======
+      font-weight: 900; }
+    .shop2 .ttu {
+      text-transform: uppercase; }
+>>>>>>> Thomas
     .shop2 img {
-      width: 60%;
+      width: 100%;
       order: 2; }
   .product {
     display: flex;
@@ -476,9 +545,14 @@ img {
       display: inline;
       margin-bottom: 50px;
       line-height: 15px;
-      margin-left: 50px; }
+      padding-left: 50px; }
       .pad .new img {
         margin-bottom: 20px; }
+<<<<<<< HEAD
+>>>>>>> Thomas
+=======
+    .pad .sec {
+      width: 49%; }
 >>>>>>> Thomas
     .pad .flex {
       display: flex; }
@@ -514,6 +588,12 @@ img {
     justify-content: space-between; }
   header {
     display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background: transparent;
     justify-content: space-between; }
     header .logo {
       max-width: 100px;
@@ -543,8 +623,10 @@ img {
   .centerT {
     width: 100%;
     height: 900px;
+    position: relative;
     overflow: hidden; }
     .centerT img {
+<<<<<<< HEAD
       transform: scale(2, 2) translateY(100px); }
 <<<<<<< HEAD
     .centerT .centerTop {
@@ -553,22 +635,35 @@ img {
       top: 40%;
       left: 30%; }
 =======
+=======
+      transform: scale(2, 2) translateY(74px); }
+>>>>>>> Thomas
   .tst {
     width: 100%;
     position: absolute;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%); }
     .tst .centerTop {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
       width: 33%;
+      left: 50%;
       display: flex;
       flex-direction: column;
       text-align: center; }
     .tst .Tright {
-      transform: translateY(-50px);
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
       margin-right: 40px;
       width: 33%;
       text-align: right; }
+<<<<<<< HEAD
       .tst .Tright .w-50 {
         display: flex;
         border: 1px #999 solid;
@@ -584,6 +679,20 @@ img {
         margin-bottom: 40px;
         transform: translateY(-50px); }
 >>>>>>> Thomas
+=======
+      .tst .Tright .gray {
+        padding-bottom: 10px;
+        position: relative; }
+        .tst .Tright .gray::after {
+          content: "";
+          display: block;
+          width: 30px;
+          height: 2px;
+          background: #999;
+          position: absolute;
+          bottom: 0;
+          right: 0; }
+>>>>>>> Thomas
   .conteneur {
     width: 100%;
     display: flex; }
@@ -592,15 +701,24 @@ img {
   .social {
     margin-left: 20px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     position: absolute;
 =======
+>>>>>>> Thomas
+=======
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 >>>>>>> Thomas
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 100px;
-    color: #999;
-    transform: translateY(-40px); }
+    color: #999; }
+    .social svg {
+      display: inline-block;
+      margin: 10px 0;
+      width: 20px;
+      height: 20px; }
   .conteneur {
     position: relative;
     color: white;
@@ -637,14 +755,18 @@ img {
 =======
     left: 70%; }
   .gau {
+    margin-top: 100px;
     display: flex;
     width: 100%; }
 >>>>>>> Thomas
   .shop1 {
     text-align: left;
-    padding-top: 20px;
+    padding-top: 100px;
+    padding-left: 200px;
     width: 75%;
     margin-left: 20px; }
+    .shop1 h2 {
+      width: 150px; }
     .shop1 img {
       width: 50%; }
 <<<<<<< HEAD
@@ -653,6 +775,13 @@ img {
     display: flex; }
 >>>>>>> Thomas
   .shop2 {
+    position: relative;
+    padding-left: 100px;
+    text-align: left;
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
     text-align: left;
     padding-top: 20px;
     width: 100%;
@@ -668,7 +797,11 @@ img {
     .shop2 .gauche {
       float: left; }
     .shop2 .size {
+      position: absolute;
+      top: 20%;
+      left: 0;
       display: flex;
+<<<<<<< HEAD
       flex-direction: column; }
 >>>>>>> Thomas
     .shop2 p {
@@ -681,8 +814,15 @@ img {
 =======
       border: green 1px solid; }
 >>>>>>> Thomas
+=======
+      flex-direction: column;
+      padding-left: 10px;
+      width: 150px; }
+    .shop2 p {
+      flex-wrap: row wrap; }
+>>>>>>> Thomas
     .shop2 img {
-      width: 60%;
+      width: 100%;
       order: 2; }
   .product {
     display: flex;
@@ -750,13 +890,26 @@ img {
         margin-left: 10px; }
     .col2 .shop {
       margin-top: 50px; }
+  .centerMid {
+    width: 70%;
+    margin: 150px auto 70px; }
   .news {
+    position: relative;
     text-align: left;
     line-height: 20px;
     margin-bottom: 50px; }
+    .news a {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+    .news .input-group {
+      position: absolute;
+      width: 50%;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      border-bottom: 1px solid #999; }
   .pad {
-    padding-left: 20px;
-    padding-right: 20px;
     display: flex;
 <<<<<<< HEAD
     width: 100%;
@@ -768,7 +921,12 @@ img {
     flex-wrap: row wrap;
     width: 100%; }
     .pad .new {
+<<<<<<< HEAD
       width: 30%;
+>>>>>>> Thomas
+=======
+      width: 33%;
+      padding: 0 20px;
 >>>>>>> Thomas
       display: inline;
       margin-bottom: 50px;
