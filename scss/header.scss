@@ -1,4 +1,5 @@
 
+
   @import "variables.scss";
 
   *{
@@ -84,11 +85,13 @@
       max-height: 100px;
       align-items: flex-start;
   
+
       li{
         padding-top: 20px;
       }
     }
   }
+
   
   /*---------------------Desktop---------------*/
   @media screen and (min-width: 993px){
@@ -141,7 +144,7 @@
         }
       }
     }
-  }
+  
   
   /*---------------------General---------------*/
   
@@ -156,3 +159,4 @@
   .txtgray{
     color: $gray;
   }
+ }

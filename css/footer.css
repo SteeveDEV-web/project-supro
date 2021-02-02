@@ -1,8 +1,8 @@
 * {
   box-sizing: border-box; }
 
+/* ---------------------Mobiles:------------------ */
 @media only screen and (max-width: 600px) {
-  /* Mobiles: */
   section {
     padding: 15px; }
   .foot {
@@ -13,8 +13,8 @@
       width: 50%;
       padding: 1px 0 5px 5px; } }
 
+/* ----------------------Tablette--------------------- */
 @media only screen and (min-width: 601px) and (max-width: 992px) {
-  /* Tablets: */
   section {
     padding: 15px; }
   .foot {
@@ -25,8 +25,8 @@
       width: 33.33%;
       padding: 1px 0 5px 5px; } }
 
+/* ---------------------------Desktop----------------- */
 @media only screen and (min-width: 993px) {
-  /* Desktop: */
   section {
     padding: 15px; }
   .foot {
@@ -35,11 +35,11 @@
     border-bottom: 1px solid #999;
     justify-content: center; }
     .foot div {
-      padding: 0px 50px 5px; }
+      padding: 0px 50px 5px;
+      /* Modif Privacy */ }
   .foot2 {
     display: flex;
-    justify-content: space-between;
-    padding-top: 1em; } }
+    justify-content: space-between; } }
 
 .foot {
   font-family: "Roboto", sans-serif; }
@@ -57,5 +57,7 @@
   .foot2 .privacy {
     display: inline;
     padding-right: 1em; }
+  .foot2 .margin0 {
+    margin: 0; }
 
 /*# sourceMappingURL=footer.css.map */

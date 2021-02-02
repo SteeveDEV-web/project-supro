@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box; }
 
@@ -499,6 +500,7 @@
   padding: 0px 20px 5px; }
 
 .review {
+
   /* star orange */
   /* star gray */ }
   .review img {
@@ -507,6 +509,7 @@
     color: #f68773; }
   .review .sg, .review .price {
     color: #999; }
+  
 
 .areview {
   font-size: small;
@@ -610,5 +613,6 @@ img {
     color: #f68773; }
   .as .sg, .as .price {
     color: #999; }
+
 
 /*# sourceMappingURL=product.css.map */
