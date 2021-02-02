@@ -136,16 +136,17 @@
     width: 100%; }
   .miniheader {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    width: 100%; }
     .miniheader .list {
       display: flex;
       flex-direction: row;
-      justify-content: center;
-      width: 40%; }
+      justify-content: center; }
     .miniheader .wallet {
-      margin: 38px; }
+      margin: 40px; }
     .miniheader .cdt {
-      margin: 38px; }
+      margin-top: 40px;
+      height: 60px; }
   .picture {
     margin-left: 15px;
     width: 75%; }
@@ -163,27 +164,28 @@
     display: flex;
     flex-direction: column;
     padding-top: 10px; }
-    .review .butclick {
+    .review .allbutton {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
       width: 100%;
-      height: 25vw; }
+      align-items: flex-end;
+      height: 50px; }
     .review .butclothes {
-      width: 30%;
-      padding-left: 10px; }
+      width: 280px;
+      padding-left: 50px;
+      padding-bottom: 7px; }
     .review .littleheart {
-      margin: 0;
-      font-family: inherit;
-      font-size: inherit;
-      line-height: inherit; }
+      width: 30px;
+      height: 30px;
+      margin-top: 10px;
+      border: #999 1px solid;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
     .review .butadd {
       display: flex;
       flex-direction: row;
-      margin-left: 40px;
-      height: 35%;
-      padding-left: 30px;
-      width: 101%; }
+      height: 50px;
+      width: 200px; }
     .review .butpay {
       display: flex;
       flex-direction: column;
@@ -310,7 +312,7 @@
       width: 40%; }
     .miniheader .cdt {
       padding: 40px;
-      width: 45%;
+      width: 60%;
       height: 10px; }
   .box {
     display: flex;
@@ -352,27 +354,27 @@
     display: flex;
     flex-direction: column;
     padding-top: 10px; }
-    .review .butclick {
+    .review .allbutton {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
       width: 100%;
-      height: 25vw; }
+      align-items: flex-end;
+      height: 50px; }
     .review .butclothes {
-      width: 30%;
-      padding-left: 10px; }
+      width: 280px;
+      padding-left: 50px;
+      padding-bottom: 7px; }
     .review .littleheart {
-      margin: 0;
-      font-family: inherit;
-      font-size: inherit;
-      line-height: inherit; }
+      width: 50px;
+      height: 50px;
+      border: #999 1px solid;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
     .review .butadd {
       display: flex;
       flex-direction: row;
-      margin-left: 40px;
-      height: 35%;
-      padding-left: 30px;
-      width: 101%; }
+      height: 50px;
+      width: 200px; }
     .review .butpay {
       display: flex;
       flex-direction: column;
@@ -396,11 +398,11 @@
         width: 5%; }
       .review .logos .twitter {
         padding-left: 10px;
-        padding-top: 3px;
+        padding-top: 2px;
         width: 5%; }
       .review .logos .pinterest {
         padding-left: 10px;
-        padding-top: 10px;
+        padding-top: 5px;
         width: 5%; }
     .review .cate, .review .tags {
       margin-top: 20px;
@@ -422,14 +424,12 @@
   .ulli {
     margin: 10px; }
   .intro {
-    display: flex;
-    flex-direction: column; }
+    display: flex; }
     .intro .pyjama {
       display: flex;
       flex-direction: column;
-      border: green 1px solid;
-      width: 40%;
-      margin: 20px; }
+      width: 60%;
+      margin: 70px; }
   .rp {
     padding-top: 10px;
     text-align: center; }
