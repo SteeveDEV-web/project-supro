@@ -154,6 +154,7 @@
       header .nav2 li {
         padding-top: 20px; }
   .mainaside {
+    display:flex;
     flex-direction: row-reverse; }
   main {
     max-width: 70%;
